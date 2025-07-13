@@ -146,5 +146,9 @@ def main():
     else:
         parser.print_help()
 
+def main_cli():
+    """Entry point for the CLI command."""
+    main()
+
 if __name__ == "__main__":
     main() 

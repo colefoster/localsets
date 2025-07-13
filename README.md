@@ -15,55 +15,26 @@ A Python package providing offline access to Pokemon random battle data and Smog
 
 ## Installation
 
-### Full Installation (All Formats)
+### Standard Installation (All Data Included)
 ```bash
-pip install localsets[all]
+pip install localsets
 ```
 
-### RandBats Only (Random Battle Data)
+This installs the complete package with all RandBats and Smogon data files included.
+
+### Installation Without CLI
 ```bash
-# All RandBats formats
-pip install localsets[randbats-all]
-
-# Specific generations
-pip install localsets[gen1,gen2,gen3]
-
-# Classic generations (1-4)
-pip install localsets[classic]
-
-# Modern generations (8-9)
-pip install localsets[modern]
+pip install localsets[no-cli]
 ```
 
-### Smogon Only (Competitive Sets)
+This installs the package without the command-line interface, useful for library-only usage.
+
+### Development Installation
 ```bash
-# All Smogon formats
-pip install localsets[smogon-all]
-
-# Specific tiers
-pip install localsets[ou,uu,ru]  # OverUsed, UnderUsed, RarelyUsed
-
-# Current generation competitive
-pip install localsets[current]  # gen9ou, gen9uu, gen9ru, gen9nu, gen9pu
-
-# VGC formats
-pip install localsets[vgc]
-
-# Doubles formats
-pip install localsets[smogon-doubles]
+pip install localsets[dev]
 ```
 
-### Combined Installations
-```bash
-# Current generation both types
-pip install localsets[current]  # gen9randombattle, gen9ou, gen9uu
-
-# Complete competitive setup
-pip install localsets[competitive]  # All Smogon formats
-
-# Everything
-pip install localsets[complete]  # All RandBats + Smogon formats
-```
+This includes development dependencies for testing and code quality tools.
 
 ## Quick Start
 
@@ -166,53 +137,7 @@ localsets list  # same as randbats list
 | `gen8vgc2023` | 8 | VGC | Video Game Championships 2023 |
 | ... | ... | ... | ... (similar for all generations) |
 
-## Installation Extras
 
-### RandBats Extras
-| Extra | Formats Included |
-|-------|------------------|
-| `gen1` | `gen1randombattle` |
-| `gen2` | `gen2randombattle` |
-| `gen3` | `gen3randombattle` |
-| `gen4` | `gen4randombattle` |
-| `gen5` | `gen5randombattle` |
-| `gen6` | `gen6randombattle` |
-| `gen7` | `gen7randombattle` |
-| `gen8` | `gen8randombattle` |
-| `gen9` | `gen9randombattle` |
-| `classic` | `gen1randombattle`, `gen2randombattle`, `gen3randombattle`, `gen4randombattle` |
-| `modern` | `gen8randombattle`, `gen9randombattle` |
-| `doubles` | `gen8randomdoublesbattle`, `gen9randomdoublesbattle` |
-| `letsgo` | `gen7letsgorandombattle` |
-| `bdsp` | `gen8bdsprandombattle` |
-| `baby` | `gen9babyrandombattle` |
-| `randbats-all` | All RandBats formats |
-
-### Smogon Extras
-| Extra | Formats Included |
-|-------|------------------|
-| `ou` | All OU formats across generations |
-| `uu` | All UU formats across generations |
-| `ru` | All RU formats across generations |
-| `nu` | All NU formats across generations |
-| `pu` | All PU formats across generations |
-| `ubers` | All Ubers formats across generations |
-| `smogon-doubles` | All Doubles OU formats |
-| `vgc` | All VGC formats across generations |
-| `current` | `gen9ou`, `gen9uu`, `gen9ru`, `gen9nu`, `gen9pu` |
-| `gen9-smogon` | All Generation 9 Smogon formats |
-| `gen8-smogon` | All Generation 8 Smogon formats |
-| ... | ... (similar for all generations) |
-| `smogon-all` | All Smogon formats |
-
-### Combined Extras
-| Extra | Formats Included |
-|-------|------------------|
-| `current` | `gen9randombattle`, `gen9ou`, `gen9uu` |
-| `competitive` | All Smogon formats |
-| `random` | All RandBats formats |
-| `complete` | All RandBats + Smogon formats |
-| `all` | All formats |
 
 ## API Reference
 
