@@ -276,6 +276,6 @@ class DataUpdater:
                     file_path.unlink()
                     logger.info(f"Cleaned up {file_path.name}")
                 except Exception as e:
-                    logger.error(f"Failed to clean up {file_path.name}: {e}")
+                    logger.error(f"Failed to clean up {file_path.name}: {e}") 
 
 __all__ = ['DataUpdater'] 

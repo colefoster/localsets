@@ -235,6 +235,6 @@ class SmogonSets:
         elif 'ubers' in format_name:
             return 'ubers'
         else:
-            return 'other'
+            return 'other' 
 
 __all__ = ['SmogonSets'] 

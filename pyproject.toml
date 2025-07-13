@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "localsets"
-version = "0.1.6"
+version = "0.1.7"
 description = "Local Pokemon random battle sets (auto-updating) and Smogon competitive sets"
 readme = "README.md"
 authors = [
@@ -56,7 +56,7 @@ Repository = "https://github.com/colefoster/localsets"
 Documentation = "https://github.com/colefoster/localsets#readme"
 
 [tool.setuptools]
-packages = ["localsets"]
+packages = ["localsets", "localsets.smogon"]
 
 [tool.setuptools.package-data]
 localsets = ["data/*.json", "metadata/*.json", "smogon/data/*.json"]
