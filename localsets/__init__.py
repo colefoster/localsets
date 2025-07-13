@@ -6,7 +6,6 @@ with automatic updates from the official source repository.
 """
 
 __version__ = "0.1.10"
-__author__ = "Pokemon RandBats Team"
 
 from .core import PokemonData, RandBatsData
 from .formats import (
