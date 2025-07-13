@@ -1,11 +1,12 @@
-# Pokemon Random Battle Data Package
+# Pokemon Data Package
 
-A Python package providing offline access to Pokemon random battle data with automatic updates from the official source repository.
+A Python package providing offline access to Pokemon random battle data and Smogon competitive sets with automatic updates from official source repositories.
 
 ## Features
 
 - **Offline Access**: Bundle data files within the package for immediate use
-- **Auto-Updates**: Automatically check for updates every 24 hours (configurable)
+- **Auto-Updates**: Automatically check for RandBats updates every 24 hours (configurable)
+- **Dual Data Sources**: Both RandBats random battle data and Smogon competitive sets
 - **Modular Installation**: Install only the generations/formats you need
 - **Clean API**: Simple programmatic access to Pokemon data
 - **Rich CLI**: Beautiful command-line interface with colored output
@@ -16,34 +17,52 @@ A Python package providing offline access to Pokemon random battle data with aut
 
 ### Full Installation (All Formats)
 ```bash
-pip install localrandbats[all]
+pip install localsets[all]
 ```
 
-### Specific Generations
+### RandBats Only (Random Battle Data)
 ```bash
-# Individual generations
-pip install localrandbats[gen1,gen2,gen3]
+# All RandBats formats
+pip install localsets[randbats-all]
+
+# Specific generations
+pip install localsets[gen1,gen2,gen3]
 
 # Classic generations (1-4)
-pip install localrandbats[classic]
+pip install localsets[classic]
 
 # Modern generations (8-9)
-pip install localrandbats[modern]
+pip install localsets[modern]
 ```
 
-### Specific Formats
+### Smogon Only (Competitive Sets)
 ```bash
-# Doubles battle formats
-pip install localrandbats[doubles]
+# All Smogon formats
+pip install localsets[smogon-all]
 
-# Let's Go format
-pip install localrandbats[letsgo]
+# Specific tiers
+pip install localsets[ou,uu,ru]  # OverUsed, UnderUsed, RarelyUsed
 
-# Brilliant Diamond/Shining Pearl format
-pip install localrandbats[bdsp]
+# Current generation competitive
+pip install localsets[current]  # gen9ou, gen9uu, gen9ru, gen9nu, gen9pu
 
-# Baby Pokemon format
-pip install localrandbats[baby]
+# VGC formats
+pip install localsets[vgc]
+
+# Doubles formats
+pip install localsets[smogon-doubles]
+```
+
+### Combined Installations
+```bash
+# Current generation both types
+pip install localsets[current]  # gen9randombattle, gen9ou, gen9uu
+
+# Complete competitive setup
+pip install localsets[competitive]  # All Smogon formats
+
+# Everything
+pip install localsets[complete]  # All RandBats + Smogon formats
 ```
 
 ## Quick Start
@@ -51,49 +70,66 @@ pip install localrandbats[baby]
 ### Programmatic Usage
 
 ```python
-from localrandbats import RandbatsData, get_pokemon
+from localsets import PokemonData, get_pokemon, get_smogon_sets
 
 # Initialize with specific formats
-data = RandbatsData(formats=['gen9randombattle', 'gen8randombattle'])
+data = PokemonData(
+    randbats_formats=['gen9randombattle', 'gen8randombattle'],
+    smogon_formats=['gen9ou', 'gen8ou']
+)
 
-# Get Pokemon data
-pikachu_gen9 = data.get_pokemon('pikachu', format='gen9randombattle')
-pikachu_gen8 = data.get_pokemon('pikachu', format='gen8randombattle')
+# RandBats data (random battle)
+pikachu_randbats = data.get_randbats('pikachu', 'gen9randombattle')
 
-# List available Pokemon in format
-pokemon_list = data.list_pokemon('gen9randombattle')
+# Smogon sets (competitive)
+pikachu_sets = data.get_smogon_sets('pikachu', 'gen9ou')
+life_orb_set = data.get_smogon_set('pikachu', 'gen9ou', 'Life Orb')
 
-# Update data
-data.update(formats=['gen9randombattle'])  # specific format
-data.update_all()  # all installed formats
+# List available Pokemon
+randbats_pokemon = data.list_randbats_pokemon('gen9randombattle')
+smogon_pokemon = data.list_smogon_pokemon('gen9ou')
+
+# Update RandBats data
+data.update_randbats(['gen9randombattle'])  # specific format
+data.update_randbats_all()  # all RandBats formats
+
+# Search across all formats
+all_results = data.search_all('pikachu')
 
 # Quick access functions
-get_pokemon('pikachu', format='gen9randombattle')
+get_pokemon('pikachu', 'gen9randombattle')  # RandBats
+get_smogon_sets('pikachu', 'gen9ou')  # Smogon
 ```
 
 ### Command Line Interface
 
 ```bash
-# Update data
-localrandbats update
-localrandbats update --format gen9randombattle
-localrandbats update --all
+# RandBats commands
+localsets randbats update
+localsets randbats get pikachu --format gen9randombattle
+localsets randbats list --format gen9randombattle
 
-# Pokemon lookup
-localrandbats get pikachu
-localrandbats get pikachu --format gen9randombattle
-localrandbats get pikachu --format gen8randombattle
+# Smogon commands
+localsets smogon get pikachu gen9ou
+localsets smogon get pikachu gen9ou --set "Life Orb"
+localsets smogon sets pikachu gen9ou
+localsets smogon list gen9ou
+localsets smogon search pikachu
+localsets smogon formats
 
-# List Pokemon
-localrandbats list
-localrandbats list --format gen9randombattle
+# Unified commands
+localsets get pikachu --randbats gen9randombattle --smogon gen9ou
+localsets formats --all  # show both RandBats and Smogon formats
 
-# Package info
-localrandbats info
-localrandbats formats  # show installed formats
+# Legacy commands (backward compatibility)
+localsets update  # same as randbats update
+localsets get pikachu  # same as randbats get
+localsets list  # same as randbats list
 ```
 
 ## Supported Formats
+
+### RandBats Formats (Random Battle)
 
 | Format | Generation | Type | Description |
 |--------|------------|------|-------------|
@@ -112,8 +148,27 @@ localrandbats formats  # show installed formats
 | `gen9randomdoublesbattle` | 9 | Doubles | Generation 9 doubles battle |
 | `gen9babyrandombattle` | 9 | Baby | Baby Pokemon format |
 
+### Smogon Formats (Competitive Sets)
+
+| Format | Generation | Type | Description |
+|--------|------------|------|-------------|
+| `gen9ou` | 9 | OU | OverUsed tier |
+| `gen9uu` | 9 | UU | UnderUsed tier |
+| `gen9ru` | 9 | RU | RarelyUsed tier |
+| `gen9nu` | 9 | NU | NeverUsed tier |
+| `gen9pu` | 9 | PU | PU tier |
+| `gen9ubers` | 9 | Ubers | Ubers tier |
+| `gen9doublesou` | 9 | Doubles | Doubles OU |
+| `gen9vgc2024` | 9 | VGC | Video Game Championships 2024 |
+| `gen8ou` | 8 | OU | OverUsed tier |
+| `gen8uu` | 8 | UU | UnderUsed tier |
+| `gen8vgc2022` | 8 | VGC | Video Game Championships 2022 |
+| `gen8vgc2023` | 8 | VGC | Video Game Championships 2023 |
+| ... | ... | ... | ... (similar for all generations) |
+
 ## Installation Extras
 
+### RandBats Extras
 | Extra | Formats Included |
 |-------|------------------|
 | `gen1` | `gen1randombattle` |
@@ -131,65 +186,159 @@ localrandbats formats  # show installed formats
 | `letsgo` | `gen7letsgorandombattle` |
 | `bdsp` | `gen8bdsprandombattle` |
 | `baby` | `gen9babyrandombattle` |
+| `randbats-all` | All RandBats formats |
+
+### Smogon Extras
+| Extra | Formats Included |
+|-------|------------------|
+| `ou` | All OU formats across generations |
+| `uu` | All UU formats across generations |
+| `ru` | All RU formats across generations |
+| `nu` | All NU formats across generations |
+| `pu` | All PU formats across generations |
+| `ubers` | All Ubers formats across generations |
+| `smogon-doubles` | All Doubles OU formats |
+| `vgc` | All VGC formats across generations |
+| `current` | `gen9ou`, `gen9uu`, `gen9ru`, `gen9nu`, `gen9pu` |
+| `gen9-smogon` | All Generation 9 Smogon formats |
+| `gen8-smogon` | All Generation 8 Smogon formats |
+| ... | ... (similar for all generations) |
+| `smogon-all` | All Smogon formats |
+
+### Combined Extras
+| Extra | Formats Included |
+|-------|------------------|
+| `current` | `gen9randombattle`, `gen9ou`, `gen9uu` |
+| `competitive` | All Smogon formats |
+| `random` | All RandBats formats |
+| `complete` | All RandBats + Smogon formats |
 | `all` | All formats |
 
 ## API Reference
 
 ### PokemonData Class
 
-The main class for managing Pokemon random battle data.
+The main class for managing Pokemon data from both RandBats and Smogon sources.
 
 #### Constructor
 ```python
-PokemonData(formats=None, cache_dir=None, auto_update=True)
+PokemonData(randbats_formats=None, smogon_formats=None, cache_dir=None, auto_update=True)
 ```
 
-- `formats`: List of format names to load (default: all available)
+- `randbats_formats`: List of RandBats format names to load (default: all available)
+- `smogon_formats`: List of Smogon format names to load (default: all available)
 - `cache_dir`: Directory to store cached data (default: system cache)
-- `auto_update`: Whether to automatically check for updates (default: True)
+- `auto_update`: Whether to automatically check for RandBats updates (default: True)
 
-#### Methods
+#### RandBats Methods
 
-- `get_pokemon(pokemon_name, format_name=None)`: Get Pokemon data
-- `list_pokemon(format_name)`: List all Pokemon in a format
-- `get_formats()`: Get list of available formats
-- `update(formats=None)`: Update data for specific formats
-- `update_all()`: Update data for all available formats
-- `get_metadata(format_name)`: Get metadata for a format
-- `get_cache_info()`: Get information about cached data
+- `get_randbats(pokemon_name, format_name=None)`: Get RandBats Pokemon data
+- `list_randbats_pokemon(format_name)`: List all Pokemon in a RandBats format
+- `get_randbats_formats()`: Get list of available RandBats formats
+- `update_randbats(formats=None)`: Update RandBats data for specific formats
+- `update_randbats_all()`: Update RandBats data for all available formats
+
+#### Smogon Methods
+
+- `get_smogon_sets(pokemon_name, format_name)`: Get all Smogon sets for a Pokemon
+- `get_smogon_set(pokemon_name, format_name, set_name)`: Get a specific Smogon set
+- `list_smogon_sets(pokemon_name, format_name)`: List all set names for a Pokemon
+- `list_smogon_pokemon(format_name)`: List all Pokemon in a Smogon format
+- `get_smogon_formats()`: Get list of available Smogon formats
+- `search_smogon(pokemon_name)`: Search for a Pokemon across all Smogon formats
+
+#### Unified Methods
+
+- `get_all_formats()`: Get all available formats from both sources
+- `search_all(pokemon_name)`: Search for a Pokemon across both sources
+
+#### Backward Compatibility Methods
+
+- `get_pokemon(pokemon_name, format_name=None)`: Alias for `get_randbats`
+- `list_pokemon(format_name)`: Alias for `list_randbats_pokemon`
+- `get_formats()`: Alias for `get_randbats_formats`
+- `update(formats=None)`: Alias for `update_randbats`
+- `update_all()`: Alias for `update_randbats_all`
 
 ### Quick Access Functions
 
-- `get_pokemon(pokemon_name, format_name=None)`: Quick Pokemon lookup
-- `list_pokemon(format_name)`: Quick format listing
-- `update_data(formats=None)`: Quick data update
+- `get_pokemon(pokemon_name, format_name=None)`: Quick RandBats lookup
+- `get_smogon_sets(pokemon_name, format_name)`: Quick Smogon sets lookup
+- `list_pokemon(format_name)`: Quick RandBats format listing
+- `list_smogon_pokemon(format_name)`: Quick Smogon format listing
+- `update_data(formats=None)`: Quick RandBats data update
+
+## Data Structure Differences
+
+### RandBats Format (Random Battle)
+```json
+{
+  "pikachu": {
+    "level": 50,
+    "abilities": ["Static"],
+    "items": ["Light Ball"],
+    "moves": ["Thunderbolt", "Quick Attack"]
+  }
+}
+```
+
+### Smogon Sets Format (Competitive)
+```json
+{
+  "Pikachu": {
+    "Life Orb": {
+      "item": "Life Orb",
+      "ability": "Static",
+      "nature": "Naive",
+      "evs": {"atk": 252, "spa": 4, "spe": 252},
+      "moves": ["Volt Tackle", "Extreme Speed", "Iron Tail", "Knock Off"]
+    },
+    "Choice Band": {
+      "item": "Choice Band",
+      "ability": "Static",
+      "nature": "Adamant",
+      "evs": {"hp": 4, "atk": 252, "spe": 252},
+      "moves": ["Volt Tackle", "Extreme Speed", "Iron Tail", "U-turn"]
+    }
+  }
+}
+```
 
 ## Configuration
 
-The package uses a JSON configuration file located at `~/.cache/localrandbats/config.json`:
+The package uses a JSON configuration file located at `~/.cache/localsets/config.json`:
 
 ```json
 {
     "update_interval_hours": 24,
-    "enabled_formats": ["gen9randombattle", "gen8randombattle"],
+    "enabled_randbats_formats": ["gen9randombattle", "gen8randombattle"],
+    "enabled_smogon_formats": ["gen9ou", "gen8ou"],
     "auto_update": true,
-    "cache_dir": "~/.cache/localrandbats"
+    "cache_dir": "~/.cache/localsets"
 }
 ```
 
 ## Data Sources
 
-All data is sourced from the official [pkmn/randbats](https://github.com/pkmn/randbats) repository:
-
+### RandBats Data
+- **Source**: [pkmn/randbats](https://github.com/pkmn/randbats) repository
 - **Raw Data**: `https://raw.githubusercontent.com/pkmn/randbats/main/data/`
 - **API Metadata**: `https://api.github.com/repos/pkmn/randbats/contents/data`
+- **Update Frequency**: Frequent (daily/weekly)
+
+### Smogon Data
+- **Source**: [pkmn/smogon](https://github.com/pkmn/smogon) repository
+- **Raw Data**: `https://pkmn.github.io/smogon/data/sets/`
+- **Update Frequency**: Infrequent (monthly/seasonal)
+- **Bundled**: Data is bundled at build time, no runtime updates
 
 ## Caching
 
-- **Cache Directory**: `~/.cache/localrandbats/` (configurable)
-- **Data Files**: `{format_name}.json`
-- **Metadata Files**: `{format_name}_metadata.json`
-- **Update Tracking**: `last_update` timestamp file
+- **Cache Directory**: `~/.cache/localsets/` (configurable)
+- **RandBats Data Files**: `{format_name}.json`
+- **RandBats Metadata Files**: `{format_name}_metadata.json`
+- **Smogon Data Files**: Bundled in package, no caching
+- **Update Tracking**: `last_update` timestamp file (RandBats only)
 
 ## Error Handling
 
@@ -199,13 +348,15 @@ The package includes robust error handling:
 - **Invalid JSON**: Skip corrupted files and continue
 - **Missing Data**: Create empty data structures
 - **Update Failures**: Continue with existing data
+- **Smogon 404s**: Skip unavailable formats during build
 
 ## Performance
 
 - **Lazy Loading**: Only load requested formats into memory
-- **Caching**: Store updated data locally for fast access
-- **Efficient Updates**: Only download changed files
+- **Caching**: Store updated RandBats data locally for fast access
+- **Efficient Updates**: Only download changed RandBats files
 - **Memory Management**: Automatic cleanup of unused data
+- **Static Smogon Data**: No runtime network requests for Smogon data
 
 ## Development
 
@@ -213,7 +364,7 @@ The package includes robust error handling:
 
 ```bash
 git clone <repository>
-cd localrandbats
+cd localsets
 pip install -e .
 ```
 
@@ -240,6 +391,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
-- Data sourced from [pkmn/randbats](https://github.com/pkmn/randbats)
+- RandBats data sourced from [pkmn/randbats](https://github.com/pkmn/randbats)
+- Smogon data sourced from [pkmn/smogon](https://github.com/pkmn/smogon)
 - Built with Python 3.8+ compatibility
 - Uses Click for CLI and Rich for beautiful output 

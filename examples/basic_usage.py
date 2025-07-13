@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Basic usage example for pokemon-randbats package.
+Basic usage example for localsets package.
 """
 
-from pokemon_randbats import RandBatsData, get_pokemon, list_pokemon
+from localsets import RandBatsData, get_pokemon, list_pokemon
 
 def main():
     """Demonstrate basic package usage."""
@@ -12,7 +12,7 @@ def main():
     
     # Initialize with specific formats
     print("\n1. Initializing PokemonData with specific formats...")
-    data = RandBatsData(formats=['gen9randombattle', 'gen8randombattle'], auto_update=False)
+    data = RandBatsData(randbats_formats=['gen9randombattle', 'gen8randombattle'], auto_update=False)
     
     # Get available formats
     print(f"Available formats: {data.get_formats()}")
@@ -51,8 +51,8 @@ def main():
     print("\n5. Cache information...")
     cache_info = data.get_cache_info()
     print(f"Cache directory: {cache_info['cache_dir']}")
-    print(f"Loaded formats: {len(cache_info['loaded_formats'])}")
-    print(f"Total Pokemon: {cache_info['total_pokemon']}")
+    print(f"Loaded RandBats formats: {len(cache_info['randbats_formats'])}")
+    print(f"Total RandBats Pokemon: {cache_info['total_randbats_pokemon']}")
     
     print("\nExample completed!")
 

@@ -1,1 +1,0 @@
-# Data package for Pokemon random battle data 

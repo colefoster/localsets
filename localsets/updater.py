@@ -32,7 +32,7 @@ class DataUpdater:
         self.github_api_base = "https://api.github.com/repos/pkmn/randbats/contents/data"
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'pokemon-randbats/0.1.0'
+            'User-Agent': 'localsets/0.1.0'
         })
     
     def update_formats(self, formats: List[str]) -> List[str]:

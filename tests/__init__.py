@@ -1,1 +1,1 @@
-# Tests package for pokemon-randbats 
+# Tests package for localsets 

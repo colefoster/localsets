@@ -14,17 +14,17 @@ test:  ## Run tests
 	pytest tests/ -v
 
 test-cov:  ## Run tests with coverage
-	pytest tests/ --cov=pokemon_randbats --cov-report=html --cov-report=term-missing
+	pytest tests/ --cov=localsets --cov-report=html --cov-report=term-missing
 
 lint:  ## Run linting checks
-	flake8 pokemon_randbats/ tests/
-	mypy pokemon_randbats/
+	flake8 localsets/ tests/
+	mypy localsets/
 
 format:  ## Format code with black
-	black pokemon_randbats/ tests/ examples/
+	black localsets/ tests/ examples/
 
 format-check:  ## Check code formatting
-	black --check pokemon_randbats/ tests/ examples/
+	black --check localsets/ tests/ examples/
 
 clean:  ## Clean build artifacts
 	rm -rf build/
@@ -51,13 +51,13 @@ example:  ## Run the basic usage example
 	python examples/basic_usage.py
 
 cli-help:  ## Show CLI help
-	pokemon-randbats --help
+	localsets --help
 
 cli-formats:  ## Show available formats
-	pokemon-randbats formats
+	localsets formats
 
 cli-info:  ## Show package info
-	pokemon-randbats info
+	localsets info
 
 check: format-check lint test  ## Run all checks (format, lint, test)
 
