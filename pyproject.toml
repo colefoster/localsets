@@ -1,0 +1,129 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokemon-randbats"
+version = "0.1.0"
+description = "Offline Pokemon random battle data with auto-updates"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Pokemon RandBats Team"}
+]
+keywords = ["pokemon", "battle", "data", "random", "showdown"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.0",
+    "click>=8.0.0",
+    "rich>=10.0.0",
+    "appdirs>=1.4.0",
+]
+
+[project.optional-dependencies]
+gen1 = []
+gen2 = []
+gen3 = []
+gen4 = []
+gen5 = []
+gen6 = []
+gen7 = []
+gen8 = []
+gen9 = []
+classic = []
+modern = []
+doubles = []
+letsgo = []
+bdsp = []
+baby = []
+all = []
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.10.0",
+    "black>=21.0.0",
+    "flake8>=3.8.0",
+    "mypy>=0.800",
+    "twine>=3.0.0",
+    "wheel>=0.36.0",
+]
+
+[project.scripts]
+pokemon-randbats = "pokemon_randbats.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/pkmn/randbats"
+Repository = "https://github.com/pkmn/randbats"
+Documentation = "https://github.com/pkmn/randbats#readme"
+
+[tool.setuptools]
+packages = ["pokemon_randbats"]
+
+[tool.setuptools.package-data]
+pokemon_randbats = ["data/*.json", "metadata/*.json"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=pokemon_randbats",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "click.*",
+    "rich.*",
+    "appdirs.*",
+]
+ignore_missing_imports = true 
