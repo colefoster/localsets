@@ -17,7 +17,7 @@ GITHUB_API_BASE = "https://api.github.com/repos/pkmn/randbats/contents/data"
 # Smogon data source
 SMOGON_BASE_URL = "https://pkmn.github.io/smogon/data/sets"
 
-# Available RandBats formats
+# Available RandBats formats (defined here to avoid circular imports)
 RANDBATS_FORMATS = [
     "gen1randombattle",
     "gen2randombattle", 
@@ -84,7 +84,7 @@ class DownloadRandBatsDataCommand(Command):
         print("Downloading Pokemon random battle data...")
         
         # Create data directory
-        data_dir = os.path.join("localsets", "data")
+        data_dir = os.path.join("localsets", "randbattle_data")
         metadata_dir = os.path.join("localsets", "metadata")
         
         os.makedirs(data_dir, exist_ok=True)
@@ -142,7 +142,7 @@ class DownloadSmogonDataCommand(Command):
         print("Downloading Smogon competitive sets data...")
         
         # Create Smogon data directory
-        smogon_data_dir = os.path.join("localsets", "smogon", "data")
+        smogon_data_dir = os.path.join("localsets", "smogon_data")
         os.makedirs(smogon_data_dir, exist_ok=True)
         
         # Download each format

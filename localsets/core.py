@@ -83,19 +83,35 @@ class PokemonData:
                 logger.debug(f"Loaded {format_name} from cache")
                 return
             
-            # Fall back to bundled data
-            bundled_file = Path(__file__).parent / "randbattle_data" / f"{format_name}.json"
-            if bundled_file.exists():
-                with open(bundled_file, 'r', encoding='utf-8') as f:
+            # Fall back to bundled data - try multiple possible paths
+            possible_paths = [
+                Path(__file__).parent / "randbattle_data" / f"{format_name}.json",
+                Path(__file__).parent.parent / "localsets" / "randbattle_data" / f"{format_name}.json",
+            ]
+            
+            for bundled_file in possible_paths:
+                if bundled_file.exists():
+                    with open(bundled_file, 'r', encoding='utf-8') as f:
+                        self._randbats_data[format_name] = json.load(f)
+                    self._loaded_randbats_formats.add(format_name)
+                    logger.debug(f"Loaded {format_name} from bundled data: {bundled_file}")
+                    return
+            
+            # Try importlib.resources as last resort (for installed packages)
+            try:
+                import importlib.resources as pkg_resources
+                with pkg_resources.open_text('localsets.randbattle_data', f"{format_name}.json") as f:
                     self._randbats_data[format_name] = json.load(f)
                 self._loaded_randbats_formats.add(format_name)
-                logger.debug(f"Loaded {format_name} from bundled data")
+                logger.debug(f"Loaded {format_name} from package resources")
                 return
+            except (ImportError, FileNotFoundError, ModuleNotFoundError):
+                pass
             
             # Create empty data if nothing available
             self._randbats_data[format_name] = {}
             self._loaded_randbats_formats.add(format_name)
-            logger.warning(f"No data available for {format_name}")
+            logger.warning(f"No data available for {format_name} - file not found in cache or bundled data")
             
         except Exception as e:
             logger.error(f"Failed to load {format_name}: {e}")
