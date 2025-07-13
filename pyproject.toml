@@ -57,7 +57,7 @@ Documentation = "https://github.com/colefoster/localsets#readme"
 include = ["localsets*"]
 
 [tool.setuptools.package-data]
-localsets = ["data/*.json", "metadata/*.json", "smogon/data/*.json"]
+localsets = ["randbattle_data/*.json", "metadata/*.json", "smogon_data/*.json"]
 
 [tool.black]
 line-length = 88

@@ -339,7 +339,7 @@ class TestSmogonPokemonLookup:
     
     def test_get_smogon_sets_exact_match(self):
         """Test getting Smogon sets with exact name match."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -354,7 +354,7 @@ class TestSmogonPokemonLookup:
     
     def test_get_smogon_sets_case_insensitive(self):
         """Test getting Smogon sets with case-insensitive matching."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -368,7 +368,7 @@ class TestSmogonPokemonLookup:
     
     def test_get_smogon_sets_not_found(self):
         """Test getting Smogon sets for Pokemon that doesn't exist."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -384,7 +384,7 @@ class TestSmogonPokemonLookup:
     
     def test_get_smogon_set_specific(self):
         """Test getting a specific Smogon set."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -402,7 +402,7 @@ class TestSmogonPokemonLookup:
     
     def test_get_smogon_set_not_found(self):
         """Test getting a Smogon set that doesn't exist."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -412,7 +412,7 @@ class TestSmogonPokemonLookup:
     
     def test_list_smogon_sets(self):
         """Test listing Smogon set names for a Pokemon."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -428,7 +428,7 @@ class TestSmogonPokemonLookup:
     
     def test_list_smogon_pokemon(self):
         """Test listing Smogon Pokemon in a format."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -444,7 +444,7 @@ class TestSmogonPokemonLookup:
     
     def test_search_smogon(self):
         """Test searching for a Pokemon across all Smogon formats."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -509,7 +509,7 @@ class TestUnifiedFunctionality:
     
     def test_search_all(self):
         """Test searching across both RandBats and Smogon data."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)
@@ -532,7 +532,7 @@ class TestUnifiedFunctionality:
     
     def test_search_all_not_found(self):
         """Test searching for Pokemon that doesn't exist in either source."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(auto_update=False)

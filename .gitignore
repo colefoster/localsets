@@ -1,5 +1,6 @@
 # Local data files
-data/
+randbattle_data/
+smogon_data/
 metadata/
 
 # Byte-compiled / optimized / DLL files

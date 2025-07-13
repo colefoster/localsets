@@ -45,7 +45,7 @@ class SmogonSets:
     
     def _discover_formats(self):
         """Discover available Smogon formats from bundled data."""
-        data_dir = Path(__file__).parent / "data"
+        data_dir = Path(__file__).parent / "smogon_data"
         if data_dir.exists():
             for file_path in data_dir.glob("*.json"):
                 format_name = file_path.stem
@@ -56,7 +56,7 @@ class SmogonSets:
         """Load data for a specific format."""
         try:
             # Load from bundled data
-            bundled_file = Path(__file__).parent / "data" / f"{format_name}.json"
+            bundled_file = Path(__file__).parent / "smogon_data" / f"{format_name}.json"
             if bundled_file.exists():
                 with open(bundled_file, 'r', encoding='utf-8') as f:
                     self._data[format_name] = json.load(f)

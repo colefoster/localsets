@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from unittest.mock import patch, MagicMock
 
-from localsets.smogon.sets import SmogonSets
+from localsets.smogon import SmogonSets
 from localsets.core import PokemonData
 
 
@@ -28,7 +28,7 @@ class TestSmogonSets:
     
     def test_init_default(self):
         """Test SmogonSets initialization with defaults."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             # Mock the data directory to not exist so no formats are discovered
             mock_path.return_value.parent.exists.return_value = False
             
@@ -50,7 +50,7 @@ class TestSmogonSets:
         (self.data_dir / "gen8ou.json").touch()
         (self.data_dir / "gen7ou.json").touch()
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -79,7 +79,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -91,7 +91,7 @@ class TestSmogonSets:
     
     def test_load_format_file_not_found(self):
         """Test format loading when file doesn't exist."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -108,7 +108,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             f.write("invalid json content")
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -142,7 +142,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -166,7 +166,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -188,7 +188,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -221,7 +221,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -247,7 +247,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -270,7 +270,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -295,7 +295,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -322,7 +322,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -367,7 +367,7 @@ class TestSmogonSets:
         (self.data_dir / "gen9ou.json").write_text(json.dumps(gen9ou_data))
         (self.data_dir / "gen8ou.json").write_text(json.dumps(gen8ou_data))
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -394,7 +394,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -415,7 +415,7 @@ class TestSmogonSets:
         with open(data_file, 'w') as f:
             json.dump(mock_data, f)
         
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent = self.data_dir.parent
             
             smogon = SmogonSets()
@@ -524,7 +524,7 @@ class TestSmogonIntegration:
     
     def test_pokemon_data_smogon_initialization(self):
         """Test PokemonData initialization with Smogon formats."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -538,7 +538,7 @@ class TestSmogonIntegration:
     
     def test_get_smogon_sets_integration(self):
         """Test getting Smogon sets through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -559,7 +559,7 @@ class TestSmogonIntegration:
     
     def test_get_smogon_set_integration(self):
         """Test getting specific Smogon set through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -580,7 +580,7 @@ class TestSmogonIntegration:
     
     def test_list_smogon_sets_integration(self):
         """Test listing Smogon set names through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -600,7 +600,7 @@ class TestSmogonIntegration:
     
     def test_list_smogon_pokemon_integration(self):
         """Test listing Smogon Pokemon through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -620,7 +620,7 @@ class TestSmogonIntegration:
     
     def test_search_smogon_integration(self):
         """Test Smogon search through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -644,7 +644,7 @@ class TestSmogonIntegration:
     
     def test_get_smogon_formats_integration(self):
         """Test getting Smogon formats through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(
@@ -659,7 +659,7 @@ class TestSmogonIntegration:
     
     def test_get_smogon_format_info_integration(self):
         """Test getting Smogon format info through PokemonData."""
-        with patch('localsets.smogon.sets.Path') as mock_path:
+        with patch('localsets.smogon.Path') as mock_path:
             mock_path.return_value.parent.parent = self.cache_dir
             
             data = PokemonData(

@@ -13,7 +13,7 @@ from appdirs import user_cache_dir
 
 from .updater import DataUpdater
 from .formats import FORMATS, FORMAT_MAPPINGS
-from .smogon.sets import SmogonSets
+from .smogon import SmogonSets
 
 logger = logging.getLogger(__name__)
 
@@ -84,7 +84,7 @@ class PokemonData:
                 return
             
             # Fall back to bundled data
-            bundled_file = Path(__file__).parent / "data" / f"{format_name}.json"
+            bundled_file = Path(__file__).parent / "randbattle_data" / f"{format_name}.json"
             if bundled_file.exists():
                 with open(bundled_file, 'r', encoding='utf-8') as f:
                     self._randbats_data[format_name] = json.load(f)

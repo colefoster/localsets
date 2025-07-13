@@ -13,7 +13,7 @@ from .formats import (
     get_pokemon, update_data, list_pokemon,
     get_smogon_sets, list_smogon_pokemon
 )
-from .smogon.sets import SmogonSets
+from .smogon import SmogonSets
 
 __all__ = [
     'PokemonData',
