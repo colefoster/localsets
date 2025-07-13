@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "localsets"
 version = "0.1.0"
-description = "Offline Pokemon random battle data with auto-updates"
+description = "Local Pokemon random battle sets (auto-updating) and Smogon competitive sets"
 readme = "README.md"
 authors = [
     {name = "Pokemon RandBats Team"}
@@ -29,8 +29,6 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = [
     "requests>=2.25.0",
-    "click>=8.0.0",
-    "rich>=10.0.0",
     "appdirs>=1.4.0",
 ]
 
@@ -91,7 +89,7 @@ dev = [
 ]
 
 [project.scripts]
-localsets = "localsets.cli:main"
+localsets = "localsets.cli:main_cli"
 
 [project.urls]
 Homepage = "https://github.com/colefoster/localsets"
