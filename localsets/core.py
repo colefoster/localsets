@@ -449,4 +449,9 @@ class PokemonData:
 
 
 # Backward compatibility alias
-RandBatsData = PokemonData 
+RandBatsData = PokemonData
+
+__all__ = [
+    'PokemonData',
+    'RandBatsData',
+] 

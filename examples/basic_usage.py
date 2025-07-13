@@ -3,7 +3,7 @@
 Basic usage example for localsets package.
 """
 
-from localsets import RandBatsData, get_pokemon, list_pokemon
+from localsets import PokemonData, get_pokemon, list_pokemon
 
 def main():
     """Demonstrate basic package usage."""
@@ -12,7 +12,7 @@ def main():
     
     # Initialize with specific formats
     print("\n1. Initializing PokemonData with specific formats...")
-    data = RandBatsData(randbats_formats=['gen9randombattle', 'gen8randombattle'], auto_update=False)
+    data = PokemonData(randbats_formats=['gen9randombattle', 'gen8randombattle'], auto_update=False)
     
     # Get available formats
     print(f"Available formats: {data.get_formats()}")

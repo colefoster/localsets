@@ -111,6 +111,36 @@ FORMAT_MAPPINGS = RANDBATS_FORMAT_MAPPINGS
 # Global PokemonData instance for quick access functions
 _global_data = None
 
+__all__ = [
+    # Format lists
+    'RANDBATS_FORMATS',
+    'SMOGON_FORMATS',
+    'FORMATS',  # Backward compatibility
+    
+    # Format mappings
+    'RANDBATS_FORMAT_MAPPINGS',
+    'SMOGON_FORMAT_MAPPINGS',
+    'FORMAT_MAPPINGS',  # Backward compatibility
+    'COMBINED_FORMAT_MAPPINGS',
+    
+    # Quick access functions
+    'get_pokemon',
+    'get_smogon_sets',
+    'list_pokemon',
+    'list_smogon_pokemon',
+    'update_data',
+    
+    # Utility functions
+    'get_available_randbats_formats',
+    'get_available_smogon_formats',
+    'get_randbats_format_mappings',
+    'get_smogon_format_mappings',
+    'resolve_randbats_formats',
+    'resolve_smogon_formats',
+    'get_randbats_format_info',
+    'get_smogon_format_info',
+]
+
 
 def _get_global_data():
     """Get or create global PokemonData instance."""
