@@ -35,48 +35,33 @@ class DataUpdater:
             'User-Agent': 'localsets/0.1.0'
         })
     
-    def _download_format_stats(self, format_name: str) -> bool:
-        """Download stats data for a format from GitHub."""
-        try:
-            url = f"{self.github_raw_base}/stats/{format_name}_stats.json"
-            response = self.session.get(url, timeout=30)
-            if response.status_code == 404:
-                # Not all formats have stats data
-                logger.info(f"No stats data for {format_name}")
-                return False
-            response.raise_for_status()
-            data = response.json()
-            cache_file = self.cache_dir / f"{format_name}_stats.json"
-            with open(cache_file, 'w', encoding='utf-8') as f:
-                json.dump(data, f, indent=2, ensure_ascii=False)
-            return True
-        except Exception as e:
-            logger.error(f"Failed to download stats for {format_name}: {e}")
-            return False
-
     def update_formats(self, formats: List[str]) -> List[str]:
         """
-        Update data for specified formats, including stats.
+        Update data for specified formats.
+        
+        Args:
+            formats: List of format names to update
+            
+        Returns:
+            List of successfully updated formats
         """
         updated_formats = []
+        
         for format_name in formats:
             if format_name not in FORMATS:
                 logger.warning(f"Unknown format: {format_name}")
                 continue
+            
             try:
-                updated = False
                 if self._update_format(format_name):
-                    updated = True
-                # Always try to update stats (no metadata for stats)
-                if self._download_format_stats(format_name):
-                    updated = True
-                if updated:
                     updated_formats.append(format_name)
-                    logger.info(f"Updated {format_name} (sets and/or stats)")
+                    logger.info(f"Updated {format_name}")
                 else:
                     logger.warning(f"No update needed for {format_name}")
+                    
             except Exception as e:
                 logger.error(f"Failed to update {format_name}: {e}")
+        
         return updated_formats
     
     def _update_format(self, format_name: str) -> bool:
@@ -159,22 +144,38 @@ class DataUpdater:
         return False
     
     def _download_format_data(self, format_name: str) -> bool:
-        """Download format data from GitHub."""
+        """Download format data and stats from GitHub, merge, and save."""
         try:
+            # Download main set data
             url = f"{self.github_raw_base}/{format_name}.json"
             response = self.session.get(url, timeout=30)
             response.raise_for_status()
-            
-            # Validate JSON
             data = response.json()
-            
-            # Save to cache
+
+            # Download stats data
+            stats_url = f"{self.github_raw_base}/stats/{format_name}.json"
+            stats = None
+            try:
+                stats_response = self.session.get(stats_url, timeout=30)
+                if stats_response.status_code == 200:
+                    stats = stats_response.json()
+            except Exception as e:
+                logger.warning(f"Failed to download stats for {format_name}: {e}")
+                stats = None
+
+            # Merge stats into each Pokémon entry if available
+            if stats and isinstance(data, dict):
+                for poke_name, poke_data in data.items():
+                    poke_stats = stats.get(poke_name)
+                    if poke_stats is not None:
+                        poke_data["stats"] = poke_stats
+
+            # Save merged data to cache
             cache_file = self.cache_dir / f"{format_name}.json"
             with open(cache_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
-            
+
             return True
-            
         except Exception as e:
             logger.error(f"Failed to download data for {format_name}: {e}")
             return False
@@ -190,7 +191,7 @@ class DataUpdater:
     
     def force_update(self, formats: List[str]) -> List[str]:
         """
-        Force update of formats and stats regardless of metadata.
+        Force update of formats regardless of metadata.
         
         Args:
             formats: List of format names to update
@@ -205,18 +206,13 @@ class DataUpdater:
                 continue
             
             try:
-                updated = False
                 if self._download_format_data(format_name):
                     # Get and save metadata
                     metadata = self._get_remote_metadata(format_name)
                     if metadata:
                         self._save_metadata(format_name, metadata)
-                    updated = True
-                if self._download_format_stats(format_name):
-                    updated = True
-                if updated:
                     updated_formats.append(format_name)
-                    logger.info(f"Force updated {format_name} (sets and/or stats)")
+                    logger.info(f"Force updated {format_name}")
                     
             except Exception as e:
                 logger.error(f"Failed to force update {format_name}: {e}")
@@ -275,22 +271,6 @@ class DataUpdater:
             pass
         
         return status
-    
-    def get_stats_file(self, format_name: str) -> Path:
-        """Get the path to the cached stats file for a format."""
-        return self.cache_dir / f"{format_name}_stats.json"
-
-    def get_stats_data(self, format_name: str) -> Optional[Dict[str, Any]]:
-        """Load stats data for a format from cache."""
-        stats_file = self.get_stats_file(format_name)
-        if not stats_file.exists():
-            return None
-        try:
-            with open(stats_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except Exception as e:
-            logger.error(f"Failed to read stats for {format_name}: {e}")
-            return None
     
     def cleanup_old_data(self, keep_formats: Optional[List[str]] = None):
         """

@@ -49,7 +49,6 @@ class PokemonData:
         
         # RandBats data storage
         self._randbats_data: Dict[str, Dict] = {}
-        self._randbats_stats: Dict[str, Dict] = {}
         self._randbats_metadata: Dict[str, Dict] = {}
         self._loaded_randbats_formats: set = set()
         
@@ -73,64 +72,50 @@ class PokemonData:
                 self._load_randbats_format(format_name)
     
     def _load_randbats_format(self, format_name: str):
-        """Load RandBats data and stats for a specific format."""
+        """Load RandBats data for a specific format."""
         try:
             # Try cache first
             cache_file = self.cache_dir / f"{format_name}.json"
-            stats_file = self.cache_dir / f"{format_name}_stats.json"
             if cache_file.exists():
                 with open(cache_file, 'r', encoding='utf-8') as f:
                     self._randbats_data[format_name] = json.load(f)
-                # Try to load stats if available
-                if stats_file.exists():
-                    with open(stats_file, 'r', encoding='utf-8') as f:
-                        self._randbats_stats[format_name] = json.load(f)
                 self._loaded_randbats_formats.add(format_name)
-                logger.debug(f"Loaded {format_name} from cache (sets and stats)")
+                logger.debug(f"Loaded {format_name} from cache")
                 return
+            
             # Fall back to bundled data - try multiple possible paths
             possible_paths = [
                 Path(__file__).parent / "randbattle_data" / f"{format_name}.json",
                 Path(__file__).parent.parent / "localsets" / "randbattle_data" / f"{format_name}.json",
             ]
-            stats_paths = [
-                Path(__file__).parent / "randbattle_data" / f"{format_name}_stats.json",
-                Path(__file__).parent.parent / "localsets" / "randbattle_data" / f"{format_name}_stats.json",
-            ]
-            for bundled_file, stats_bundled_file in zip(possible_paths, stats_paths):
+            
+            for bundled_file in possible_paths:
                 if bundled_file.exists():
                     with open(bundled_file, 'r', encoding='utf-8') as f:
                         self._randbats_data[format_name] = json.load(f)
-                    if stats_bundled_file.exists():
-                        with open(stats_bundled_file, 'r', encoding='utf-8') as f:
-                            self._randbats_stats[format_name] = json.load(f)
                     self._loaded_randbats_formats.add(format_name)
-                    logger.debug(f"Loaded {format_name} from bundled data: {bundled_file} (sets and stats)")
+                    logger.debug(f"Loaded {format_name} from bundled data: {bundled_file}")
                     return
+            
             # Try importlib.resources as last resort (for installed packages)
             try:
                 import importlib.resources as pkg_resources
                 with pkg_resources.open_text('localsets.randbattle_data', f"{format_name}.json") as f:
                     self._randbats_data[format_name] = json.load(f)
-                try:
-                    with pkg_resources.open_text('localsets.randbattle_data', f"{format_name}_stats.json") as f:
-                        self._randbats_stats[format_name] = json.load(f)
-                except (FileNotFoundError, ModuleNotFoundError):
-                    pass
                 self._loaded_randbats_formats.add(format_name)
-                logger.debug(f"Loaded {format_name} from package resources (sets and stats)")
+                logger.debug(f"Loaded {format_name} from package resources")
                 return
             except (ImportError, FileNotFoundError, ModuleNotFoundError):
                 pass
+            
             # Create empty data if nothing available
             self._randbats_data[format_name] = {}
-            self._randbats_stats[format_name] = {}
             self._loaded_randbats_formats.add(format_name)
             logger.warning(f"No data available for {format_name} - file not found in cache or bundled data")
+            
         except Exception as e:
             logger.error(f"Failed to load {format_name}: {e}")
             self._randbats_data[format_name] = {}
-            self._randbats_stats[format_name] = {}
             self._loaded_randbats_formats.add(format_name)
     
     def _check_randbats_updates(self):
@@ -199,46 +184,6 @@ class PokemonData:
             return []
         
         return list(self._randbats_data[format_name].keys())
-    
-    def get_randbats_stats(self, pokemon_name: str, format_name: Optional[str] = None) -> Optional[Dict[str, Any]]:
-        """
-        Get RandBats stats data for a specific Pokemon and format.
-        Args:
-            pokemon_name: Name of the Pokemon (case-insensitive)
-            format_name: Battle format. If None, tries to auto-detect.
-        Returns:
-            Stats data dictionary or None if not found
-        """
-        if format_name is None:
-            format_name = self._detect_randbats_format(pokemon_name)
-        if format_name not in self._randbats_stats:
-            logger.warning(f"Stats for format {format_name} not available")
-            return None
-        pokemon_name = self._normalize_name(pokemon_name)
-        stats_data = self._randbats_stats[format_name]
-        # Try exact match
-        if pokemon_name in stats_data:
-            return stats_data[pokemon_name]
-        # Try fuzzy match
-        for key in stats_data.keys():
-            if self._normalize_name(key) == pokemon_name:
-                return stats_data[key]
-        return None
-
-    def get_randbats_with_stats(self, pokemon_name: str, format_name: Optional[str] = None) -> Optional[Dict[str, Any]]:
-        """
-        Get both RandBats set and stats data for a specific Pokemon and format.
-        Args:
-            pokemon_name: Name of the Pokemon (case-insensitive)
-            format_name: Battle format. If None, tries to auto-detect.
-        Returns:
-            Dictionary with 'set' and 'stats' keys, or None if not found
-        """
-        set_data = self.get_randbats(pokemon_name, format_name)
-        stats_data = self.get_randbats_stats(pokemon_name, format_name)
-        if set_data is None and stats_data is None:
-            return None
-        return {'set': set_data, 'stats': stats_data}
     
     def get_randbats_formats(self) -> List[str]:
         """Get list of available RandBats formats."""
