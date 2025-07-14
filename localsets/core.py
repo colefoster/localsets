@@ -189,6 +189,101 @@ class PokemonData:
         }
         return info
 
+    def get_most_likely_role(self, pokemon_name: str, format_name: Optional[str] = None) -> Optional[str]:
+        """
+        Get the most likely role for a Pokémon in a given format based on role weights.
+        Returns the role name with the highest weight, or None if not found.
+        """
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data or 'roles' not in data['stats']:
+            return None
+        roles = data['stats']['roles']
+        if not roles:
+            return None
+        # Find role with highest weight
+        return max(roles.items(), key=lambda x: x[1].get('weight', 0))[0]
+
+    def get_most_likely_item(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None) -> Optional[str]:
+        """
+        Get the most likely item for a Pokémon in a given format (optionally for a specific role).
+        Returns the item with the highest weight, or None if not found.
+        """
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data:
+            return None
+        if role:
+            roles = data['stats'].get('roles', {})
+            if role in roles and 'items' in roles[role]:
+                items = roles[role]['items']
+                if items:
+                    return max(items.items(), key=lambda x: x[1])[0]
+        # Fallback to top-level items
+        items = data['stats'].get('items', {})
+        if items:
+            return max(items.items(), key=lambda x: x[1])[0]
+        return None
+
+    def get_most_likely_ability(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None) -> Optional[str]:
+        """
+        Get the most likely ability for a Pokémon in a given format (optionally for a specific role).
+        Returns the ability with the highest weight, or None if not found.
+        """
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data:
+            return None
+        if role:
+            roles = data['stats'].get('roles', {})
+            if role in roles and 'abilities' in roles[role]:
+                abilities = roles[role]['abilities']
+                if abilities:
+                    return max(abilities.items(), key=lambda x: x[1])[0]
+        # Fallback to top-level abilities
+        abilities = data['stats'].get('abilities', {})
+        if abilities:
+            return max(abilities.items(), key=lambda x: x[1])[0]
+        return None
+
+    def get_most_likely_tera_type(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None) -> Optional[str]:
+        """
+        Get the most likely Tera Type for a Pokémon in a given format (optionally for a specific role).
+        Returns the Tera Type with the highest weight, or None if not found.
+        """
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data:
+            return None
+        if role:
+            roles = data['stats'].get('roles', {})
+            if role in roles and 'teraTypes' in roles[role]:
+                teras = roles[role]['teraTypes']
+                if teras:
+                    return max(teras.items(), key=lambda x: x[1])[0]
+        # Fallback to top-level (rare, but for completeness)
+        teras = data['stats'].get('teraTypes', {})
+        if teras:
+            return max(teras.items(), key=lambda x: x[1])[0]
+        return None
+
+    def get_most_likely_moves(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None, top_n: int = 4) -> Optional[List[str]]:
+        """
+        Get the most likely moves for a Pokémon in a given format (optionally for a specific role).
+        Returns a list of up to top_n moves with the highest weights, or None if not found.
+        """
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data:
+            return None
+        moves = None
+        if role:
+            roles = data['stats'].get('roles', {})
+            if role in roles and 'moves' in roles[role]:
+                moves = roles[role]['moves']
+        if moves is None:
+            moves = data['stats'].get('moves', {})
+        if not moves:
+            return None
+        # Sort moves by weight, descending, and return top_n
+        sorted_moves = sorted(moves.items(), key=lambda x: x[1], reverse=True)
+        return [move for move, _ in sorted_moves[:top_n]]
+
 RandBatsData = PokemonData
 
 __all__ = [
