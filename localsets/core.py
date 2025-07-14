@@ -336,6 +336,36 @@ class PokemonData:
             return {stat: evs.get(stat, 85) for stat in default_evs}
         return default_evs.copy()
 
+    def get_smogon_ivs(self, pokemon_name: str, format_name: str, set_name: str) -> dict:
+        """
+        Returns a dict of IVs for the given Pokémon, format, and set name, with keys 'hp', 'atk', 'def', 'spa', 'spd', 'spe'.
+        Uses 31 as the default for all stats if not specified in the set.
+        If the set has multiple IV spreads (list), returns the first one.
+        """
+        default_ivs = {'hp': 31, 'atk': 31, 'def': 31, 'spa': 31, 'spd': 31, 'spe': 31}
+        set_data = self._smogon_data.get_set(pokemon_name, format_name, set_name)
+        if not set_data:
+            return default_ivs.copy()
+        ivs = set_data.get('ivs', {})
+        if isinstance(ivs, list):
+            ivs = ivs[0] if ivs else {}
+        return {stat: ivs.get(stat, 31) for stat in default_ivs}
+
+    def get_smogon_evs(self, pokemon_name: str, format_name: str, set_name: str) -> dict:
+        """
+        Returns a dict of EVs for the given Pokémon, format, and set name, with keys 'hp', 'atk', 'def', 'spa', 'spd', 'spe'.
+        Uses 0 as the default for all stats if not specified in the set.
+        If the set has multiple EV spreads (list), returns the first one.
+        """
+        default_evs = {'hp': 0, 'atk': 0, 'def': 0, 'spa': 0, 'spd': 0, 'spe': 0}
+        set_data = self._smogon_data.get_set(pokemon_name, format_name, set_name)
+        if not set_data:
+            return default_evs.copy()
+        evs = set_data.get('evs', {})
+        if isinstance(evs, list):
+            evs = evs[0] if evs else {}
+        return {stat: evs.get(stat, 0) for stat in default_evs}
+
 RandBatsData = PokemonData
 
 __all__ = [
