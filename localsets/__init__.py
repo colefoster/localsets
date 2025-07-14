@@ -7,7 +7,7 @@ with automatic updates from the official source repository.
 
 from .core import PokemonData, RandBatsData
 from .formats import (
-    get_pokemon, update_data, list_pokemon,
+    get_pokemon,  list_pokemon,
     get_smogon_sets, list_smogon_pokemon
 )
 from .smogon import SmogonSets
@@ -17,7 +17,6 @@ __all__ = [
     'RandBatsData',
     'SmogonSets',
     'get_pokemon', 
-    'update_data',
     'list_pokemon',
     'get_smogon_sets',
     'list_smogon_pokemon',
