@@ -294,6 +294,48 @@ class PokemonData:
         sorted_moves = sorted(moves.items(), key=lambda x: x[1], reverse=True)
         return [move for move, _ in sorted_moves[:top_n]]
 
+    def get_randbats_ivs(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None) -> dict:
+        """
+        Returns a dict of IVs for the given Pokémon and role, with keys 'atk', 'def', 'spa', 'spd', 'spe'.
+        Uses 31 as the default for all stats if not specified in the data.
+        """
+        default_ivs = {'atk': 31, 'def': 31, 'spa': 31, 'spd': 31, 'spe': 31}
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data:
+            return default_ivs.copy()
+        roles = data['stats'].get('roles', {})
+        if not role:
+            role = self.get_most_likely_role(pokemon_name, format_name)
+        if role and role in roles and 'ivs' in roles[role]:
+            ivs = roles[role]['ivs']
+            return {stat: ivs.get(stat, 31) for stat in default_ivs}
+        # fallback to top-level ivs if present
+        if 'ivs' in data['stats']:
+            ivs = data['stats']['ivs']
+            return {stat: ivs.get(stat, 31) for stat in default_ivs}
+        return default_ivs.copy()
+
+    def get_randbats_evs(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None) -> dict:
+        """
+        Returns a dict of EVs for the given Pokémon and role, with keys 'atk', 'def', 'spa', 'spd', 'spe'.
+        Uses 85 as the default for all stats if not specified in the data.
+        """
+        default_evs = {'atk': 85, 'def': 85, 'spa': 85, 'spd': 85, 'spe': 85}
+        data = self.get_randbats(pokemon_name, format_name)
+        if not data or 'stats' not in data:
+            return default_evs.copy()
+        roles = data['stats'].get('roles', {})
+        if not role:
+            role = self.get_most_likely_role(pokemon_name, format_name)
+        if role and role in roles and 'evs' in roles[role]:
+            evs = roles[role]['evs']
+            return {stat: evs.get(stat, 85) for stat in default_evs}
+        # fallback to top-level evs if present
+        if 'evs' in data['stats']:
+            evs = data['stats']['evs']
+            return {stat: evs.get(stat, 85) for stat in default_evs}
+        return default_evs.copy()
+
 RandBatsData = PokemonData
 
 __all__ = [
