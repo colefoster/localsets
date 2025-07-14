@@ -210,15 +210,6 @@ def list_smogon_pokemon(format_name: str) -> List[str]:
     return data.list_smogon_pokemon(format_name)
 
 
-def update_data(formats: Optional[List[str]] = None):
-    """
-    Quick access function to update RandBats data.
-    
-    Args:
-        formats: List of formats to update (optional)
-    """
-    data = _get_global_data()
-    data.update_randbats(formats)
 
 
 def get_available_randbats_formats() -> List[str]:
