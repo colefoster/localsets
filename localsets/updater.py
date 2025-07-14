@@ -90,6 +90,8 @@ class DataUpdater:
         if self._is_update_needed(current_metadata, remote_metadata):
             # Download new data
             if self._download_format_data(format_name):
+                # Download stats data
+                self._download_format_stats(format_name)
                 # Save new metadata
                 self._save_metadata(format_name, remote_metadata)
                 return True
@@ -164,6 +166,28 @@ class DataUpdater:
             logger.error(f"Failed to download data for {format_name}: {e}")
             return False
     
+    def _download_format_stats(self, format_name: str) -> bool:
+        """Download format stats data from GitHub."""
+        try:
+            url = f"{self.github_raw_base}/stats/{format_name}.json"
+            response = self.session.get(url, timeout=30)
+            response.raise_for_status()
+            
+            # Validate JSON
+            stats_data = response.json()
+            
+            # Save to cache
+            stats_file = self.cache_dir / f"{format_name}_stats.json"
+            with open(stats_file, 'w', encoding='utf-8') as f:
+                json.dump(stats_data, f, indent=2, ensure_ascii=False)
+            
+            logger.debug(f"Downloaded stats for {format_name}")
+            return True
+            
+        except Exception as e:
+            logger.warning(f"Failed to download stats for {format_name}: {e}")
+            return False
+    
     def _save_metadata(self, format_name: str, metadata: Dict[str, Any]):
         """Save metadata for a format."""
         try:
@@ -191,6 +215,8 @@ class DataUpdater:
             
             try:
                 if self._download_format_data(format_name):
+                    # Download stats data
+                    self._download_format_stats(format_name)
                     # Get and save metadata
                     metadata = self._get_remote_metadata(format_name)
                     if metadata:
@@ -208,74 +234,94 @@ class DataUpdater:
         Get update status for a format.
         
         Args:
-            format_name: Format name
+            format_name: Format name to check
             
         Returns:
             Dictionary with update status information
         """
-        status = {
-            'format': format_name,
-            'has_local_data': False,
-            'has_remote_data': False,
-            'needs_update': False,
-            'last_update': None,
-            'local_sha': None,
-            'remote_sha': None
-        }
+        if format_name not in FORMATS:
+            return {"error": f"Unknown format: {format_name}"}
         
-        # Check local data
-        cache_file = self.cache_dir / f"{format_name}.json"
-        metadata_file = self.cache_dir / f"{format_name}_metadata.json"
-        
-        if cache_file.exists() and metadata_file.exists():
-            status['has_local_data'] = True
-            try:
-                with open(metadata_file, 'r') as f:
-                    metadata = json.load(f)
-                    status['local_sha'] = metadata.get('sha')
-                    status['last_update'] = metadata.get('updated_at')
-            except Exception:
-                pass
-        
-        # Check remote data
         try:
+            # Check current metadata
+            current_metadata = self._get_current_metadata(format_name)
+            if not current_metadata:
+                return {
+                    "format": format_name,
+                    "status": "not_cached",
+                    "last_update": None,
+                    "sha": None
+                }
+            
+            # Check remote metadata
             remote_metadata = self._get_remote_metadata(format_name)
-            if remote_metadata:
-                status['has_remote_data'] = True
-                status['remote_sha'] = remote_metadata.get('sha')
-                
-                # Check if update is needed
-                if status['has_local_data']:
-                    current_metadata = self._get_current_metadata(format_name)
-                    if current_metadata:
-                        status['needs_update'] = self._is_update_needed(
-                            current_metadata, remote_metadata
-                        )
-        except Exception:
-            pass
-        
-        return status
+            if not remote_metadata:
+                return {
+                    "format": format_name,
+                    "status": "remote_unavailable",
+                    "last_update": current_metadata.get("updated_at"),
+                    "sha": current_metadata.get("sha")
+                }
+            
+            # Compare
+            current_sha = current_metadata.get("sha")
+            remote_sha = remote_metadata.get("remote_sha")
+            
+            if current_sha == remote_sha:
+                status = "up_to_date"
+            else:
+                status = "update_available"
+            
+            return {
+                "format": format_name,
+                "status": status,
+                "last_update": current_metadata.get("updated_at"),
+                "current_sha": current_sha,
+                "remote_sha": remote_sha
+            }
+            
+        except Exception as e:
+            return {
+                "format": format_name,
+                "status": "error",
+                "error": str(e)
+            }
     
     def cleanup_old_data(self, keep_formats: Optional[List[str]] = None):
         """
-        Clean up old data files.
+        Clean up old cached data files.
         
         Args:
-            keep_formats: List of formats to keep (if None, keeps all)
+            keep_formats: List of formats to keep. If None, keeps all loaded formats.
         """
         if keep_formats is None:
             keep_formats = FORMATS
         
-        for file_path in self.cache_dir.glob("*.json"):
-            format_name = file_path.stem
-            if format_name.endswith('_metadata'):
-                format_name = format_name[:-9]  # Remove _metadata suffix
+        try:
+            # Get all files in cache directory
+            cache_files = list(self.cache_dir.glob("*.json"))
             
-            if format_name not in keep_formats:
-                try:
-                    file_path.unlink()
-                    logger.info(f"Cleaned up {file_path.name}")
-                except Exception as e:
-                    logger.error(f"Failed to clean up {file_path.name}: {e}") 
+            for file_path in cache_files:
+                # Extract format name from filename
+                filename = file_path.stem
+                
+                # Handle different file types
+                if filename.endswith("_metadata"):
+                    format_name = filename[:-9]  # Remove "_metadata"
+                elif filename.endswith("_stats"):
+                    format_name = filename[:-6]  # Remove "_stats"
+                else:
+                    format_name = filename
+                
+                # Check if format should be kept
+                if format_name not in keep_formats:
+                    try:
+                        file_path.unlink()
+                        logger.debug(f"Cleaned up {file_path.name}")
+                    except Exception as e:
+                        logger.warning(f"Failed to clean up {file_path.name}: {e}")
+                        
+        except Exception as e:
+            logger.error(f"Failed to cleanup old data: {e}")
 
 __all__ = ['DataUpdater'] 

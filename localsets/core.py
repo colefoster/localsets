@@ -49,6 +49,7 @@ class PokemonData:
         
         # RandBats data storage
         self._randbats_data: Dict[str, Dict] = {}
+        self._randbats_stats: Dict[str, Dict] = {}
         self._randbats_metadata: Dict[str, Dict] = {}
         self._loaded_randbats_formats: set = set()
         
@@ -76,11 +77,23 @@ class PokemonData:
         try:
             # Try cache first
             cache_file = self.cache_dir / f"{format_name}.json"
+            stats_file = self.cache_dir / f"{format_name}_stats.json"
+            
             if cache_file.exists():
                 with open(cache_file, 'r', encoding='utf-8') as f:
                     self._randbats_data[format_name] = json.load(f)
                 self._loaded_randbats_formats.add(format_name)
                 logger.debug(f"Loaded {format_name} from cache")
+                
+                # Load stats if available
+                if stats_file.exists():
+                    with open(stats_file, 'r', encoding='utf-8') as f:
+                        self._randbats_stats[format_name] = json.load(f)
+                    logger.debug(f"Loaded {format_name} stats from cache")
+                else:
+                    # Create empty stats if not available
+                    self._randbats_stats[format_name] = {}
+                
                 return
             
             # Fall back to bundled data - try multiple possible paths
@@ -95,6 +108,16 @@ class PokemonData:
                         self._randbats_data[format_name] = json.load(f)
                     self._loaded_randbats_formats.add(format_name)
                     logger.debug(f"Loaded {format_name} from bundled data: {bundled_file}")
+                    
+                    # Try to load bundled stats
+                    stats_bundled_file = bundled_file.parent / f"{format_name}_stats.json"
+                    if stats_bundled_file.exists():
+                        with open(stats_bundled_file, 'r', encoding='utf-8') as f:
+                            self._randbats_stats[format_name] = json.load(f)
+                        logger.debug(f"Loaded {format_name} stats from bundled data")
+                    else:
+                        self._randbats_stats[format_name] = {}
+                    
                     return
             
             # Try importlib.resources as last resort (for installed packages)
@@ -104,18 +127,29 @@ class PokemonData:
                     self._randbats_data[format_name] = json.load(f)
                 self._loaded_randbats_formats.add(format_name)
                 logger.debug(f"Loaded {format_name} from package resources")
+                
+                # Try to load stats from package resources
+                try:
+                    with pkg_resources.open_text('localsets.randbattle_data', f"{format_name}_stats.json") as f:
+                        self._randbats_stats[format_name] = json.load(f)
+                    logger.debug(f"Loaded {format_name} stats from package resources")
+                except (ImportError, FileNotFoundError, ModuleNotFoundError):
+                    self._randbats_stats[format_name] = {}
+                
                 return
             except (ImportError, FileNotFoundError, ModuleNotFoundError):
                 pass
             
             # Create empty data if nothing available
             self._randbats_data[format_name] = {}
+            self._randbats_stats[format_name] = {}
             self._loaded_randbats_formats.add(format_name)
             logger.warning(f"No data available for {format_name} - file not found in cache or bundled data")
             
         except Exception as e:
             logger.error(f"Failed to load {format_name}: {e}")
             self._randbats_data[format_name] = {}
+            self._randbats_stats[format_name] = {}
             self._loaded_randbats_formats.add(format_name)
     
     def _check_randbats_updates(self):
@@ -169,6 +203,113 @@ class PokemonData:
         
         return None
     
+    def get_randbats_stats(self, pokemon_name: str, format_name: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        """
+        Get RandBats stats data for a specific Pokemon and format.
+        
+        Args:
+            pokemon_name: Name of the Pokemon (case-insensitive)
+            format_name: Battle format. If None, tries to auto-detect.
+            
+        Returns:
+            Pokemon stats dictionary or None if not found
+        """
+        if format_name is None:
+            format_name = self._detect_randbats_format(pokemon_name)
+        
+        if format_name not in self._randbats_stats:
+            logger.warning(f"Format {format_name} stats not available")
+            return None
+        
+        # Normalize Pokemon name
+        pokemon_name = self._normalize_name(pokemon_name)
+        
+        # Search in format stats
+        format_stats = self._randbats_stats[format_name]
+        if pokemon_name in format_stats:
+            return format_stats[pokemon_name]
+        
+        # Try fuzzy matching
+        for key in format_stats.keys():
+            if self._normalize_name(key) == pokemon_name:
+                return format_stats[key]
+        
+        return None
+    
+    def get_randbats_with_stats(self, pokemon_name: str, format_name: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        """
+        Get RandBats Pokemon data with stats for a specific Pokemon and format.
+        
+        Args:
+            pokemon_name: Name of the Pokemon (case-insensitive)
+            format_name: Battle format. If None, tries to auto-detect.
+            
+        Returns:
+            Dictionary containing both data and stats, or None if not found
+        """
+        data = self.get_randbats(pokemon_name, format_name)
+        stats = self.get_randbats_stats(pokemon_name, format_name)
+        
+        if data is None:
+            return None
+        
+        result = {"data": data}
+        if stats is not None:
+            result["stats"] = stats
+        
+        return result
+    
+    def get_format_stats(self, format_name: str) -> Optional[Dict[str, Any]]:
+        """
+        Get all stats data for a specific format.
+        
+        Args:
+            format_name: Battle format name
+            
+        Returns:
+            Complete stats data for the format or None if not available
+        """
+        if format_name not in self._randbats_stats:
+            logger.warning(f"Format {format_name} stats not available")
+            return None
+        
+        return self._randbats_stats[format_name]
+    
+    def get_stats_summary(self, format_name: str) -> Optional[Dict[str, Any]]:
+        """
+        Get a summary of stats for a specific format.
+        
+        Args:
+            format_name: Battle format name
+            
+        Returns:
+            Summary statistics for the format or None if not available
+        """
+        stats = self.get_format_stats(format_name)
+        if not stats:
+            return None
+        
+        summary = {
+            "format": format_name,
+            "total_pokemon": len(stats),
+            "pokemon_with_stats": 0,
+            "field_coverage": {}
+        }
+        
+        # Analyze stats coverage
+        for pokemon, pokemon_stats in stats.items():
+            if pokemon_stats:
+                summary["pokemon_with_stats"] += 1
+                
+                # Count fields that have stats
+                for field, field_stats in pokemon_stats.items():
+                    if isinstance(field_stats, dict) and field_stats:
+                        if field not in summary["field_coverage"]:
+                            summary["field_coverage"][field] = 0
+                        summary["field_coverage"][field] += 1
+        
+        return summary
+    
     def list_randbats_pokemon(self, format_name: str) -> List[str]:
         """
         List all Pokemon available in a specific RandBats format.
@@ -198,27 +339,30 @@ class PokemonData:
         """
         formats_to_update = formats or list(self._loaded_randbats_formats)
         
-        try:
-            updated_formats = self.updater.update_formats(formats_to_update)
-            
+        if not formats_to_update:
+            logger.warning("No formats to update")
+            return
+        
+        # Perform update
+        updated_formats = self.updater.update_formats(formats_to_update)
+        
+        if updated_formats:
             # Reload updated formats
             for format_name in updated_formats:
-                if format_name in self._loaded_randbats_formats:
-                    self._load_randbats_format(format_name)
+                self._load_randbats_format(format_name)
             
             # Update last update timestamp
             last_update_file = self.cache_dir / "last_update"
             with open(last_update_file, 'w') as f:
                 f.write(datetime.now().isoformat())
             
-            logger.info(f"Updated {len(updated_formats)} formats")
-            
-        except Exception as e:
-            logger.error(f"Update failed: {e}")
+            logger.info(f"Updated formats: {updated_formats}")
+        else:
+            logger.info("No formats needed updating")
     
     def update_randbats_all(self):
-        """Update RandBats data for all available formats."""
-        self.update_randbats(FORMATS)
+        """Update all RandBats formats."""
+        self.update_randbats()
     
     # Smogon methods (new API)
     def get_smogon_sets(self, pokemon_name: str, format_name: str) -> Optional[Dict[str, Any]]:
