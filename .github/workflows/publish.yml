@@ -34,10 +34,4 @@ jobs:
       run: |
         twine upload dist/*
         
-    - name: Publish to Test PyPI (optional)
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
-      run: |
-        twine upload --repository testpypi dist/*
-      continue-on-error: true  # This step is optional, won't fail the workflow 
+  

@@ -5,7 +5,7 @@ A Python package providing offline access to Pokemon random battle data
 with automatic updates from the official source repository.
 """
 
-__version__ = "0.1.17"
+__version__ = "0.1.18"
 
 from .core import PokemonData, RandBatsData
 from .formats import (
