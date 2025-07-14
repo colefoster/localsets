@@ -299,7 +299,7 @@ class PokemonData:
         Returns a dict of IVs for the given Pokémon and role, with keys 'atk', 'def', 'spa', 'spd', 'spe'.
         Uses 31 as the default for all stats if not specified in the data.
         """
-        default_ivs = {'atk': 31, 'def': 31, 'spa': 31, 'spd': 31, 'spe': 31}
+        default_ivs = {'hp': 31, 'atk': 31, 'def': 31, 'spa': 31, 'spd': 31, 'spe': 31}
         data = self.get_randbats(pokemon_name, format_name)
         if not data or 'stats' not in data:
             return default_ivs.copy()
@@ -320,7 +320,7 @@ class PokemonData:
         Returns a dict of EVs for the given Pokémon and role, with keys 'atk', 'def', 'spa', 'spd', 'spe'.
         Uses 85 as the default for all stats if not specified in the data.
         """
-        default_evs = {'atk': 85, 'def': 85, 'spa': 85, 'spd': 85, 'spe': 85}
+        default_evs = {'hp': 85, 'atk': 85, 'def': 85, 'spa': 85, 'spd': 85, 'spe': 85 }
         data = self.get_randbats(pokemon_name, format_name)
         if not data or 'stats' not in data:
             return default_evs.copy()
