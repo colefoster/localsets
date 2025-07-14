@@ -29,6 +29,14 @@ def main():
             print(f"  Data keys: {list(pokemon.keys())}")
         else:
             print(f"{pokemon_name} not found in {format_name}")
+    # Example: Get both set and stats data
+    print("\n2b. Getting set and stats data together...")
+    for format_name in data.get_formats():
+        both = data.get_randbats_with_stats(pokemon_name, format_name)
+        if both:
+            print(f"{pokemon_name} in {format_name}: set keys: {list(both['set'].keys()) if both['set'] else 'None'}, stats keys: {list(both['stats'].keys()) if both['stats'] else 'None'}")
+        else:
+            print(f"No set or stats for {pokemon_name} in {format_name}")
     
     # List Pokemon in a format
     print("\n3. Listing Pokemon in gen9randombattle...")
