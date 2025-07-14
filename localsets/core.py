@@ -257,10 +257,15 @@ class PokemonData:
                 teras = roles[role]['teraTypes']
                 if teras:
                     return max(teras.items(), key=lambda x: x[1])[0]
-        # Fallback to top-level (rare, but for completeness)
-        teras = data['stats'].get('teraTypes', {})
-        if teras:
-            return max(teras.items(), key=lambda x: x[1])[0]
+        # If no role specified, get the most likely role and use its tera types
+        if not role:
+            most_likely_role = self.get_most_likely_role(pokemon_name, format_name)
+            if most_likely_role:
+                roles = data['stats'].get('roles', {})
+                if most_likely_role in roles and 'teraTypes' in roles[most_likely_role]:
+                    teras = roles[most_likely_role]['teraTypes']
+                    if teras:
+                        return max(teras.items(), key=lambda x: x[1])[0]
         return None
 
     def get_most_likely_moves(self, pokemon_name: str, format_name: Optional[str] = None, role: Optional[str] = None, top_n: int = 4) -> Optional[List[str]]:
@@ -276,8 +281,13 @@ class PokemonData:
             roles = data['stats'].get('roles', {})
             if role in roles and 'moves' in roles[role]:
                 moves = roles[role]['moves']
+        # If no role specified, get the most likely role and use its moves
         if moves is None:
-            moves = data['stats'].get('moves', {})
+            most_likely_role = self.get_most_likely_role(pokemon_name, format_name)
+            if most_likely_role:
+                roles = data['stats'].get('roles', {})
+                if most_likely_role in roles and 'moves' in roles[most_likely_role]:
+                    moves = roles[most_likely_role]['moves']
         if not moves:
             return None
         # Sort moves by weight, descending, and return top_n
