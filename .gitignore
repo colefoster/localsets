@@ -3,6 +3,9 @@ randbattle_data/
 smogon_data/
 metadata/
 
+# GitHub Actions state tracking files
+.pkmn_randbats_state.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

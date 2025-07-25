@@ -1,0 +1,58 @@
+name: Monitor External Repository
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Check every 30 minutes
+  workflow_dispatch:
+
+jobs:
+  check-pkmn-randbats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check pkmn/randbats vendor directory for changes
+        id: check-changes
+        run: |
+          # Get the latest commit hash from pkmn/randbats main branch
+          LATEST_COMMIT=$(curl -s https://api.github.com/repos/pkmn/randbats/commits/main | jq -r '.sha')
+          
+          # Get the vendor directory tree hash
+          VENDOR_TREE=$(curl -s "https://api.github.com/repos/pkmn/randbats/git/trees/main?recursive=1" | jq -r '.tree[] | select(.path | startswith("vendor/")) | .sha' | sort | head -1)
+          
+          # Create a unique identifier for the current state
+          CURRENT_STATE="$LATEST_COMMIT-$VENDOR_TREE"
+          
+          # Check if we have a previous state to compare against
+          if [ -f .pkmn_randbats_state.txt ]; then
+            PREVIOUS_STATE=$(cat .pkmn_randbats_state.txt)
+            
+            if [ "$CURRENT_STATE" != "$PREVIOUS_STATE" ]; then
+              echo "Changes detected in pkmn/randbats repository"
+              echo "Previous: $PREVIOUS_STATE"
+              echo "Current: $CURRENT_STATE"
+              
+              # Trigger the main workflow
+              curl -X POST \
+                -H "Accept: application/vnd.github.v3+json" \
+                -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                https://api.github.com/repos/${{ github.repository }}/dispatches \
+                -d '{"event_type":"data_update_triggered"}'
+              
+              echo "Triggered data_update_triggered event"
+            else
+              echo "No changes detected in pkmn/randbats repository"
+            fi
+          else
+            echo "First run - saving current state"
+          fi
+          
+          # Save current state for next comparison
+          echo "$CURRENT_STATE" > .pkmn_randbats_state.txt
+          
+          # Commit the state file if it changed
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .pkmn_randbats_state.txt || true
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: update external repo state tracking [auto]' || true
+            git push || true
+          fi 
