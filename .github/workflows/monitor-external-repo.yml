@@ -2,7 +2,7 @@ name: Monitor External Repository
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Check every 30 minutes
+    - cron: '0 * * * *'  # Check every hour
   workflow_dispatch:
 
 jobs:
@@ -14,50 +14,49 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Check pkmn/randbats vendor directory for changes
+      - name: Check pkmn/randbats vendor directory for recent changes
         id: check-changes
         run: |
-          # Get the latest commit hash from pkmn/randbats main branch
-          LATEST_COMMIT=$(curl -s https://api.github.com/repos/pkmn/randbats/commits/main | jq -r '.sha')
+          # Get the latest commit that modified the vendor directory
+          LATEST_VENDOR_COMMIT=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits?path=vendor&per_page=1" | jq -r '.[0].sha')
           
-          # Get the vendor directory tree hash
-          VENDOR_TREE=$(curl -s "https://api.github.com/repos/pkmn/randbats/git/trees/main?recursive=1" | jq -r '.tree[] | select(.path | startswith("vendor/")) | .sha' | sort | head -1)
-          
-          # Create a unique identifier for the current state
-          CURRENT_STATE="$LATEST_COMMIT-$VENDOR_TREE"
-          
-          # Check if we have a previous state to compare against
-          if [ -f .pkmn_randbats_state.txt ]; then
-            PREVIOUS_STATE=$(cat .pkmn_randbats_state.txt)
-            
-            if [ "$CURRENT_STATE" != "$PREVIOUS_STATE" ]; then
-              echo "Changes detected in pkmn/randbats repository"
-              echo "Previous: $PREVIOUS_STATE"
-              echo "Current: $CURRENT_STATE"
-              
-              # Trigger the main workflow
-              curl -X POST \
-                -H "Accept: application/vnd.github.v3+json" \
-                -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                https://api.github.com/repos/${{ github.repository }}/dispatches \
-                -d '{"event_type":"data_update_triggered"}'
-              
-              echo "Triggered data_update_triggered event"
-            else
-              echo "No changes detected in pkmn/randbats repository"
-            fi
-          else
-            echo "First run - saving current state"
+          if [ "$LATEST_VENDOR_COMMIT" = "null" ] || [ -z "$LATEST_VENDOR_COMMIT" ]; then
+            echo "No commits found for vendor directory"
+            exit 0
           fi
           
-          # Save current state for next comparison
-          echo "$CURRENT_STATE" > .pkmn_randbats_state.txt
+          # Get the commit details including timestamp
+          COMMIT_DETAILS=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits/$LATEST_VENDOR_COMMIT")
+          COMMIT_DATE=$(echo "$COMMIT_DETAILS" | jq -r '.commit.committer.date')
+          COMMIT_SHA=$(echo "$COMMIT_DETAILS" | jq -r '.sha')
           
-          # Commit the state file if it changed
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .pkmn_randbats_state.txt || true
-          if ! git diff --cached --quiet; then
-            git commit -m 'chore: update external repo state tracking [auto]' || true
-            git push || true
+          echo "Latest vendor commit: $COMMIT_SHA"
+          echo "Commit date: $COMMIT_DATE"
+          
+          # Convert commit date to Unix timestamp
+          COMMIT_TIMESTAMP=$(date -d "$COMMIT_DATE" +%s)
+          CURRENT_TIMESTAMP=$(date +%s)
+          
+          # Calculate time difference in hours
+          TIME_DIFF_HOURS=$(( (CURRENT_TIMESTAMP - COMMIT_TIMESTAMP) / 3600 ))
+          
+          echo "Time difference: $TIME_DIFF_HOURS hours"
+          
+          # Check if the commit is within the last hour
+          if [ $TIME_DIFF_HOURS -lt 1 ]; then
+            echo "Recent changes detected in pkmn/randbats vendor directory (within last hour)"
+            echo "Commit SHA: $COMMIT_SHA"
+            echo "Commit date: $COMMIT_DATE"
+            
+            # Trigger the main workflow
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/dispatches \
+              -d '{"event_type":"data_update_triggered"}'
+            
+            echo "Triggered data_update_triggered event"
+          else
+            echo "No recent changes detected in pkmn/randbats vendor directory"
+            echo "Last change was $TIME_DIFF_HOURS hours ago"
           fi 
