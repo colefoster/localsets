@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          token: ${{ secrets.REPO_DISPATCH_TOKEN }}
 
       - name: Check pkmn/randbats vendor directory for recent changes
         id: check-changes
@@ -63,12 +63,20 @@ jobs:
           
           echo "Time difference: $TIME_DIFF_HOURS hours"
           
-          # Check if we've already processed this commit by looking at the tracking file in the repo
-          TRACKING_FILE=".last_processed_commit"
-          if [ -f "$TRACKING_FILE" ]; then
-            LAST_PROCESSED=$(cat "$TRACKING_FILE")
-            if [ "$LAST_PROCESSED" = "$COMMIT_SHA" ]; then
-              echo "Commit $COMMIT_SHA has already been processed, skipping"
+          # Check if we've already processed this commit by looking at recent workflow runs
+          # Get the last successful workflow run that processed this commit
+          LAST_RUN=$(curl -s -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=success&per_page=5" | \
+            jq -r '.workflow_runs[] | select(.name == "Monitor External Repository") | .id' | head -1)
+          
+          if [ -n "$LAST_RUN" ] && [ "$LAST_RUN" != "null" ]; then
+            # Get the logs from the last run to see if it processed this commit
+            LAST_RUN_LOGS=$(curl -s -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$LAST_RUN/logs" | \
+              grep -o "Recorded commit $COMMIT_SHA as processed" || echo "")
+            
+            if [ -n "$LAST_RUN_LOGS" ]; then
+              echo "Commit $COMMIT_SHA has already been processed in a previous run, skipping"
               exit 0
             fi
           fi
@@ -88,13 +96,7 @@ jobs:
             
             echo "Triggered data_update_triggered event"
             
-            # Record this commit as processed and commit it to the repo
-            echo "$COMMIT_SHA" > "$TRACKING_FILE"
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add "$TRACKING_FILE"
-            git commit -m "Update last processed commit: $COMMIT_SHA" || echo "No changes to commit"
-            git push || echo "Push failed, but update was triggered"
+            # Record this commit as processed (will be visible in logs for future checks)
             echo "Recorded commit $COMMIT_SHA as processed"
           else
             echo "No recent changes detected in pkmn/randbats vendor directory"
