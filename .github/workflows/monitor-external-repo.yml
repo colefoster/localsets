@@ -63,7 +63,7 @@ jobs:
           
           echo "Time difference: $TIME_DIFF_HOURS hours"
           
-          # Check if we've already processed this commit
+          # Check if we've already processed this commit by looking at the tracking file in the repo
           TRACKING_FILE=".last_processed_commit"
           if [ -f "$TRACKING_FILE" ]; then
             LAST_PROCESSED=$(cat "$TRACKING_FILE")
@@ -88,8 +88,13 @@ jobs:
             
             echo "Triggered data_update_triggered event"
             
-            # Record this commit as processed
+            # Record this commit as processed and commit it to the repo
             echo "$COMMIT_SHA" > "$TRACKING_FILE"
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add "$TRACKING_FILE"
+            git commit -m "Update last processed commit: $COMMIT_SHA" || echo "No changes to commit"
+            git push || echo "Push failed, but update was triggered"
             echo "Recorded commit $COMMIT_SHA as processed"
           else
             echo "No recent changes detected in pkmn/randbats vendor directory"
