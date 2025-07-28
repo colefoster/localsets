@@ -2,8 +2,14 @@ name: Monitor External Repository
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Check every day at 00:00 UTC
+    - cron: '0 * * * *'  # Check every hour at minute 0
   workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force update regardless of timing'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   check-pkmn-randbats:
@@ -17,6 +23,21 @@ jobs:
       - name: Check pkmn/randbats vendor directory for recent changes
         id: check-changes
         run: |
+          # Check if this is a manual force update
+          if [ "${{ github.event.inputs.force_update }}" = "true" ]; then
+            echo "Force update requested - triggering update regardless of timing"
+            
+            # Trigger the main workflow using PAT
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/dispatches \
+              -d '{"event_type":"data_update_triggered"}'
+            
+            echo "Triggered data_update_triggered event (force update)"
+            exit 0
+          fi
+          
           # Get the latest commit that modified the vendor directory
           LATEST_VENDOR_COMMIT=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits?path=vendor&per_page=1" | jq -r '.[0].sha')
           
