@@ -81,9 +81,9 @@ jobs:
             fi
           fi
           
-          # Check if the commit is within the last 24 hours
-          if [ $TIME_DIFF_HOURS -lt 24 ]; then
-            echo "Recent changes detected in pkmn/randbats vendor directory (within last 24 hours)"
+          # Check if the commit is within the last hour (since we run hourly)
+          if [ $TIME_DIFF_HOURS -lt 1 ]; then
+            echo "Recent changes detected in pkmn/randbats vendor directory (within last hour)"
             echo "Commit SHA: $COMMIT_SHA"
             echo "Commit date: $COMMIT_DATE"
             
