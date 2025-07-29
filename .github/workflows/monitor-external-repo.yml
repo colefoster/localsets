@@ -65,20 +65,27 @@ jobs:
           
           # Check if we've already processed this commit by looking at recent workflow runs
           # Get the last successful workflow run that processed this commit
-          LAST_RUN=$(curl -s -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=success&per_page=5" | \
-            jq -r '.workflow_runs[] | select(.name == "Monitor External Repository") | .id' | head -1)
+          API_RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=success&per_page=5")
           
-          if [ -n "$LAST_RUN" ] && [ "$LAST_RUN" != "null" ]; then
-            # Get the logs from the last run to see if it processed this commit
-            LAST_RUN_LOGS=$(curl -s -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
-              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$LAST_RUN/logs" | \
-              grep -o "Recorded commit $COMMIT_SHA as processed" || echo "")
+          # Check if the response contains workflow_runs and has any entries
+          if echo "$API_RESPONSE" | jq -e '.workflow_runs' > /dev/null 2>&1; then
+            LAST_RUN=$(echo "$API_RESPONSE" | \
+              jq -r '.workflow_runs[] | select(.name == "Monitor External Repository") | .id' | head -1)
             
-            if [ -n "$LAST_RUN_LOGS" ]; then
-              echo "Commit $COMMIT_SHA has already been processed in a previous run, skipping"
-              exit 0
+            if [ -n "$LAST_RUN" ] && [ "$LAST_RUN" != "null" ]; then
+              # Get the logs from the last run to see if it processed this commit
+              LAST_RUN_LOGS=$(curl -s -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/runs/$LAST_RUN/logs" | \
+                grep -o "Recorded commit $COMMIT_SHA as processed" || echo "")
+              
+              if [ -n "$LAST_RUN_LOGS" ]; then
+                echo "Commit $COMMIT_SHA has already been processed in a previous run, skipping"
+                exit 0
+              fi
             fi
+          else
+            echo "No previous workflow runs found or API response error, proceeding with check"
           fi
           
           # Check if the commit is within the last hour (since we run hourly)
