@@ -31,7 +31,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests build twine
 
-      - name: Log trigger reason
+      - name: Log trigger reason and get external commit info
+        id: external-commit
         run: |
           if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
             echo "Workflow triggered by external repository changes"
@@ -40,12 +41,24 @@ jobs:
             fi
             if [ -n "${{ github.event.client_payload.commit_sha }}" ]; then
               echo "External commit SHA: ${{ github.event.client_payload.commit_sha }}"
+              echo "commit_sha=${{ github.event.client_payload.commit_sha }}" >> $GITHUB_OUTPUT
             fi
             if [ -n "${{ github.event.client_payload.commit_date }}" ]; then
               echo "External commit date: ${{ github.event.client_payload.commit_date }}"
             fi
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "Workflow triggered manually (force update: ${{ github.event.inputs.force_update }})"
+            
+            # For manual updates, fetch the latest external commit info
+            echo "Fetching latest external commit information..."
+            LATEST_VENDOR_COMMIT=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits?path=vendor&per_page=1" | jq -r '.[0].sha')
+            
+            if [ "$LATEST_VENDOR_COMMIT" != "null" ] && [ -n "$LATEST_VENDOR_COMMIT" ]; then
+              echo "Latest external commit SHA: $LATEST_VENDOR_COMMIT"
+              echo "commit_sha=$LATEST_VENDOR_COMMIT" >> $GITHUB_OUTPUT
+            else
+              echo "Could not fetch latest external commit SHA"
+            fi
           fi
 
       - name: Run data update script
@@ -76,8 +89,10 @@ jobs:
           
           # Create commit message with external commit info if available
           COMMIT_MSG="chore: update data and bump version to $NEW_VERSION [auto]"
-          if [ "${{ github.event_name }}" = "repository_dispatch" ] && [ -n "${{ github.event.client_payload.commit_sha }}" ]; then
-            COMMIT_MSG="chore: update data and bump version to $NEW_VERSION [auto] - triggered by pkmn/randbats commit ${{ github.event.client_payload.commit_sha }}"
+          EXTERNAL_COMMIT_SHA="${{ steps.external-commit.outputs.commit_sha }}"
+          
+          if [ -n "$EXTERNAL_COMMIT_SHA" ]; then
+            COMMIT_MSG="chore: update data and bump version to $NEW_VERSION [auto] - triggered by pkmn/randbats commit $EXTERNAL_COMMIT_SHA"
           fi
           
           git commit -m "$COMMIT_MSG"

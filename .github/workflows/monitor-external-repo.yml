@@ -20,7 +20,7 @@ jobs:
         with:
           token: ${{ secrets.REPO_DISPATCH_TOKEN }}
 
-      - name: Check pkmn/randbats vendor directory for recent changes
+      - name: Check pkmn/randbats data directory for recent changes
         id: check-changes
         run: |
           # Check if this is a manual force update
@@ -38,20 +38,20 @@ jobs:
             exit 0
           fi
           
-          # Get the latest commit that modified the vendor directory
-          LATEST_VENDOR_COMMIT=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits?path=vendor&per_page=1" | jq -r '.[0].sha')
+          # Get the latest commit that modified the data directory
+          LATEST_DATA_COMMIT=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits?path=data&per_page=1" | jq -r '.[0].sha')
           
-          if [ "$LATEST_VENDOR_COMMIT" = "null" ] || [ -z "$LATEST_VENDOR_COMMIT" ]; then
-            echo "No commits found for vendor directory"
+          if [ "$LATEST_DATA_COMMIT" = "null" ] || [ -z "$LATEST_DATA_COMMIT" ]; then
+            echo "No commits found for data directory"
             exit 0
           fi
           
           # Get the commit details including timestamp
-          COMMIT_DETAILS=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits/$LATEST_VENDOR_COMMIT")
+          COMMIT_DETAILS=$(curl -s "https://api.github.com/repos/pkmn/randbats/commits/$LATEST_DATA_COMMIT")
           COMMIT_DATE=$(echo "$COMMIT_DETAILS" | jq -r '.commit.committer.date')
           COMMIT_SHA=$(echo "$COMMIT_DETAILS" | jq -r '.sha')
           
-          echo "Latest vendor commit: $COMMIT_SHA"
+          echo "Latest data directory commit: $COMMIT_SHA"
           echo "Commit date: $COMMIT_DATE"
           
           # Convert commit date to Unix timestamp
@@ -90,7 +90,7 @@ jobs:
           
           # Check if the commit is within the last hour (since we run hourly)
           if [ $TIME_DIFF_HOURS -lt 1 ]; then
-            echo "Recent changes detected in pkmn/randbats vendor directory (within last hour)"
+            echo "Recent changes detected in pkmn/randbats data directory (within last hour)"
             echo "Commit SHA: $COMMIT_SHA"
             echo "Commit date: $COMMIT_DATE"
             
@@ -106,6 +106,6 @@ jobs:
             # Record this commit as processed (will be visible in logs for future checks)
             echo "Recorded commit $COMMIT_SHA as processed"
           else
-            echo "No recent changes detected in pkmn/randbats vendor directory"
+            echo "No recent changes detected in pkmn/randbats data directory"
             echo "Last change was $TIME_DIFF_HOURS hours ago"
           fi 
