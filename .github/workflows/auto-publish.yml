@@ -35,6 +35,15 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
             echo "Workflow triggered by external repository changes"
+            if [ -n "${{ github.event.client_payload.trigger_reason }}" ]; then
+              echo "Trigger reason: ${{ github.event.client_payload.trigger_reason }}"
+            fi
+            if [ -n "${{ github.event.client_payload.commit_sha }}" ]; then
+              echo "External commit SHA: ${{ github.event.client_payload.commit_sha }}"
+            fi
+            if [ -n "${{ github.event.client_payload.commit_date }}" ]; then
+              echo "External commit date: ${{ github.event.client_payload.commit_date }}"
+            fi
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "Workflow triggered manually (force update: ${{ github.event.inputs.force_update }})"
           fi
@@ -64,7 +73,14 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add localsets/randbattle_data/*.json localsets/metadata/*.json localsets/smogon_data/*.json pyproject.toml
-          git commit -m "chore: update data and bump version to $NEW_VERSION [auto]"
+          
+          # Create commit message with external commit info if available
+          COMMIT_MSG="chore: update data and bump version to $NEW_VERSION [auto]"
+          if [ "${{ github.event_name }}" = "repository_dispatch" ] && [ -n "${{ github.event.client_payload.commit_sha }}" ]; then
+            COMMIT_MSG="chore: update data and bump version to $NEW_VERSION [auto] - triggered by pkmn/randbats commit ${{ github.event.client_payload.commit_sha }}"
+          fi
+          
+          git commit -m "$COMMIT_MSG"
           
           # Create and push version tag
           git tag "v$NEW_VERSION"

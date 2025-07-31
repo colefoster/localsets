@@ -29,69 +29,144 @@ SMOGON_FORMATS = [
 def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
+def load_existing_data(file_path):
+    """Load existing data from file if it exists, return empty dict if not"""
+    if file_path.exists():
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"[WARN] Failed to load existing data from {file_path}: {e}")
+    return {}
+
 def download_randbats():
     data_dir = Path("localsets/randbattle_data")
     metadata_dir = Path("localsets/metadata")
     ensure_dir(data_dir)
     ensure_dir(metadata_dir)
+    
     for format_name in RANDBATS_FORMATS:
         data_url = f"{GITHUB_RAW_BASE}/{format_name}.json"
         stats_url = f"{GITHUB_STATS_BASE}/{format_name}.json"
         data_file = data_dir / f"{format_name}.json"
         metadata_url = f"{GITHUB_API_BASE}/{format_name}.json"
         metadata_file = metadata_dir / f"{format_name}_metadata.json"
+        
+        # Load existing data as backup
+        existing_data = load_existing_data(data_file)
+        
         try:
             print(f"Downloading {format_name}.json...")
+            
             # Download set data
             with urllib.request.urlopen(data_url) as response:
+                if response.status != 200:
+                    raise Exception(f"HTTP {response.status}: {response.reason}")
                 set_data = json.loads(response.read().decode())
+            
             # Download stats data (optional)
             try:
                 with urllib.request.urlopen(stats_url) as stats_response:
-                    stats_data = json.loads(stats_response.read().decode())
-                # Merge stats into each set
-                for poke, poke_stats in stats_data.items():
-                    if poke in set_data:
-                        set_data[poke]["stats"] = poke_stats
-                print(f"[OK] Downloaded stats for {format_name}")
+                    if stats_response.status == 200:
+                        stats_data = json.loads(stats_response.read().decode())
+                        # Merge stats into each set
+                        for poke, poke_stats in stats_data.items():
+                            if poke in set_data:
+                                set_data[poke]["stats"] = poke_stats
+                        print(f"[OK] Downloaded stats for {format_name}")
+                    else:
+                        print(f"[WARN] Stats not available for {format_name} (HTTP {stats_response.status})")
             except Exception as stats_e:
                 print(f"[WARN] No stats for {format_name}: {stats_e}")
+            
             # Save merged data
             with open(data_file, 'w', encoding='utf-8') as f:
                 json.dump(set_data, f, indent=2)
+            
             # Download and save metadata
-            with urllib.request.urlopen(metadata_url) as response:
-                metadata = json.loads(response.read().decode())
-            with open(metadata_file, 'w', encoding='utf-8') as f:
-                json.dump(metadata, f, indent=2)
+            try:
+                with urllib.request.urlopen(metadata_url) as response:
+                    if response.status == 200:
+                        metadata = json.loads(response.read().decode())
+                        with open(metadata_file, 'w', encoding='utf-8') as f:
+                            json.dump(metadata, f, indent=2)
+                        print(f"[OK] Downloaded metadata for {format_name}")
+                    else:
+                        print(f"[WARN] Metadata not available for {format_name} (HTTP {response.status})")
+            except Exception as metadata_e:
+                print(f"[WARN] Failed to download metadata for {format_name}: {metadata_e}")
+            
             print(f"[OK] Downloaded {format_name}.json")
+            
         except Exception as e:
             print(f"[ERROR] Failed to download {format_name}.json: {e}")
-            with open(data_file, 'w', encoding='utf-8') as f:
-                json.dump({}, f)
+            print(f"[INFO] Preserving existing data for {format_name}")
+            
+            # Only write empty data if we don't have existing data
+            if not existing_data:
+                print(f"[WARN] No existing data found for {format_name}, creating empty file")
+                with open(data_file, 'w', encoding='utf-8') as f:
+                    json.dump({}, f)
+            else:
+                print(f"[INFO] Keeping existing data for {format_name} ({len(existing_data)} entries)")
+                # Verify the existing data is still valid and not empty
+                if len(existing_data) == 0:
+                    print(f"[WARN] Existing data for {format_name} is empty, but keeping it to avoid data loss")
 
 def download_smogon():
     smogon_data_dir = Path("localsets/smogon_data")
     ensure_dir(smogon_data_dir)
     for format_name in SMOGON_FORMATS:
+        data_url = f"{SMOGON_BASE_URL}/{format_name}.json"
+        data_file = smogon_data_dir / f"{format_name}.json"
+        
+        # Load existing data as backup
+        existing_data = load_existing_data(data_file)
+        
         try:
             print(f"Downloading {format_name}.json...")
-            data_url = f"{SMOGON_BASE_URL}/{format_name}.json"
-            data_file = smogon_data_dir / f"{format_name}.json"
             with urllib.request.urlopen(data_url) as response:
                 if response.status == 200:
                     with open(data_file, 'wb') as f:
                         f.write(response.read())
                     print(f"[OK] Downloaded {format_name}.json")
                 else:
-                    print(f"[ERROR] {format_name}.json not available (404)")
+                    print(f"[ERROR] {format_name}.json not available (HTTP {response.status})")
+                    # Preserve existing data if download fails
+                    if existing_data:
+                        print(f"[INFO] Preserving existing data for {format_name} ({len(existing_data)} entries)")
+                    else:
+                        print(f"[WARN] No existing data found for {format_name}")
         except Exception as e:
             print(f"[ERROR] Failed to download {format_name}.json: {e}")
+            # Preserve existing data if download fails
+            if existing_data:
+                print(f"[INFO] Preserving existing data for {format_name} ({len(existing_data)} entries)")
+            else:
+                print(f"[WARN] No existing data found for {format_name}")
 
 def main():
+    print("Starting data update process...")
+    print("=" * 50)
+    
     download_randbats()
+    print("-" * 30)
     download_smogon()
+    
+    print("=" * 50)
     print("All data update complete!")
+    
+    # Print summary of updated files
+    data_dir = Path("localsets/randbattle_data")
+    smogon_dir = Path("localsets/smogon_data")
+    
+    if data_dir.exists():
+        randbats_files = list(data_dir.glob("*.json"))
+        print(f"Random Battle files: {len(randbats_files)}")
+    
+    if smogon_dir.exists():
+        smogon_files = list(smogon_dir.glob("*.json"))
+        print(f"Smogon files: {len(smogon_files)}")
 
 if __name__ == "__main__":
     main() 

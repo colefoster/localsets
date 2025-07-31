@@ -32,7 +32,7 @@ jobs:
               -H "Accept: application/vnd.github.v3+json" \
               -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
               https://api.github.com/repos/${{ github.repository }}/dispatches \
-              -d '{"event_type":"data_update_triggered"}'
+              -d '{"event_type":"data_update_triggered","client_payload":{"trigger_reason":"force_update","commit_sha":"manual"}}'
             
             echo "Triggered data_update_triggered event (force update)"
             exit 0
@@ -99,7 +99,7 @@ jobs:
               -H "Accept: application/vnd.github.v3+json" \
               -H "Authorization: token ${{ secrets.REPO_DISPATCH_TOKEN }}" \
               https://api.github.com/repos/${{ github.repository }}/dispatches \
-              -d '{"event_type":"data_update_triggered"}'
+              -d '{"event_type":"data_update_triggered","client_payload":{"trigger_reason":"external_changes","commit_sha":"'$COMMIT_SHA'","commit_date":"'$COMMIT_DATE'"}}'
             
             echo "Triggered data_update_triggered event"
             
