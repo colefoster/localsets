@@ -4180,7 +4180,8 @@
     "level": 90,
     "abilities": [
       "Cursed Body",
-      "Frisk"
+      "Frisk",
+      "Insomnia"
     ],
     "items": [
       "Choice Band",
@@ -4190,7 +4191,8 @@
       "Wallbreaker": {
         "abilities": [
           "Cursed Body",
-          "Frisk"
+          "Frisk",
+          "Insomnia"
         ],
         "items": [
           "Choice Band",
@@ -4209,8 +4211,9 @@
     "stats": {
       "level": 90,
       "abilities": {
-        "Frisk": 0.5102,
-        "Cursed Body": 0.4898
+        "Insomnia": 0.3506,
+        "Cursed Body": 0.3265,
+        "Frisk": 0.3228
       },
       "items": {
         "Life Orb": 0.8442,
@@ -4220,8 +4223,9 @@
         "Wallbreaker": {
           "weight": 1,
           "abilities": {
-            "Frisk": 0.5102,
-            "Cursed Body": 0.4898
+            "Insomnia": 0.3506,
+            "Cursed Body": 0.3265,
+            "Frisk": 0.3228
           },
           "items": {
             "Life Orb": 0.8442,
@@ -13810,7 +13814,6 @@
         ],
         "moves": [
           "Focus Blast",
-          "Pain Split",
           "Shadow Ball",
           "Sludge Wave",
           "Substitute",
@@ -13837,9 +13840,9 @@
         "Levitate": 1
       },
       "items": {
-        "Black Sludge": 0.4138,
-        "Life Orb": 0.3489,
-        "Choice Specs": 0.2373
+        "Black Sludge": 0.4828,
+        "Choice Specs": 0.3124,
+        "Life Orb": 0.2049
       },
       "roles": {
         "Fast Attacker": {
@@ -13848,18 +13851,17 @@
             "Levitate": 1
           },
           "items": {
-            "Black Sludge": 0.4138,
-            "Life Orb": 0.3489,
-            "Choice Specs": 0.2373
+            "Black Sludge": 0.4828,
+            "Choice Specs": 0.3124,
+            "Life Orb": 0.2049
           },
           "moves": {
             "Shadow Ball": 1,
             "Sludge Wave": 1,
-            "Focus Blast": 0.6207,
-            "Substitute": 0.4138,
-            "Pain Split": 0.3753,
-            "Will-O-Wisp": 0.3529,
-            "Trick": 0.2373
+            "Focus Blast": 0.7586,
+            "Substitute": 0.4828,
+            "Will-O-Wisp": 0.4462,
+            "Trick": 0.3124
           },
           "evs": {
             "atk": 0

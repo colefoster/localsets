@@ -1780,8 +1780,7 @@
           "Calm Mind",
           "Earth Power",
           "Judgment",
-          "Recover",
-          "Refresh"
+          "Recover"
         ],
         "evs": {
           "hp": 81,
@@ -1818,10 +1817,9 @@
           },
           "moves": {
             "Calm Mind": 1,
+            "Earth Power": 1,
             "Judgment": 1,
-            "Recover": 1,
-            "Refresh": 0.5068,
-            "Earth Power": 0.4932
+            "Recover": 1
           },
           "evs": {
             "hp": 81,

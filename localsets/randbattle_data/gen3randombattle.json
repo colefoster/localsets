@@ -11085,7 +11085,6 @@
           "Salac Berry"
         ],
         "moves": [
-          "Brick Break",
           "Earthquake",
           "Explosion",
           "Rock Slide",
@@ -11137,8 +11136,8 @@
         "Synchronize": 1
       },
       "items": {
-        "Leftovers": 0.7779,
-        "Salac Berry": 0.2221
+        "Leftovers": 0.8271,
+        "Salac Berry": 0.1729
       },
       "roles": {
         "Setup Sweeper": {
@@ -11147,16 +11146,15 @@
             "Synchronize": 1
           },
           "items": {
-            "Salac Berry": 0.651,
-            "Leftovers": 0.349
+            "Salac Berry": 0.5069,
+            "Leftovers": 0.4931
           },
           "moves": {
             "Earthquake": 1,
             "Rock Slide": 1,
             "Swords Dance": 1,
-            "Soft-Boiled": 0.349,
-            "Explosion": 0.3412,
-            "Brick Break": 0.3098
+            "Explosion": 0.5069,
+            "Soft-Boiled": 0.4931
           }
         },
         "Bulky Support": {
@@ -17212,7 +17210,6 @@
     ],
     "items": [
       "Chesto Berry",
-      "Choice Band",
       "Leftovers"
     ],
     "roles": {
@@ -17245,17 +17242,17 @@
           "Sleep Talk"
         ]
       },
-      "Wallbreaker": {
+      "Setup Sweeper": {
         "abilities": [
           "Immunity"
         ],
         "items": [
-          "Choice Band"
+          "Leftovers"
         ],
         "moves": [
           "Body Slam",
+          "Curse",
           "Earthquake",
-          "Return",
           "Self-Destruct",
           "Shadow Ball"
         ]
@@ -17268,9 +17265,8 @@
         "Immunity": 0.4851
       },
       "items": {
-        "Chesto Berry": 0.3429,
-        "Leftovers": 0.3371,
-        "Choice Band": 0.32
+        "Leftovers": 0.6571,
+        "Chesto Berry": 0.3429
       },
       "roles": {
         "Bulky Setup": {
@@ -17304,20 +17300,20 @@
             "Sleep Talk": 1
           }
         },
-        "Wallbreaker": {
+        "Setup Sweeper": {
           "weight": 0.32,
           "abilities": {
             "Immunity": 1
           },
           "items": {
-            "Choice Band": 1
+            "Leftovers": 1
           },
           "moves": {
+            "Body Slam": 1,
+            "Curse": 1,
             "Earthquake": 1,
-            "Self-Destruct": 1,
-            "Shadow Ball": 1,
-            "Body Slam": 0.517,
-            "Return": 0.483
+            "Shadow Ball": 0.5295,
+            "Self-Destruct": 0.4705
           }
         }
       }
