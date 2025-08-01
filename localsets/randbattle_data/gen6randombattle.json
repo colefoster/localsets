@@ -118,7 +118,7 @@
     }
   },
   "Absol": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Justified"
     ],
@@ -148,7 +148,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Justified": 1
       },
@@ -7764,7 +7764,7 @@
     }
   },
   "Cobalion": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Justified"
     ],
@@ -7789,7 +7789,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Justified": 1
       },
@@ -15785,7 +15785,7 @@
     }
   },
   "Grumpig": {
-    "level": 93,
+    "level": 92,
     "abilities": [
       "Thick Fat"
     ],
@@ -15823,7 +15823,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 93,
+      "level": 92,
       "abilities": {
         "Thick Fat": 1
       },
@@ -16479,7 +16479,7 @@
     }
   },
   "Heracross": {
-    "level": 78,
+    "level": 79,
     "abilities": [
       "Guts",
       "Moxie"
@@ -16521,7 +16521,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 79,
       "abilities": {
         "Moxie": 0.5572,
         "Guts": 0.4428
@@ -17385,7 +17385,7 @@
     }
   },
   "Hydreigon": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Levitate"
     ],
@@ -17448,7 +17448,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Levitate": 1
       },
@@ -17638,7 +17638,7 @@
     }
   },
   "Illumise": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Prankster"
     ],
@@ -17674,7 +17674,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Prankster": 1
       },
@@ -23831,7 +23831,7 @@
     }
   },
   "Metagross-Mega": {
-    "level": 75,
+    "level": 74,
     "abilities": [
       "Clear Body"
     ],
@@ -23871,7 +23871,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 74,
       "abilities": {
         "Clear Body": 1
       },
@@ -26744,7 +26744,7 @@
     }
   },
   "Pinsir-Mega": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Hyper Cutter"
     ],
@@ -26765,17 +26765,11 @@
           "Quick Attack",
           "Return",
           "Swords Dance"
-        ],
-        "evs": {
-          "hp": 81
-        }
+        ]
       }
     },
-    "evs": {
-      "hp": 81
-    },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Hyper Cutter": 1
       },
@@ -26797,14 +26791,8 @@
             "Swords Dance": 1,
             "Close Combat": 0.5022,
             "Earthquake": 0.4978
-          },
-          "evs": {
-            "hp": 81
           }
         }
-      },
-      "evs": {
-        "hp": 81
       }
     }
   },
@@ -27644,7 +27632,7 @@
     }
   },
   "Quagsire": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Unaware"
     ],
@@ -27669,7 +27657,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Unaware": 1
       },
@@ -31044,7 +31032,7 @@
     }
   },
   "Seaking": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Lightning Rod",
       "Swift Swim"
@@ -31088,7 +31076,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Swift Swim": 0.5029,
         "Lightning Rod": 0.4971
@@ -36709,7 +36697,7 @@
     }
   },
   "Uxie": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Levitate"
     ],
@@ -36737,7 +36725,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Levitate": 1
       },
@@ -37489,7 +37477,7 @@
     }
   },
   "Vigoroth": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Vital Spirit"
     ],
@@ -37515,7 +37503,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Vital Spirit": 1
       },
@@ -37999,7 +37987,7 @@
     }
   },
   "Wailord": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Water Veil"
     ],
@@ -38039,7 +38027,7 @@
       "spa": 30
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Water Veil": 1
       },

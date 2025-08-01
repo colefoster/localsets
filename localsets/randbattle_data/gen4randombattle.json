@@ -5853,7 +5853,7 @@
     }
   },
   "Dialga": {
-    "level": 71,
+    "level": 70,
     "abilities": [
       "Pressure"
     ],
@@ -5904,7 +5904,7 @@
       }
     },
     "stats": {
-      "level": 71,
+      "level": 70,
       "abilities": {
         "Pressure": 1
       },
@@ -6481,7 +6481,7 @@
     }
   },
   "Dunsparce": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Serene Grace"
     ],
@@ -6520,7 +6520,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Serene Grace": 1
       },
@@ -7733,7 +7733,7 @@
     }
   },
   "Floatzel": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Swift Swim"
     ],
@@ -7776,7 +7776,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Swift Swim": 1
       },
@@ -11444,7 +11444,7 @@
     }
   },
   "Kingdra": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Sniper",
       "Swift Swim"
@@ -11505,7 +11505,7 @@
       }
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Sniper": 0.6437,
         "Swift Swim": 0.3563
@@ -15152,7 +15152,7 @@
     }
   },
   "Moltres": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Pressure"
     ],
@@ -15177,15 +15177,15 @@
           "U-turn"
         ],
         "evs": {
-          "hp": 81
+          "hp": 77
         }
       }
     },
     "evs": {
-      "hp": 81
+      "hp": 77
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Pressure": 1
       },
@@ -15211,12 +15211,12 @@
             "Hidden Power Grass": 0.2451
           },
           "evs": {
-            "hp": 81
+            "hp": 77
           }
         }
       },
       "evs": {
-        "hp": 81
+        "hp": 77
       }
     }
   },
@@ -17325,7 +17325,7 @@
     }
   },
   "Purugly": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Thick Fat"
     ],
@@ -17352,7 +17352,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Thick Fat": 1
       },
@@ -20159,7 +20159,7 @@
     }
   },
   "Shaymin-Sky": {
-    "level": 69,
+    "level": 70,
     "abilities": [
       "Serene Grace"
     ],
@@ -20193,7 +20193,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 69,
+      "level": 70,
       "abilities": {
         "Serene Grace": 1
       },
@@ -20230,7 +20230,7 @@
     }
   },
   "Shedinja": {
-    "level": 98,
+    "level": 99,
     "abilities": [
       "Wonder Guard"
     ],
@@ -20252,17 +20252,11 @@
           "Swords Dance",
           "Will-O-Wisp",
           "X-Scissor"
-        ],
-        "evs": {
-          "hp": 81
-        }
+        ]
       }
     },
-    "evs": {
-      "hp": 81
-    },
     "stats": {
-      "level": 98,
+      "level": 99,
       "abilities": {
         "Wonder Guard": 1
       },
@@ -20285,14 +20279,8 @@
             "Baton Pass": 0.343,
             "Shadow Claw": 0.3323,
             "Will-O-Wisp": 0.3247
-          },
-          "evs": {
-            "hp": 81
           }
         }
-      },
-      "evs": {
-        "hp": 81
       }
     }
   },
@@ -20953,7 +20941,7 @@
     }
   },
   "Snorlax": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Thick Fat"
     ],
@@ -21009,7 +20997,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Thick Fat": 1
       },
@@ -25188,7 +25176,7 @@
     }
   },
   "Zangoose": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Immunity"
     ],
@@ -25215,7 +25203,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Immunity": 1
       },

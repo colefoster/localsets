@@ -106,7 +106,7 @@
     }
   },
   "Absol": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Justified"
     ],
@@ -136,7 +136,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Justified": 1
       },
@@ -1537,7 +1537,7 @@
     }
   },
   "Arbok": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Intimidate",
       "Shed Skin"
@@ -1578,7 +1578,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Intimidate": 0.5222,
         "Shed Skin": 0.4778
@@ -5299,7 +5299,7 @@
     }
   },
   "Bibarel": {
-    "level": 89,
+    "level": 90,
     "abilities": [
       "Simple"
     ],
@@ -5324,7 +5324,7 @@
       }
     },
     "stats": {
-      "level": 89,
+      "level": 90,
       "abilities": {
         "Simple": 1
       },
@@ -7526,7 +7526,7 @@
     }
   },
   "Chansey": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Natural Cure"
     ],
@@ -7565,7 +7565,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Natural Cure": 1
       },
@@ -10668,7 +10668,7 @@
     }
   },
   "Dewgong": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Thick Fat"
     ],
@@ -10724,7 +10724,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Thick Fat": 1
       },
@@ -14414,7 +14414,7 @@
     }
   },
   "Forretress": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Sturdy"
     ],
@@ -14453,7 +14453,7 @@
       "spe": 0
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Sturdy": 1
       },
@@ -15752,7 +15752,7 @@
     }
   },
   "Gengar-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Cursed Body"
     ],
@@ -15811,7 +15811,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Cursed Body": 1
       },
@@ -17079,7 +17079,7 @@
     }
   },
   "Golurk": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Iron Fist",
       "No Guard"
@@ -17122,7 +17122,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "No Guard": 0.5012,
         "Iron Fist": 0.4988
@@ -29601,7 +29601,7 @@
     }
   },
   "Musharna": {
-    "level": 90,
+    "level": 89,
     "abilities": [
       "Synchronize"
     ],
@@ -29662,7 +29662,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 89,
       "abilities": {
         "Synchronize": 1
       },
@@ -30938,7 +30938,7 @@
     }
   },
   "Octillery": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Sniper"
     ],
@@ -30986,7 +30986,7 @@
       }
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Sniper": 1
       },
@@ -32402,7 +32402,7 @@
     }
   },
   "Phione": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Hydration"
     ],
@@ -32430,7 +32430,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Hydration": 1
       },
@@ -38318,7 +38318,7 @@
     }
   },
   "Sharpedo": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Speed Boost"
     ],
@@ -38344,7 +38344,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Speed Boost": 1
       },
@@ -40442,7 +40442,7 @@
     }
   },
   "Skarmory": {
-    "level": 77,
+    "level": 76,
     "abilities": [
       "Sturdy"
     ],
@@ -40485,7 +40485,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 76,
       "abilities": {
         "Sturdy": 1
       },
@@ -40652,7 +40652,7 @@
     }
   },
   "Slowbro": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Regenerator"
     ],
@@ -40715,7 +40715,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Regenerator": 1
       },
@@ -48587,7 +48587,7 @@
     }
   },
   "Wishiwashi": {
-    "level": 90,
+    "level": 89,
     "abilities": [
       "Schooling"
     ],
@@ -48654,7 +48654,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 89,
       "abilities": {
         "Schooling": 1
       },

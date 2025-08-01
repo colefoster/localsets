@@ -2345,7 +2345,7 @@
     }
   },
   "Arceus-Poison": {
-    "level": 72,
+    "level": 73,
     "abilities": [
       "Multitype"
     ],
@@ -2375,7 +2375,7 @@
       }
     },
     "stats": {
-      "level": 72,
+      "level": 73,
       "abilities": {
         "Multitype": 1
       },
@@ -3236,7 +3236,7 @@
     }
   },
   "Articuno": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Pressure"
     ],
@@ -3267,7 +3267,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Pressure": 1
       },
@@ -7817,7 +7817,7 @@
     }
   },
   "Corviknight": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Mirror Armor"
     ],
@@ -7863,7 +7863,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Mirror Armor": 1
       },
@@ -8031,7 +8031,7 @@
     }
   },
   "Crawdaunt": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Adaptability"
     ],
@@ -8076,7 +8076,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Adaptability": 1
       },
@@ -9108,7 +9108,7 @@
     }
   },
   "Deoxys-Speed": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Pressure"
     ],
@@ -9156,7 +9156,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Pressure": 1
       },
@@ -16899,7 +16899,7 @@
     }
   },
   "Gyarados": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Intimidate"
     ],
@@ -16964,7 +16964,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Intimidate": 1
       },
@@ -17906,7 +17906,7 @@
     }
   },
   "Ho-Oh": {
-    "level": 71,
+    "level": 70,
     "abilities": [
       "Regenerator"
     ],
@@ -17935,7 +17935,7 @@
       }
     },
     "stats": {
-      "level": 71,
+      "level": 70,
       "abilities": {
         "Regenerator": 1
       },
@@ -20468,7 +20468,7 @@
     }
   },
   "Jolteon": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Volt Absorb"
     ],
@@ -20531,7 +20531,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Volt Absorb": 1
       },
@@ -26784,7 +26784,7 @@
     }
   },
   "Milotic": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Competitive"
     ],
@@ -26814,7 +26814,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Competitive": 1
       },
@@ -29136,7 +29136,7 @@
     }
   },
   "Oinkologne": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Gluttony",
       "Thick Fat"
@@ -29194,7 +29194,7 @@
       }
     },
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Thick Fat": 0.5046,
         "Gluttony": 0.4954
@@ -30993,7 +30993,7 @@
     }
   },
   "Persian": {
-    "level": 93,
+    "level": 92,
     "abilities": [
       "Technician"
     ],
@@ -31024,7 +31024,7 @@
       }
     },
     "stats": {
-      "level": 93,
+      "level": 92,
       "abilities": {
         "Technician": 1
       },
@@ -42737,7 +42737,7 @@
     }
   },
   "Tsareena": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Queenly Majesty"
     ],
@@ -42766,7 +42766,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Queenly Majesty": 1
       },
@@ -43165,7 +43165,7 @@
     }
   },
   "Ursaluna": {
-    "level": 77,
+    "level": 78,
     "abilities": [
       "Guts"
     ],
@@ -43192,7 +43192,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 78,
       "abilities": {
         "Guts": 1
       },

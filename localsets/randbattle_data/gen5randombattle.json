@@ -3145,7 +3145,7 @@
     }
   },
   "Azumarill": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Huge Power"
     ],
@@ -3188,7 +3188,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Huge Power": 1
       },
@@ -4625,7 +4625,7 @@
     }
   },
   "Butterfree": {
-    "level": 92,
+    "level": 91,
     "abilities": [
       "Tinted Lens"
     ],
@@ -4647,7 +4647,6 @@
           "Substitute"
         ],
         "evs": {
-          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -4668,7 +4667,6 @@
           "Sleep Powder"
         ],
         "evs": {
-          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -4677,14 +4675,13 @@
       }
     },
     "evs": {
-      "hp": 81,
       "atk": 0
     },
     "ivs": {
       "atk": 0
     },
     "stats": {
-      "level": 92,
+      "level": 91,
       "abilities": {
         "Tinted Lens": 1
       },
@@ -4707,7 +4704,6 @@
             "Substitute": 1
           },
           "evs": {
-            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -4729,7 +4725,6 @@
             "Sleep Powder": 1
           },
           "evs": {
-            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -4738,7 +4733,6 @@
         }
       },
       "evs": {
-        "hp": 81,
         "atk": 0
       },
       "ivs": {
@@ -5385,7 +5379,7 @@
     }
   },
   "Charizard": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Blaze",
       "Solar Power"
@@ -5411,7 +5405,10 @@
           "Fire Blast",
           "Roost",
           "Will-O-Wisp"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       },
       "Fast Attacker": {
         "abilities": [
@@ -5432,6 +5429,7 @@
           "Roost"
         ],
         "evs": {
+          "hp": 81,
           "atk": 0
         }
       },
@@ -5448,11 +5446,17 @@
           "Earthquake",
           "Flare Blitz",
           "Swords Dance"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       }
     },
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Blaze": 0.9936,
         "Solar Power": 0.0064
@@ -5479,6 +5483,9 @@
             "Roost": 1,
             "Will-O-Wisp": 0.5071,
             "Earthquake": 0.4929
+          },
+          "evs": {
+            "hp": 81
           }
         },
         "Fast Attacker": {
@@ -5501,6 +5508,7 @@
             "Roost": 0.4693
           },
           "evs": {
+            "hp": 81,
             "atk": 0
           }
         },
@@ -5518,8 +5526,14 @@
             "Flare Blitz": 1,
             "Swords Dance": 0.5172,
             "Dragon Dance": 0.4828
+          },
+          "evs": {
+            "hp": 81
           }
         }
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
@@ -5832,7 +5846,7 @@
     }
   },
   "Cinccino": {
-    "level": 79,
+    "level": 80,
     "abilities": [
       "Skill Link"
     ],
@@ -5856,7 +5870,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 80,
       "abilities": {
         "Skill Link": 1
       },
@@ -10785,7 +10799,7 @@
     }
   },
   "Garchomp": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Rough Skin"
     ],
@@ -10830,7 +10844,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Rough Skin": 1
       },
@@ -11015,7 +11029,7 @@
     }
   },
   "Gastrodon": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Storm Drain"
     ],
@@ -11041,7 +11055,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Storm Drain": 1
       },
@@ -15670,7 +15684,7 @@
     }
   },
   "Lanturn": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Volt Absorb"
     ],
@@ -15711,7 +15725,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Volt Absorb": 1
       },
@@ -18652,7 +18666,7 @@
     }
   },
   "Mesprit": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Levitate"
     ],
@@ -18703,7 +18717,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Levitate": 1
       },
@@ -23353,7 +23367,7 @@
     }
   },
   "Reuniclus": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Magic Guard"
     ],
@@ -23391,7 +23405,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Magic Guard": 1
       },
@@ -23702,7 +23716,7 @@
     }
   },
   "Rotom-Fan": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Levitate"
     ],
@@ -23743,7 +23757,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Levitate": 1
       },
@@ -25220,7 +25234,7 @@
     }
   },
   "Serperior": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Overgrow"
     ],
@@ -25285,7 +25299,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Overgrow": 1
       },
@@ -27719,7 +27733,7 @@
     }
   },
   "Suicune": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Pressure"
     ],
@@ -27799,7 +27813,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Pressure": 1
       },
@@ -28268,7 +28282,7 @@
     }
   },
   "Swellow": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Guts"
     ],
@@ -28306,7 +28320,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Guts": 1
       },
@@ -29784,7 +29798,7 @@
     }
   },
   "Umbreon": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Synchronize"
     ],
@@ -29840,7 +29854,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Synchronize": 1
       },
@@ -32708,7 +32722,7 @@
     }
   },
   "Zoroark": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Illusion"
     ],
@@ -32736,7 +32750,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Illusion": 1
       },

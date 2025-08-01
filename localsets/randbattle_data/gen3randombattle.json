@@ -1833,7 +1833,7 @@
     }
   },
   "Blaziken": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Blaze"
     ],
@@ -1891,7 +1891,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Blaze": 1
       },
@@ -2251,7 +2251,7 @@
     }
   },
   "Cacturne": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Sand Veil"
     ],
@@ -2295,7 +2295,7 @@
       }
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Sand Veil": 1
       },
@@ -3284,7 +3284,7 @@
     }
   },
   "Crobat": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Inner Focus"
     ],
@@ -3320,7 +3320,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Inner Focus": 1
       },
@@ -3482,7 +3482,7 @@
     }
   },
   "Delibird": {
-    "level": 98,
+    "level": 99,
     "abilities": [
       "Hustle"
     ],
@@ -3516,7 +3516,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 98,
+      "level": 99,
       "abilities": {
         "Hustle": 1
       },
@@ -7451,7 +7451,7 @@
     }
   },
   "Houndoom": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Flash Fire"
     ],
@@ -7474,7 +7474,6 @@
           "Substitute"
         ],
         "evs": {
-          "hp": 69,
           "atk": 0
         },
         "ivs": {
@@ -7505,7 +7504,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Flash Fire": 1
       },
@@ -7529,7 +7528,6 @@
             "Substitute": 1
           },
           "evs": {
-            "hp": 69,
             "atk": 0
           },
           "ivs": {
@@ -9050,7 +9048,7 @@
     }
   },
   "Latios": {
-    "level": 66,
+    "level": 67,
     "abilities": [
       "Levitate"
     ],
@@ -9101,7 +9099,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 66,
+      "level": 67,
       "abilities": {
         "Levitate": 1
       },
@@ -12420,7 +12418,7 @@
     }
   },
   "Ninjask": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Speed Boost"
     ],
@@ -12479,7 +12477,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Speed Boost": 1
       },
@@ -20651,7 +20649,7 @@
     }
   },
   "Xatu": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Early Bird",
       "Synchronize"
@@ -20732,7 +20730,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Synchronize": 0.6792,
         "Early Bird": 0.3208

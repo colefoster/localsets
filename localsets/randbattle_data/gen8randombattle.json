@@ -204,7 +204,7 @@
     }
   },
   "Aerodactyl": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Unnerve"
     ],
@@ -221,7 +221,7 @@
       "Stone Edge"
     ],
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Unnerve": 1
       },
@@ -924,7 +924,7 @@
     }
   },
   "Aurorus": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Snow Warning"
     ],
@@ -948,7 +948,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Snow Warning": 1
       },
@@ -1958,7 +1958,7 @@
     }
   },
   "Carbink": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Sturdy"
     ],
@@ -1980,7 +1980,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Sturdy": 1
       },
@@ -2040,7 +2040,7 @@
     }
   },
   "Celebi": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Natural Cure"
     ],
@@ -2061,7 +2061,7 @@
       "U-turn"
     ],
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Natural Cure": 1
       },
@@ -3626,7 +3626,7 @@
     }
   },
   "Ditto": {
-    "level": 76,
+    "level": 75,
     "abilities": [
       "Imposter"
     ],
@@ -3637,7 +3637,7 @@
       "Transform"
     ],
     "stats": {
-      "level": 76,
+      "level": 75,
       "abilities": {
         "Imposter": 1
       },
@@ -4022,7 +4022,7 @@
     }
   },
   "Druddigon": {
-    "level": 85,
+    "level": 86,
     "abilities": [
       "Mold Breaker",
       "Rough Skin"
@@ -4042,7 +4042,7 @@
       "Superpower"
     ],
     "stats": {
-      "level": 85,
+      "level": 86,
       "abilities": {
         "Rough Skin": 0.5114,
         "Mold Breaker": 0.4886
@@ -4404,7 +4404,7 @@
     }
   },
   "Electivire": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Motor Drive"
     ],
@@ -4422,7 +4422,7 @@
       "Wild Charge"
     ],
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Motor Drive": 1
       },
@@ -5072,7 +5072,7 @@
     }
   },
   "Frosmoth": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Ice Scales"
     ],
@@ -5093,7 +5093,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Ice Scales": 1
       },
@@ -5610,7 +5610,7 @@
     }
   },
   "Glaceon": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Ice Body",
       "Snow Cloak"
@@ -5631,7 +5631,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Snow Cloak": 0.65,
         "Ice Body": 0.35
@@ -6020,7 +6020,7 @@
     }
   },
   "Gourgeist-Super": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Frisk"
     ],
@@ -6036,7 +6036,7 @@
       "Trick Room"
     ],
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Frisk": 1
       },
@@ -6120,7 +6120,7 @@
     }
   },
   "Grimmsnarl": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Prankster"
     ],
@@ -6136,7 +6136,7 @@
       "Thunder Wave"
     ],
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Prankster": 1
       },
@@ -6154,7 +6154,7 @@
     }
   },
   "Grimmsnarl-Gmax": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Prankster"
     ],
@@ -6172,7 +6172,7 @@
       "Trick"
     ],
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Prankster": 1
       },
@@ -6898,7 +6898,7 @@
     }
   },
   "Indeedee": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Psychic Surge"
     ],
@@ -6921,7 +6921,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Psychic Surge": 1
       },
@@ -7544,7 +7544,7 @@
     }
   },
   "Kommo-o": {
-    "level": 80,
+    "level": 81,
     "abilities": [
       "Bulletproof"
     ],
@@ -7560,7 +7560,7 @@
       "Stealth Rock"
     ],
     "stats": {
-      "level": 80,
+      "level": 81,
       "abilities": {
         "Bulletproof": 1
       },
@@ -7666,7 +7666,7 @@
     }
   },
   "Kyurem": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Pressure"
     ],
@@ -7691,7 +7691,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Pressure": 1
       },
@@ -8236,7 +8236,7 @@
     }
   },
   "Linoone": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Gluttony"
     ],
@@ -8253,8 +8253,11 @@
       "Stomping Tantrum",
       "Throat Chop"
     ],
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Gluttony": 1
       },
@@ -8270,6 +8273,9 @@
         "Extreme Speed": 1,
         "Stomping Tantrum": 1,
         "Throat Chop": 1
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
@@ -8304,7 +8310,7 @@
     }
   },
   "Lucario": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Justified"
     ],
@@ -8321,7 +8327,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Justified": 1
       },
@@ -8658,7 +8664,7 @@
     }
   },
   "Lycanroc-Midnight": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "No Guard"
     ],
@@ -8676,7 +8682,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "No Guard": 1
       },
@@ -9180,7 +9186,7 @@
     }
   },
   "Marshadow": {
-    "level": 69,
+    "level": 68,
     "abilities": [
       "Technician"
     ],
@@ -9197,7 +9203,7 @@
       "Spectral Thief"
     ],
     "stats": {
-      "level": 69,
+      "level": 68,
       "abilities": {
         "Technician": 1
       },
@@ -9740,7 +9746,7 @@
     }
   },
   "Moltres-Galar": {
-    "level": 73,
+    "level": 74,
     "abilities": [
       "Berserk"
     ],
@@ -9754,14 +9760,13 @@
       "Rest"
     ],
     "evs": {
-      "hp": 81,
       "atk": 0
     },
     "ivs": {
       "atk": 0
     },
     "stats": {
-      "level": 73,
+      "level": 74,
       "abilities": {
         "Berserk": 1
       },
@@ -9775,7 +9780,6 @@
         "Rest": 1
       },
       "evs": {
-        "hp": 81,
         "atk": 0
       },
       "ivs": {
@@ -10536,7 +10540,7 @@
     }
   },
   "Obstagoon": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Guts"
     ],
@@ -10551,7 +10555,7 @@
       "Parting Shot"
     ],
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Guts": 1
       },
@@ -11196,7 +11200,7 @@
     }
   },
   "Politoed": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Drizzle"
     ],
@@ -11219,7 +11223,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Drizzle": 1
       },
@@ -12016,7 +12020,7 @@
     }
   },
   "Registeel": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Clear Body"
     ],
@@ -12035,7 +12039,7 @@
       "Toxic"
     ],
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Clear Body": 1
       },
@@ -13058,7 +13062,7 @@
     }
   },
   "Scolipede": {
-    "level": 79,
+    "level": 80,
     "abilities": [
       "Speed Boost"
     ],
@@ -13078,7 +13082,7 @@
       "Toxic Spikes"
     ],
     "stats": {
-      "level": 79,
+      "level": 80,
       "abilities": {
         "Speed Boost": 1
       },
@@ -13210,7 +13214,7 @@
     }
   },
   "Seismitoad": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Swift Swim",
       "Water Absorb"
@@ -13226,7 +13230,7 @@
       "Stealth Rock"
     ],
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Swift Swim": 0.8222,
         "Water Absorb": 0.1778
@@ -14562,7 +14566,7 @@
     }
   },
   "Spiritomb": {
-    "level": 89,
+    "level": 88,
     "abilities": [
       "Infiltrator"
     ],
@@ -14577,7 +14581,7 @@
       "Trick"
     ],
     "stats": {
-      "level": 89,
+      "level": 88,
       "abilities": {
         "Infiltrator": 1
       },
@@ -14792,7 +14796,7 @@
     }
   },
   "Stunfisk": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Sand Veil",
       "Static"
@@ -14809,7 +14813,7 @@
       "Stealth Rock"
     ],
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Static": 0.9932,
         "Sand Veil": 0.0068
@@ -15410,7 +15414,7 @@
     }
   },
   "Terrakion": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Justified"
     ],
@@ -15426,7 +15430,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Justified": 1
       },
@@ -16660,7 +16664,7 @@
     }
   },
   "Vikavolt": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Levitate"
     ],
@@ -16685,7 +16689,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Levitate": 1
       },
