@@ -1605,7 +1605,7 @@
     }
   },
   "Bellossom": {
-    "level": 93,
+    "level": 94,
     "abilities": [
       "Chlorophyll"
     ],
@@ -1647,7 +1647,7 @@
       "spe": 30
     },
     "stats": {
-      "level": 93,
+      "level": 94,
       "abilities": {
         "Chlorophyll": 1
       },
@@ -1954,7 +1954,7 @@
     }
   },
   "Blissey": {
-    "level": 77,
+    "level": 76,
     "abilities": [
       "Natural Cure"
     ],
@@ -2011,7 +2011,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 77,
+      "level": 76,
       "abilities": {
         "Natural Cure": 1
       },
@@ -4796,7 +4796,7 @@
     }
   },
   "Entei": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Pressure"
     ],
@@ -4870,7 +4870,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Pressure": 1
       },
@@ -6736,7 +6736,7 @@
     }
   },
   "Gyarados": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Intimidate"
     ],
@@ -6801,7 +6801,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Intimidate": 1
       },
@@ -8593,7 +8593,7 @@
     }
   },
   "Kingler": {
-    "level": 91,
+    "level": 90,
     "abilities": [
       "Hyper Cutter"
     ],
@@ -8624,7 +8624,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 91,
+      "level": 90,
       "abilities": {
         "Hyper Cutter": 1
       },
@@ -9833,7 +9833,7 @@
     }
   },
   "Machamp": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Guts"
     ],
@@ -9875,7 +9875,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Guts": 1
       },
@@ -10979,7 +10979,7 @@
     }
   },
   "Metagross": {
-    "level": 72,
+    "level": 73,
     "abilities": [
       "Clear Body"
     ],
@@ -11020,7 +11020,7 @@
       }
     },
     "stats": {
-      "level": 72,
+      "level": 73,
       "abilities": {
         "Clear Body": 1
       },
@@ -14827,7 +14827,7 @@
     }
   },
   "Rayquaza": {
-    "level": 69,
+    "level": 70,
     "abilities": [
       "Air Lock"
     ],
@@ -14889,7 +14889,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 69,
+      "level": 70,
       "abilities": {
         "Air Lock": 1
       },
@@ -16548,7 +16548,7 @@
     }
   },
   "Skarmory": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Keen Eye"
     ],
@@ -16606,7 +16606,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Keen Eye": 1
       },
@@ -17201,7 +17201,7 @@
     }
   },
   "Snorlax": {
-    "level": 72,
+    "level": 71,
     "abilities": [
       "Immunity",
       "Thick Fat"
@@ -17257,7 +17257,7 @@
       }
     },
     "stats": {
-      "level": 72,
+      "level": 71,
       "abilities": {
         "Thick Fat": 0.5149,
         "Immunity": 0.4851
@@ -19172,7 +19172,7 @@
     }
   },
   "Umbreon": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Synchronize"
     ],
@@ -19220,7 +19220,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Synchronize": 1
       },

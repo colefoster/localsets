@@ -678,7 +678,7 @@
     }
   },
   "Arcanine": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Intimidate"
     ],
@@ -725,7 +725,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Intimidate": 1
       },
@@ -5388,7 +5388,7 @@
     }
   },
   "Deoxys": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Pressure"
     ],
@@ -5426,7 +5426,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Pressure": 1
       },
@@ -10735,7 +10735,7 @@
     }
   },
   "Jirachi": {
-    "level": 74,
+    "level": 75,
     "abilities": [
       "Serene Grace"
     ],
@@ -10785,7 +10785,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 75,
       "abilities": {
         "Serene Grace": 1
       },
@@ -13731,7 +13731,7 @@
     }
   },
   "Mantine": {
-    "level": 90,
+    "level": 89,
     "abilities": [
       "Water Absorb"
     ],
@@ -13788,7 +13788,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 89,
       "abilities": {
         "Water Absorb": 1
       },
@@ -18544,7 +18544,7 @@
     }
   },
   "Rhyperior": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Solid Rock"
     ],
@@ -18572,7 +18572,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Solid Rock": 1
       },
@@ -22966,7 +22966,7 @@
     }
   },
   "Tyranitar": {
-    "level": 76,
+    "level": 75,
     "abilities": [
       "Sand Stream"
     ],
@@ -23014,7 +23014,7 @@
       }
     },
     "stats": {
-      "level": 76,
+      "level": 75,
       "abilities": {
         "Sand Stream": 1
       },
@@ -24239,7 +24239,7 @@
     }
   },
   "Walrein": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Thick Fat"
     ],
@@ -24299,7 +24299,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Thick Fat": 1
       },

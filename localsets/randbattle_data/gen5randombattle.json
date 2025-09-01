@@ -312,7 +312,7 @@
     }
   },
   "Aggron": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Rock Head"
     ],
@@ -341,7 +341,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Rock Head": 1
       },
@@ -2984,7 +2984,7 @@
     }
   },
   "Audino": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Regenerator"
     ],
@@ -3011,7 +3011,7 @@
       }
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Regenerator": 1
       },
@@ -3235,7 +3235,7 @@
     }
   },
   "Banette": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Cursed Body",
       "Frisk",
@@ -3276,7 +3276,7 @@
       "spe": 30
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Cursed Body": 0.3394,
         "Insomnia": 0.3361,
@@ -7667,7 +7667,7 @@
     }
   },
   "Ditto": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Imposter"
     ],
@@ -7688,7 +7688,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Imposter": 1
       },
@@ -7943,7 +7943,7 @@
     }
   },
   "Dragonite": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Multiscale"
     ],
@@ -7983,7 +7983,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Multiscale": 1
       },
@@ -9387,7 +9387,7 @@
     }
   },
   "Escavalier": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Swarm"
     ],
@@ -9414,7 +9414,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Swarm": 1
       },
@@ -14001,7 +14001,7 @@
     }
   },
   "Jirachi": {
-    "level": 76,
+    "level": 75,
     "abilities": [
       "Serene Grace"
     ],
@@ -14032,7 +14032,7 @@
       }
     },
     "stats": {
-      "level": 76,
+      "level": 75,
       "abilities": {
         "Serene Grace": 1
       },
@@ -16090,7 +16090,7 @@
     }
   },
   "Leavanny": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Chlorophyll",
       "Swarm"
@@ -16116,7 +16116,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Swarm": 0.992,
         "Chlorophyll": 0.008
@@ -21914,7 +21914,7 @@
     }
   },
   "Probopass": {
-    "level": 89,
+    "level": 90,
     "abilities": [
       "Magnet Pull"
     ],
@@ -21952,7 +21952,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 89,
+      "level": 90,
       "abilities": {
         "Magnet Pull": 1
       },
@@ -23716,7 +23716,7 @@
     }
   },
   "Rotom-Fan": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Levitate"
     ],
@@ -23757,7 +23757,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Levitate": 1
       },
@@ -25234,7 +25234,7 @@
     }
   },
   "Serperior": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Overgrow"
     ],
@@ -25299,7 +25299,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Overgrow": 1
       },
@@ -25564,7 +25564,7 @@
     }
   },
   "Shaymin-Sky": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Serene Grace"
     ],
@@ -25598,7 +25598,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Serene Grace": 1
       },
@@ -25998,7 +25998,7 @@
     }
   },
   "Simipour": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Torrent"
     ],
@@ -26037,7 +26037,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Torrent": 1
       },
@@ -29215,7 +29215,7 @@
     }
   },
   "Torkoal": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Shell Armor"
     ],
@@ -29240,7 +29240,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Shell Armor": 1
       },
@@ -29268,7 +29268,7 @@
     }
   },
   "Tornadus": {
-    "level": 78,
+    "level": 79,
     "abilities": [
       "Defiant"
     ],
@@ -29307,7 +29307,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 79,
       "abilities": {
         "Defiant": 1
       },
@@ -29629,7 +29629,7 @@
     }
   },
   "Typhlosion": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Blaze"
     ],
@@ -29662,7 +29662,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Blaze": 1
       },
@@ -30647,7 +30647,7 @@
     }
   },
   "Victini": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Victory Star"
     ],
@@ -30670,10 +30670,7 @@
           "U-turn",
           "V-create",
           "Zen Headbutt"
-        ],
-        "evs": {
-          "hp": 81
-        }
+        ]
       },
       "Fast Attacker": {
         "abilities": [
@@ -30691,17 +30688,11 @@
           "Trick",
           "U-turn",
           "V-create"
-        ],
-        "evs": {
-          "hp": 81
-        }
+        ]
       }
     },
-    "evs": {
-      "hp": 81
-    },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Victory Star": 1
       },
@@ -30725,9 +30716,6 @@
             "U-turn": 1,
             "V-create": 1,
             "Zen Headbutt": 1
-          },
-          "evs": {
-            "hp": 81
           }
         },
         "Fast Attacker": {
@@ -30747,14 +30735,8 @@
             "Focus Blast": 0.4266,
             "Trick": 0.3544,
             "U-turn": 0.3329
-          },
-          "evs": {
-            "hp": 81
           }
         }
-      },
-      "evs": {
-        "hp": 81
       }
     }
   },
@@ -31870,7 +31852,7 @@
     }
   },
   "Wobbuffet": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Shadow Tag"
     ],
@@ -31906,7 +31888,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Shadow Tag": 1
       },

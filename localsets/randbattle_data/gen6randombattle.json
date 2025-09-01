@@ -181,7 +181,7 @@
     }
   },
   "Absol-Mega": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Justified"
     ],
@@ -208,7 +208,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Justified": 1
       },
@@ -619,7 +619,7 @@
     }
   },
   "Aggron-Mega": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Sturdy"
     ],
@@ -646,7 +646,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Sturdy": 1
       },
@@ -940,7 +940,7 @@
     }
   },
   "Altaria": {
-    "level": 89,
+    "level": 88,
     "abilities": [
       "Natural Cure"
     ],
@@ -964,7 +964,7 @@
       }
     },
     "stats": {
-      "level": 89,
+      "level": 88,
       "abilities": {
         "Natural Cure": 1
       },
@@ -1339,7 +1339,7 @@
     }
   },
   "Ampharos-Mega": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Static"
     ],
@@ -1398,7 +1398,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Static": 1
       },
@@ -9574,7 +9574,7 @@
     }
   },
   "Diancie": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Clear Body"
     ],
@@ -9600,7 +9600,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Clear Body": 1
       },
@@ -15336,7 +15336,7 @@
     }
   },
   "Gourgeist-Large": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Frisk"
     ],
@@ -15360,7 +15360,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Frisk": 1
       },
@@ -19159,7 +19159,7 @@
     }
   },
   "Kricketune": {
-    "level": 97,
+    "level": 98,
     "abilities": [
       "Technician"
     ],
@@ -19186,7 +19186,7 @@
       }
     },
     "stats": {
-      "level": 97,
+      "level": 98,
       "abilities": {
         "Technician": 1
       },
@@ -19279,7 +19279,7 @@
     }
   },
   "Kyogre": {
-    "level": 68,
+    "level": 67,
     "abilities": [
       "Drizzle"
     ],
@@ -19316,7 +19316,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 68,
+      "level": 67,
       "abilities": {
         "Drizzle": 1
       },
@@ -25695,7 +25695,7 @@
     }
   },
   "Noivern": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Infiltrator"
     ],
@@ -25724,7 +25724,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Infiltrator": 1
       },
@@ -26567,7 +26567,7 @@
     }
   },
   "Pidgeot-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Big Pecks"
     ],
@@ -26593,7 +26593,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Big Pecks": 1
       },
@@ -29670,7 +29670,7 @@
     }
   },
   "Rotom-Mow": {
-    "level": 85,
+    "level": 86,
     "abilities": [
       "Levitate"
     ],
@@ -29714,7 +29714,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 85,
+      "level": 86,
       "abilities": {
         "Levitate": 1
       },
@@ -31241,7 +31241,7 @@
     }
   },
   "Serperior": {
-    "level": 79,
+    "level": 80,
     "abilities": [
       "Contrary"
     ],
@@ -31281,7 +31281,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 79,
+      "level": 80,
       "abilities": {
         "Contrary": 1
       },
@@ -32302,7 +32302,7 @@
     }
   },
   "Skarmory": {
-    "level": 75,
+    "level": 74,
     "abilities": [
       "Sturdy"
     ],
@@ -32345,7 +32345,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 74,
       "abilities": {
         "Sturdy": 1
       },
@@ -35190,7 +35190,7 @@
     }
   },
   "Thundurus": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Prankster"
     ],
@@ -35241,7 +35241,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Prankster": 1
       },

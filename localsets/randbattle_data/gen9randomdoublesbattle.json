@@ -748,7 +748,7 @@
     }
   },
   "Araquanid": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Water Bubble"
     ],
@@ -812,7 +812,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Water Bubble": 1
       },
@@ -7369,7 +7369,7 @@
     }
   },
   "Coalossal": {
-    "level": 91,
+    "level": 90,
     "abilities": [
       "Flame Body"
     ],
@@ -7399,7 +7399,7 @@
       }
     },
     "stats": {
-      "level": 91,
+      "level": 90,
       "abilities": {
         "Flame Body": 1
       },
@@ -20234,7 +20234,7 @@
     }
   },
   "Iron Treads": {
-    "level": 80,
+    "level": 81,
     "abilities": [
       "Quark Drive"
     ],
@@ -20267,7 +20267,7 @@
       }
     },
     "stats": {
-      "level": 80,
+      "level": 81,
       "abilities": {
         "Quark Drive": 1
       },
@@ -20598,7 +20598,7 @@
     }
   },
   "Jumpluff": {
-    "level": 93,
+    "level": 92,
     "abilities": [
       "Infiltrator"
     ],
@@ -20633,7 +20633,7 @@
       }
     },
     "stats": {
-      "level": 93,
+      "level": 92,
       "abilities": {
         "Infiltrator": 1
       },
@@ -29439,7 +29439,7 @@
     }
   },
   "Oranguru": {
-    "level": 91,
+    "level": 90,
     "abilities": [
       "Inner Focus"
     ],
@@ -29482,7 +29482,7 @@
       "spe": 0
     },
     "stats": {
-      "level": 91,
+      "level": 90,
       "abilities": {
         "Inner Focus": 1
       },
@@ -37125,7 +37125,7 @@
     }
   },
   "Seviper": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Infiltrator"
     ],
@@ -37155,7 +37155,7 @@
       }
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Infiltrator": 1
       },
@@ -42133,7 +42133,7 @@
     }
   },
   "Toxapex": {
-    "level": 93,
+    "level": 92,
     "abilities": [
       "Regenerator"
     ],
@@ -42173,7 +42173,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 93,
+      "level": 92,
       "abilities": {
         "Regenerator": 1
       },

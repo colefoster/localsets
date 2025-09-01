@@ -5688,7 +5688,7 @@
     }
   },
   "Breloom": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Technician"
     ],
@@ -5717,7 +5717,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Technician": 1
       },
@@ -47513,7 +47513,7 @@
     }
   },
   "Tyranitar": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Sand Stream"
     ],
@@ -47565,7 +47565,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Sand Stream": 1
       },

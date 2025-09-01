@@ -7150,7 +7150,7 @@
     }
   },
   "Celebi": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Natural Cure"
     ],
@@ -7216,7 +7216,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Natural Cure": 1
       },
@@ -9079,7 +9079,7 @@
     }
   },
   "Corsola": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Regenerator"
     ],
@@ -9116,7 +9116,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Regenerator": 1
       },
@@ -13252,7 +13252,7 @@
     }
   },
   "Excadrill": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Mold Breaker",
       "Sand Rush"
@@ -13281,7 +13281,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Mold Breaker": 0.9924,
         "Sand Rush": 0.0076
@@ -14037,7 +14037,7 @@
     }
   },
   "Floette-Eternal": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Flower Veil"
     ],
@@ -14078,7 +14078,7 @@
       "spa": 30
     },
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Flower Veil": 1
       },
@@ -14414,7 +14414,7 @@
     }
   },
   "Forretress": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Sturdy"
     ],
@@ -14453,7 +14453,7 @@
       "spe": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Sturdy": 1
       },
@@ -16869,7 +16869,7 @@
     }
   },
   "Golem": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Sturdy"
     ],
@@ -16915,7 +16915,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Sturdy": 1
       },
@@ -22453,7 +22453,7 @@
     }
   },
   "Kyurem": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Pressure"
     ],
@@ -22519,7 +22519,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Pressure": 1
       },
@@ -24659,7 +24659,7 @@
     }
   },
   "Lugia": {
-    "level": 72,
+    "level": 71,
     "abilities": [
       "Multiscale"
     ],
@@ -24685,7 +24685,7 @@
       }
     },
     "stats": {
-      "level": 72,
+      "level": 71,
       "abilities": {
         "Multiscale": 1
       },
@@ -26494,7 +26494,7 @@
     }
   },
   "Manectric": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Lightning Rod"
     ],
@@ -26533,7 +26533,7 @@
       "def": 30
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Lightning Rod": 1
       },
