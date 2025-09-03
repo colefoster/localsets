@@ -5,20 +5,20 @@
       "Leftovers"
     ],
     "roles": {
-      "Setup Sweeper": {
+      "Bulky Attacker": {
         "items": [
           "Leftovers"
         ],
         "moves": [
-          "Ancient Power",
           "Curse",
           "Earthquake",
-          "Hidden Power Flying"
+          "Hidden Power Rock",
+          "Whirlwind"
         ],
         "ivs": {
-          "hp": 14,
-          "atk": 24,
-          "def": 26
+          "hp": 22,
+          "atk": 26,
+          "def": 24
         }
       },
       "Bulky Setup": {
@@ -37,20 +37,20 @@
           "def": 24
         }
       },
-      "Bulky Attacker": {
+      "Setup Sweeper": {
         "items": [
           "Leftovers"
         ],
         "moves": [
+          "Ancient Power",
           "Curse",
           "Earthquake",
-          "Hidden Power Rock",
-          "Whirlwind"
+          "Hidden Power Flying"
         ],
         "ivs": {
-          "hp": 22,
-          "atk": 26,
-          "def": 24
+          "hp": 14,
+          "atk": 24,
+          "def": 26
         }
       }
     },
@@ -60,25 +60,25 @@
         "Leftovers": 1
       },
       "roles": {
-        "Setup Sweeper": {
-          "weight": 0.3354,
+        "Bulky Attacker": {
+          "weight": 0.3431,
           "items": {
             "Leftovers": 1
           },
           "moves": {
-            "Ancient Power": 1,
             "Curse": 1,
             "Earthquake": 1,
-            "Hidden Power Flying": 1
+            "Hidden Power Rock": 1,
+            "Whirlwind": 1
           },
           "ivs": {
-            "hp": 14,
-            "atk": 24,
-            "def": 26
+            "hp": 22,
+            "atk": 26,
+            "def": 24
           }
         },
         "Bulky Setup": {
-          "weight": 0.3324,
+          "weight": 0.3319,
           "items": {
             "Leftovers": 1
           },
@@ -94,21 +94,21 @@
             "def": 24
           }
         },
-        "Bulky Attacker": {
-          "weight": 0.3322,
+        "Setup Sweeper": {
+          "weight": 0.325,
           "items": {
             "Leftovers": 1
           },
           "moves": {
+            "Ancient Power": 1,
             "Curse": 1,
             "Earthquake": 1,
-            "Hidden Power Rock": 1,
-            "Whirlwind": 1
+            "Hidden Power Flying": 1
           },
           "ivs": {
-            "hp": 22,
-            "atk": 26,
-            "def": 24
+            "hp": 14,
+            "atk": 24,
+            "def": 26
           }
         }
       }
@@ -120,17 +120,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Rest",
-          "Return",
-          "Sleep Talk"
-        ]
-      },
       "Generalist": {
         "items": [
           "Leftovers"
@@ -141,6 +130,17 @@
           "Curse",
           "Return"
         ]
+      },
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Rest",
+          "Return",
+          "Sleep Talk"
+        ]
       }
     },
     "stats": {
@@ -149,20 +149,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Setup": {
-          "weight": 0.5051,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Curse": 1,
-            "Rest": 1,
-            "Return": 1,
-            "Sleep Talk": 1
-          }
-        },
         "Generalist": {
-          "weight": 0.4949,
+          "weight": 0.502,
           "items": {
             "Leftovers": 1
           },
@@ -171,6 +159,18 @@
             "Baton Pass": 1,
             "Curse": 1,
             "Return": 1
+          }
+        },
+        "Bulky Setup": {
+          "weight": 0.498,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Curse": 1,
+            "Rest": 1,
+            "Return": 1,
+            "Sleep Talk": 1
           }
         }
       }
@@ -211,9 +211,9 @@
             "Fire Punch": 1,
             "Psychic": 1,
             "Recover": 1,
-            "Encore": 0.3451,
-            "Hidden Power Dark": 0.3381,
-            "Thunder Wave": 0.3167
+            "Encore": 0.3458,
+            "Hidden Power Dark": 0.3356,
+            "Thunder Wave": 0.3185
           }
         }
       }
@@ -253,8 +253,8 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Thunder": 1,
-            "Hidden Power Ice": 0.5027,
-            "Fire Punch": 0.4973
+            "Hidden Power Ice": 0.5035,
+            "Fire Punch": 0.4965
           }
         }
       }
@@ -278,18 +278,6 @@
           "Sludge Bomb"
         ]
       },
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Earthquake",
-          "Rest",
-          "Sleep Talk",
-          "Sludge Bomb"
-        ]
-      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -301,6 +289,18 @@
           "Rock Slide",
           "Sludge Bomb"
         ]
+      },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Earthquake",
+          "Rest",
+          "Sleep Talk",
+          "Sludge Bomb"
+        ]
       }
     },
     "stats": {
@@ -310,7 +310,7 @@
       },
       "roles": {
         "Fast Attacker": {
-          "weight": 0.3441,
+          "weight": 0.3437,
           "items": {
             "Leftovers": 1
           },
@@ -318,12 +318,25 @@
             "Earthquake": 1,
             "Glare": 1,
             "Sludge Bomb": 1,
-            "Haze": 0.5125,
-            "Curse": 0.4875
+            "Haze": 0.5085,
+            "Curse": 0.4915
+          }
+        },
+        "Bulky Attacker": {
+          "weight": 0.3287,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Earthquake": 1,
+            "Sludge Bomb": 1,
+            "Rock Slide": 0.6783,
+            "Glare": 0.6731,
+            "Curse": 0.6486
           }
         },
         "Generalist": {
-          "weight": 0.3314,
+          "weight": 0.3276,
           "items": {
             "Leftovers": 1
           },
@@ -331,21 +344,8 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Sludge Bomb": 1,
-            "Curse": 0.5023,
-            "Earthquake": 0.4977
-          }
-        },
-        "Bulky Attacker": {
-          "weight": 0.3245,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Earthquake": 1,
-            "Sludge Bomb": 1,
-            "Glare": 0.6735,
-            "Rock Slide": 0.6676,
-            "Curse": 0.6589
+            "Earthquake": 0.505,
+            "Curse": 0.495
           }
         }
       }
@@ -386,11 +386,11 @@
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Flamethrower": 0.507,
-            "Fire Blast": 0.493,
-            "Hidden Power Grass": 0.3389,
-            "Double-Edge": 0.3316,
-            "Crunch": 0.3296
+            "Flamethrower": 0.5013,
+            "Fire Blast": 0.4987,
+            "Hidden Power Grass": 0.3359,
+            "Crunch": 0.3341,
+            "Double-Edge": 0.33
           }
         }
       }
@@ -432,7 +432,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.5136,
+          "weight": 0.5096,
           "items": {
             "Leftovers": 1
           },
@@ -444,7 +444,7 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4864,
+          "weight": 0.4904,
           "items": {
             "Leftovers": 1
           },
@@ -492,8 +492,8 @@
             "Ice Beam": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hidden Power Electric": 0.5079,
-            "Toxic": 0.4921
+            "Hidden Power Electric": 0.5148,
+            "Toxic": 0.4852
           }
         }
       }
@@ -505,6 +505,17 @@
       "Leftovers"
     ],
     "roles": {
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Double-Edge",
+          "Rest",
+          "Sleep Talk"
+        ]
+      },
       "Bulky Support": {
         "items": [
           "Leftovers"
@@ -516,17 +527,6 @@
           "Sleep Talk",
           "Surf",
           "Toxic"
-        ]
-      },
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Double-Edge",
-          "Rest",
-          "Sleep Talk"
         ]
       },
       "Bulky Attacker": {
@@ -547,22 +547,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Support": {
-          "weight": 0.3388,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Surf": 1,
-            "Ice Beam": 0.3468,
-            "Light Screen": 0.3432,
-            "Toxic": 0.31
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.3336,
+          "weight": 0.3413,
           "items": {
             "Leftovers": 1
           },
@@ -573,8 +559,22 @@
             "Sleep Talk": 1
           }
         },
+        "Bulky Support": {
+          "weight": 0.3328,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Surf": 1,
+            "Light Screen": 0.3432,
+            "Ice Beam": 0.3418,
+            "Toxic": 0.3149
+          }
+        },
         "Bulky Attacker": {
-          "weight": 0.3276,
+          "weight": 0.326,
           "items": {
             "Leftovers": 1
           },
@@ -630,8 +630,8 @@
             "Hidden Power Ground": 1,
             "Sludge Bomb": 1,
             "Swords Dance": 1,
-            "Substitute": 0.5065,
-            "Agility": 0.4935
+            "Substitute": 0.5056,
+            "Agility": 0.4944
           },
           "ivs": {
             "hp": 14,
@@ -685,7 +685,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.5147,
+          "weight": 0.5082,
           "items": {
             "Leftovers": 1
           },
@@ -693,23 +693,23 @@
             "Moonlight": 1,
             "Return": 1,
             "Swords Dance": 1,
-            "Hidden Power Ground": 0.5037,
-            "Stun Spore": 0.4963
+            "Hidden Power Ground": 0.5035,
+            "Stun Spore": 0.4965
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4853,
+          "weight": 0.4918,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Moonlight": 1,
             "Razor Leaf": 1,
-            "Hidden Power Ice": 0.5033,
-            "Hidden Power Fire": 0.4967,
-            "Stun Spore": 0.347,
-            "Leech Seed": 0.3378,
-            "Sleep Powder": 0.3152
+            "Hidden Power Fire": 0.5144,
+            "Hidden Power Ice": 0.4856,
+            "Stun Spore": 0.3416,
+            "Leech Seed": 0.3318,
+            "Sleep Powder": 0.3266
           }
         }
       }
@@ -753,7 +753,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.507,
+          "weight": 0.5006,
           "items": {
             "Leftovers": 1
           },
@@ -765,17 +765,17 @@
           }
         },
         "Bulky Support": {
-          "weight": 0.493,
+          "weight": 0.4994,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Surf": 1,
-            "Ice Beam": 0.5074,
-            "Roar": 0.5045,
-            "Rapid Spin": 0.4988,
-            "Toxic": 0.4893
+            "Ice Beam": 0.5079,
+            "Roar": 0.4995,
+            "Toxic": 0.4977,
+            "Rapid Spin": 0.4949
           }
         }
       }
@@ -822,24 +822,24 @@
       },
       "roles": {
         "Bulky Support": {
-          "weight": 0.5026,
+          "weight": 0.5065,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Present": 1,
             "Soft-Boiled": 1,
-            "Flamethrower": 0.3024,
-            "Light Screen": 0.2993,
-            "Counter": 0.2926,
-            "Ice Beam": 0.2908,
-            "Thunder Wave": 0.2823,
-            "Heal Bell": 0.2739,
-            "Toxic": 0.2587
+            "Light Screen": 0.2964,
+            "Counter": 0.296,
+            "Ice Beam": 0.296,
+            "Flamethrower": 0.2925,
+            "Thunder Wave": 0.2802,
+            "Heal Bell": 0.2715,
+            "Toxic": 0.2675
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4974,
+          "weight": 0.4935,
           "items": {
             "Leftovers": 1
           },
@@ -904,7 +904,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.3484,
+          "weight": 0.3443,
           "items": {
             "Leftovers": 1
           },
@@ -916,7 +916,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3337,
+          "weight": 0.3329,
           "items": {
             "Leftovers": 1
           },
@@ -932,7 +932,7 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.3179,
+          "weight": 0.3228,
           "items": {
             "Leftovers": 1
           },
@@ -963,6 +963,18 @@
           "Return"
         ]
       },
+      "Bulky Support": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Heal Bell",
+          "Leech Seed",
+          "Psychic",
+          "Recover",
+          "Toxic"
+        ]
+      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -978,18 +990,6 @@
           "atk": 28,
           "def": 28
         }
-      },
-      "Bulky Support": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Heal Bell",
-          "Leech Seed",
-          "Psychic",
-          "Recover",
-          "Toxic"
-        ]
       }
     },
     "stats": {
@@ -999,7 +999,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3415,
+          "weight": 0.3432,
           "items": {
             "Leftovers": 1
           },
@@ -1010,8 +1010,21 @@
             "Return": 1
           }
         },
+        "Bulky Support": {
+          "weight": 0.33,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Psychic": 1,
+            "Recover": 1,
+            "Leech Seed": 0.6977,
+            "Toxic": 0.6557,
+            "Heal Bell": 0.6466
+          }
+        },
         "Bulky Attacker": {
-          "weight": 0.3317,
+          "weight": 0.3268,
           "items": {
             "Leftovers": 1
           },
@@ -1025,19 +1038,6 @@
             "hp": 6,
             "atk": 28,
             "def": 28
-          }
-        },
-        "Bulky Support": {
-          "weight": 0.3267,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Psychic": 1,
-            "Recover": 1,
-            "Leech Seed": 0.6762,
-            "Toxic": 0.665,
-            "Heal Bell": 0.6588
           }
         }
       }
@@ -1067,22 +1067,22 @@
     "stats": {
       "level": 67,
       "items": {
-        "Leftovers": 0.753,
-        "Miracle Berry": 0.247
+        "Leftovers": 0.7505,
+        "Miracle Berry": 0.2495
       },
       "roles": {
         "Setup Sweeper": {
           "weight": 1,
           "items": {
-            "Leftovers": 0.753,
-            "Miracle Berry": 0.247
+            "Leftovers": 0.7505,
+            "Miracle Berry": 0.2495
           },
           "moves": {
             "Earthquake": 1,
             "Fire Blast": 1,
             "Rock Slide": 1,
-            "Belly Drum": 0.5003,
-            "Swords Dance": 0.4997
+            "Belly Drum": 0.5052,
+            "Swords Dance": 0.4948
           }
         }
       }
@@ -1138,21 +1138,21 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3441,
+          "weight": 0.344,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Belly Drum": 1,
             "Moonlight": 1,
-            "Hidden Power Ground": 0.7568,
-            "Body Slam": 0.5117,
-            "Return": 0.4883,
-            "Thunder Wave": 0.2432
+            "Hidden Power Ground": 0.7481,
+            "Return": 0.5045,
+            "Body Slam": 0.4955,
+            "Thunder Wave": 0.2519
           }
         },
         "Bulky Support": {
-          "weight": 0.3354,
+          "weight": 0.3319,
           "items": {
             "Leftovers": 1
           },
@@ -1160,12 +1160,12 @@
             "Body Slam": 1,
             "Encore": 1,
             "Moonlight": 1,
-            "Flamethrower": 0.515,
-            "Fire Blast": 0.485
+            "Flamethrower": 0.5188,
+            "Fire Blast": 0.4812
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3204,
+          "weight": 0.3241,
           "items": {
             "Leftovers": 1
           },
@@ -1230,33 +1230,33 @@
       },
       "roles": {
         "Bulky Support": {
-          "weight": 0.338,
+          "weight": 0.3408,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Explosion": 1,
             "Ice Beam": 1,
-            "Spikes": 0.9374,
-            "Rapid Spin": 0.5355,
-            "Toxic": 0.5271
+            "Spikes": 0.9373,
+            "Rapid Spin": 0.5394,
+            "Toxic": 0.5233
           }
         },
         "Generalist": {
-          "weight": 0.3357,
+          "weight": 0.3306,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Explosion": 1,
             "Surf": 1,
-            "Spikes": 0.9315,
-            "Toxic": 0.5431,
-            "Rapid Spin": 0.5254
+            "Spikes": 0.933,
+            "Toxic": 0.5434,
+            "Rapid Spin": 0.5237
           }
         },
         "Fast Attacker": {
-          "weight": 0.3264,
+          "weight": 0.3286,
           "items": {
             "Leftovers": 1
           },
@@ -1264,9 +1264,9 @@
             "Explosion": 1,
             "Ice Beam": 1,
             "Surf": 1,
-            "Spikes": 0.9486,
-            "Toxic": 0.0285,
-            "Rapid Spin": 0.0229
+            "Spikes": 0.9429,
+            "Toxic": 0.0333,
+            "Rapid Spin": 0.0238
           }
         }
       }
@@ -1308,10 +1308,10 @@
             "Recover": 1,
             "Rock Slide": 1,
             "Surf": 1,
-            "Sandstorm": 0.2573,
-            "Curse": 0.2563,
-            "Ice Beam": 0.2446,
-            "Toxic": 0.2417
+            "Sandstorm": 0.2544,
+            "Curse": 0.2537,
+            "Ice Beam": 0.251,
+            "Toxic": 0.2409
           }
         }
       }
@@ -1323,17 +1323,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Haze",
-          "Protect",
-          "Toxic",
-          "Wing Attack"
-        ]
-      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -1349,6 +1338,17 @@
           "hp": 14,
           "atk": 24
         }
+      },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Haze",
+          "Protect",
+          "Toxic",
+          "Wing Attack"
+        ]
       }
     },
     "stats": {
@@ -1357,8 +1357,25 @@
         "Leftovers": 1
       },
       "roles": {
+        "Bulky Attacker": {
+          "weight": 0.5047,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Hidden Power Ground": 1,
+            "Rest": 1,
+            "Wing Attack": 1,
+            "Haze": 0.5078,
+            "Toxic": 0.4922
+          },
+          "ivs": {
+            "hp": 14,
+            "atk": 24
+          }
+        },
         "Generalist": {
-          "weight": 0.5018,
+          "weight": 0.4953,
           "items": {
             "Leftovers": 1
           },
@@ -1367,23 +1384,6 @@
             "Protect": 1,
             "Toxic": 1,
             "Wing Attack": 1
-          }
-        },
-        "Bulky Attacker": {
-          "weight": 0.4982,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Hidden Power Ground": 1,
-            "Rest": 1,
-            "Wing Attack": 1,
-            "Haze": 0.5082,
-            "Toxic": 0.4918
-          },
-          "ivs": {
-            "hp": 14,
-            "atk": 24
           }
         }
       }
@@ -1411,10 +1411,10 @@
           "moves": {
             "Ice Beam": 1,
             "Thief": 1,
-            "Spikes": 0.9232,
-            "Hidden Power Flying": 0.3688,
-            "Toxic": 0.3644,
-            "Rapid Spin": 0.3436
+            "Spikes": 0.9259,
+            "Hidden Power Flying": 0.3728,
+            "Toxic": 0.3668,
+            "Rapid Spin": 0.3345
           }
         }
       }
@@ -1456,7 +1456,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5078,
+          "weight": 0.5053,
           "items": {
             "Leftovers": 1
           },
@@ -1468,7 +1468,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4922,
+          "weight": 0.4947,
           "items": {
             "Leftovers": 1
           },
@@ -1549,8 +1549,8 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Drill Peck": 0.5025,
-            "Hidden Power Ground": 0.4975
+            "Hidden Power Ground": 0.5049,
+            "Drill Peck": 0.4951
           }
         }
       }
@@ -1562,18 +1562,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Earthquake",
-          "Hidden Power Rock",
-          "Rest",
-          "Sleep Talk"
-        ]
-      },
       "Bulky Setup": {
         "items": [
           "Leftovers"
@@ -1589,6 +1577,18 @@
           "atk": 26,
           "def": 24
         }
+      },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Earthquake",
+          "Hidden Power Rock",
+          "Rest",
+          "Sleep Talk"
+        ]
       }
     },
     "stats": {
@@ -1597,21 +1597,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Generalist": {
-          "weight": 0.5014,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Earthquake": 1,
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Hidden Power Rock": 0.5017,
-            "Curse": 0.4983
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.4986,
+          "weight": 0.5042,
           "items": {
             "Leftovers": 1
           },
@@ -1625,6 +1612,19 @@
             "hp": 22,
             "atk": 26,
             "def": 24
+          }
+        },
+        "Generalist": {
+          "weight": 0.4958,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Earthquake": 1,
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Curse": 0.503,
+            "Hidden Power Rock": 0.497
           }
         }
       }
@@ -1686,12 +1686,12 @@
     "stats": {
       "level": 67,
       "items": {
-        "Leftovers": 0.7537,
-        "Mint Berry": 0.2463
+        "Leftovers": 0.7485,
+        "Mint Berry": 0.2515
       },
       "roles": {
         "Fast Attacker": {
-          "weight": 0.3381,
+          "weight": 0.3406,
           "items": {
             "Leftovers": 1
           },
@@ -1708,17 +1708,17 @@
           }
         },
         "Generalist": {
-          "weight": 0.3317,
+          "weight": 0.3381,
           "items": {
-            "Mint Berry": 0.7425,
-            "Leftovers": 0.2575
+            "Mint Berry": 0.7439,
+            "Leftovers": 0.2561
           },
           "moves": {
             "Hidden Power Flying": 1,
-            "Surf": 0.7627,
-            "Haze": 0.7567,
-            "Rest": 0.7425,
-            "Thunder": 0.738
+            "Haze": 0.7535,
+            "Surf": 0.7528,
+            "Thunder": 0.7498,
+            "Rest": 0.7439
           },
           "ivs": {
             "hp": 14,
@@ -1727,7 +1727,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3302,
+          "weight": 0.3213,
           "items": {
             "Leftovers": 1
           },
@@ -1763,20 +1763,20 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.3316
+        "Leftovers": 0.3307
       },
       "roles": {
         "Fast Attacker": {
           "weight": 1,
           "items": {
-            "Leftovers": 0.3316
+            "Leftovers": 0.3307
           },
           "moves": {
             "Earthquake": 1,
             "Rock Slide": 1,
-            "Sludge Bomb": 0.6732,
-            "Thief": 0.6684,
-            "Substitute": 0.6584
+            "Sludge Bomb": 0.6706,
+            "Thief": 0.6693,
+            "Substitute": 0.6602
           }
         }
       }
@@ -1823,7 +1823,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5056,
+          "weight": 0.5047,
           "items": {
             "Leftovers": 1
           },
@@ -1839,7 +1839,7 @@
           }
         },
         "Generalist": {
-          "weight": 0.4944,
+          "weight": 0.4953,
           "items": {
             "Leftovers": 1
           },
@@ -1847,8 +1847,8 @@
             "Rest": 1,
             "Return": 1,
             "Sleep Talk": 1,
-            "Thunder": 0.5158,
-            "Curse": 0.4842
+            "Thunder": 0.5127,
+            "Curse": 0.4873
           }
         }
       }
@@ -1888,11 +1888,11 @@
     "stats": {
       "level": 69,
       "items": {
-        "Leftovers": 0.7506
+        "Leftovers": 0.7529
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.5093,
+          "weight": 0.5079,
           "items": {
             "Leftovers": 1
           },
@@ -1904,17 +1904,17 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.4907,
+          "weight": 0.4921,
           "items": {
-            "Leftovers": 0.4917
+            "Leftovers": 0.4979
           },
           "moves": {
             "Cross Chop": 1,
             "Ice Punch": 1,
-            "Thunder": 0.516,
-            "Thief": 0.5083,
-            "Pursuit": 0.4917,
-            "Thunderbolt": 0.484
+            "Thunderbolt": 0.5034,
+            "Thief": 0.5021,
+            "Pursuit": 0.4979,
+            "Thunder": 0.4966
           }
         }
       }
@@ -1967,7 +1967,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.504,
+          "weight": 0.5075,
           "items": {
             "Leftovers": 1
           },
@@ -1982,17 +1982,17 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.496,
+          "weight": 0.4925,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Explosion": 1,
             "Hidden Power Ice": 1,
-            "Thunderbolt": 0.5069,
-            "Light Screen": 0.5013,
-            "Reflect": 0.4987,
-            "Thunder": 0.4931
+            "Light Screen": 0.5045,
+            "Thunder": 0.5002,
+            "Thunderbolt": 0.4998,
+            "Reflect": 0.4955
           },
           "ivs": {
             "def": 26
@@ -2043,21 +2043,21 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5094,
+          "weight": 0.5139,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Return": 0.5093,
-            "Flamethrower": 0.5049,
-            "Fire Blast": 0.4951,
-            "Hidden Power Grass": 0.4907
+            "Return": 0.5092,
+            "Flamethrower": 0.5016,
+            "Fire Blast": 0.4984,
+            "Hidden Power Grass": 0.4908
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4906,
+          "weight": 0.4861,
           "items": {
             "Leftovers": 1
           },
@@ -2065,8 +2065,8 @@
             "Fire Blast": 1,
             "Solar Beam": 1,
             "Sunny Day": 1,
-            "Hidden Power Rock": 0.514,
-            "Hidden Power Ground": 0.486
+            "Hidden Power Rock": 0.5074,
+            "Hidden Power Ground": 0.4926
           }
         }
       }
@@ -2115,7 +2115,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5004,
+          "weight": 0.5088,
           "items": {
             "Leftovers": 1
           },
@@ -2123,8 +2123,8 @@
             "Growth": 1,
             "Hidden Power Fire": 1,
             "Psychic": 1,
-            "Substitute": 0.5008,
-            "Baton Pass": 0.4992
+            "Baton Pass": 0.5038,
+            "Substitute": 0.4962
           },
           "ivs": {
             "hp": 6,
@@ -2133,7 +2133,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.4996,
+          "weight": 0.4912,
           "items": {
             "Leftovers": 1
           },
@@ -2141,8 +2141,8 @@
             "Growth": 1,
             "Morning Sun": 1,
             "Psychic": 1,
-            "Baton Pass": 0.5061,
-            "Hidden Power Fire": 0.4939
+            "Hidden Power Fire": 0.5029,
+            "Baton Pass": 0.4971
           }
         }
       }
@@ -2154,22 +2154,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Explosion",
-          "Giga Drain",
-          "Hidden Power Fire",
-          "Psychic"
-        ],
-        "ivs": {
-          "hp": 6,
-          "atk": 28,
-          "def": 24
-        }
-      },
       "Fast Attacker": {
         "items": [
           "Leftovers"
@@ -2187,6 +2171,22 @@
           "hp": 6,
           "atk": 28
         }
+      },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Explosion",
+          "Giga Drain",
+          "Hidden Power Fire",
+          "Psychic"
+        ],
+        "ivs": {
+          "hp": 6,
+          "atk": 28,
+          "def": 24
+        }
       }
     },
     "ivs": {
@@ -2196,11 +2196,30 @@
     "stats": {
       "level": 65,
       "items": {
-        "Leftovers": 0.8359
+        "Leftovers": 0.8319
       },
       "roles": {
+        "Fast Attacker": {
+          "weight": 0.5069,
+          "items": {
+            "Leftovers": 0.6683
+          },
+          "moves": {
+            "Explosion": 1,
+            "Psychic": 1,
+            "Hidden Power Grass": 0.5047,
+            "Hidden Power Fire": 0.4953,
+            "Sleep Powder": 0.3571,
+            "Thief": 0.3317,
+            "Stun Spore": 0.3112
+          },
+          "ivs": {
+            "hp": 6,
+            "atk": 28
+          }
+        },
         "Generalist": {
-          "weight": 0.5062,
+          "weight": 0.4931,
           "items": {
             "Leftovers": 1
           },
@@ -2214,25 +2233,6 @@
             "hp": 6,
             "atk": 28,
             "def": 24
-          }
-        },
-        "Fast Attacker": {
-          "weight": 0.4938,
-          "items": {
-            "Leftovers": 0.6677
-          },
-          "moves": {
-            "Explosion": 1,
-            "Psychic": 1,
-            "Hidden Power Grass": 0.5093,
-            "Hidden Power Fire": 0.4907,
-            "Sleep Powder": 0.3473,
-            "Thief": 0.3323,
-            "Stun Spore": 0.3205
-          },
-          "ivs": {
-            "hp": 6,
-            "atk": 28
           }
         }
       },
@@ -2315,8 +2315,8 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hidden Power Ground": 0.5023,
-            "Drill Peck": 0.4977
+            "Hidden Power Ground": 0.5025,
+            "Drill Peck": 0.4975
           }
         }
       }
@@ -2357,9 +2357,9 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Hidden Power Electric": 0.3445,
-            "Earthquake": 0.337,
-            "Ice Beam": 0.3184
+            "Hidden Power Electric": 0.3428,
+            "Earthquake": 0.3393,
+            "Ice Beam": 0.3179
           }
         }
       }
@@ -2407,7 +2407,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5068,
+          "weight": 0.5049,
           "items": {
             "Leftovers": 1
           },
@@ -2415,12 +2415,12 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Flamethrower": 0.5088,
-            "Fire Blast": 0.4912
+            "Flamethrower": 0.5146,
+            "Fire Blast": 0.4854
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4932,
+          "weight": 0.4951,
           "items": {
             "Leftovers": 1
           },
@@ -2479,12 +2479,12 @@
           },
           "moves": {
             "Explosion": 1,
-            "Spikes": 0.9222,
-            "Hidden Power Bug": 0.5095,
-            "Hidden Power Steel": 0.4905,
-            "Reflect": 0.3686,
-            "Toxic": 0.3613,
-            "Rapid Spin": 0.3479
+            "Spikes": 0.922,
+            "Hidden Power Bug": 0.5084,
+            "Hidden Power Steel": 0.4916,
+            "Reflect": 0.3617,
+            "Rapid Spin": 0.3589,
+            "Toxic": 0.3574
           },
           "ivs": {
             "atk": 26
@@ -2544,7 +2544,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3363,
+          "weight": 0.3397,
           "items": {
             "Leftovers": 1
           },
@@ -2556,7 +2556,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.3338,
+          "weight": 0.3328,
           "items": {
             "Leftovers": 1
           },
@@ -2568,7 +2568,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3299,
+          "weight": 0.3275,
           "items": {
             "Leftovers": 1
           },
@@ -2576,8 +2576,8 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Surf": 0.5124,
-            "Iron Tail": 0.4876
+            "Surf": 0.5156,
+            "Iron Tail": 0.4844
           }
         }
       }
@@ -2623,7 +2623,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.513,
+          "weight": 0.5017,
           "items": {
             "Leftovers": 1
           },
@@ -2631,13 +2631,13 @@
             "Explosion": 1,
             "Ice Punch": 1,
             "Thunderbolt": 1,
-            "Psychic": 0.3419,
-            "Fire Punch": 0.332,
-            "Hypnosis": 0.326
+            "Psychic": 0.3408,
+            "Fire Punch": 0.3322,
+            "Hypnosis": 0.327
           }
         },
         "Fast Attacker": {
-          "weight": 0.487,
+          "weight": 0.4983,
           "items": {
             "Leftovers": 1
           },
@@ -2645,9 +2645,9 @@
             "Destiny Bond": 1,
             "Ice Punch": 1,
             "Thunderbolt": 1,
-            "Fire Punch": 0.338,
-            "Psychic": 0.3312,
-            "Hypnosis": 0.3308
+            "Hypnosis": 0.3349,
+            "Psychic": 0.3336,
+            "Fire Punch": 0.3314
           }
         }
       }
@@ -2702,7 +2702,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3423,
+          "weight": 0.3407,
           "items": {
             "Leftovers": 1
           },
@@ -2714,7 +2714,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.33,
+          "weight": 0.3349,
           "items": {
             "Leftovers": 1
           },
@@ -2726,17 +2726,17 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.3277,
+          "weight": 0.3243,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Psychic": 1,
             "Return": 1,
-            "Earthquake": 0.5011,
-            "Thunder": 0.5011,
-            "Rest": 0.4989,
-            "Sleep Talk": 0.4989
+            "Earthquake": 0.5235,
+            "Thunder": 0.5235,
+            "Rest": 0.4765,
+            "Sleep Talk": 0.4765
           }
         }
       }
@@ -2748,6 +2748,20 @@
       "Leftovers"
     ],
     "roles": {
+      "Thief user": {
+        "moves": [
+          "Counter",
+          "Earthquake",
+          "Hidden Power Flying",
+          "Thief",
+          "Toxic"
+        ],
+        "ivs": {
+          "hp": 14,
+          "atk": 24,
+          "def": 26
+        }
+      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -2757,20 +2771,6 @@
           "Hidden Power Flying",
           "Rest",
           "Sleep Talk"
-        ],
-        "ivs": {
-          "hp": 14,
-          "atk": 24,
-          "def": 26
-        }
-      },
-      "Thief user": {
-        "moves": [
-          "Counter",
-          "Earthquake",
-          "Hidden Power Flying",
-          "Thief",
-          "Toxic"
         ],
         "ivs": {
           "hp": 14,
@@ -2787,11 +2787,26 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.5066
+        "Leftovers": 0.4982
       },
       "roles": {
+        "Thief user": {
+          "weight": 0.5018,
+          "moves": {
+            "Earthquake": 1,
+            "Hidden Power Flying": 1,
+            "Thief": 1,
+            "Counter": 0.5053,
+            "Toxic": 0.4947
+          },
+          "ivs": {
+            "hp": 14,
+            "atk": 24,
+            "def": 26
+          }
+        },
         "Bulky Attacker": {
-          "weight": 0.5066,
+          "weight": 0.4982,
           "items": {
             "Leftovers": 1
           },
@@ -2800,21 +2815,6 @@
             "Hidden Power Flying": 1,
             "Rest": 1,
             "Sleep Talk": 1
-          },
-          "ivs": {
-            "hp": 14,
-            "atk": 24,
-            "def": 26
-          }
-        },
-        "Thief user": {
-          "weight": 0.4934,
-          "moves": {
-            "Earthquake": 1,
-            "Hidden Power Flying": 1,
-            "Thief": 1,
-            "Counter": 0.503,
-            "Toxic": 0.497
           },
           "ivs": {
             "hp": 14,
@@ -2869,20 +2869,20 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5089,
+          "weight": 0.5111,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Hydro Pump": 1,
             "Hidden Power Electric": 0.7594,
-            "Hypnosis": 0.7594,
-            "Cross Chop": 0.7411,
-            "Ice Beam": 0.7401
+            "Hypnosis": 0.7548,
+            "Cross Chop": 0.7434,
+            "Ice Beam": 0.7425
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4911,
+          "weight": 0.4889,
           "items": {
             "Leftovers": 1
           },
@@ -2890,9 +2890,9 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Cross Chop": 0.3685,
-            "Hidden Power Electric": 0.3238,
-            "Ice Beam": 0.3077
+            "Cross Chop": 0.3611,
+            "Hidden Power Electric": 0.3219,
+            "Ice Beam": 0.3171
           }
         }
       }
@@ -2933,9 +2933,9 @@
             "Earthquake": 1,
             "Explosion": 1,
             "Rock Slide": 1,
-            "Roar": 0.342,
-            "Curse": 0.3343,
-            "Rapid Spin": 0.3238
+            "Roar": 0.3451,
+            "Curse": 0.3381,
+            "Rapid Spin": 0.3169
           }
         }
       }
@@ -2962,17 +2962,6 @@
           "atk": 24
         }
       },
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Rest",
-          "Return",
-          "Sleep Talk"
-        ]
-      },
       "Bulky Support": {
         "items": [
           "Leftovers"
@@ -2980,6 +2969,17 @@
         "moves": [
           "Heal Bell",
           "Hidden Power Ground",
+          "Rest",
+          "Return",
+          "Sleep Talk"
+        ]
+      },
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
           "Rest",
           "Return",
           "Sleep Talk"
@@ -2993,7 +2993,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3366,
+          "weight": 0.335,
           "items": {
             "Leftovers": 1
           },
@@ -3008,8 +3008,21 @@
             "atk": 24
           }
         },
+        "Bulky Support": {
+          "weight": 0.3339,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Rest": 1,
+            "Return": 1,
+            "Sleep Talk": 1,
+            "Hidden Power Ground": 0.5211,
+            "Heal Bell": 0.4789
+          }
+        },
         "Bulky Setup": {
-          "weight": 0.3328,
+          "weight": 0.3312,
           "items": {
             "Leftovers": 1
           },
@@ -3018,19 +3031,6 @@
             "Rest": 1,
             "Return": 1,
             "Sleep Talk": 1
-          }
-        },
-        "Bulky Support": {
-          "weight": 0.3306,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Rest": 1,
-            "Return": 1,
-            "Sleep Talk": 1,
-            "Hidden Power Ground": 0.5275,
-            "Heal Bell": 0.4725
           }
         }
       }
@@ -3091,7 +3091,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3475,
+          "weight": 0.349,
           "items": {
             "Leftovers": 1
           },
@@ -3108,30 +3108,30 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3277,
+          "weight": 0.3315,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hydro Pump": 0.5137,
-            "Double-Edge": 0.5065,
-            "Hidden Power Flying": 0.4935,
-            "Surf": 0.4863
+            "Hidden Power Flying": 0.5028,
+            "Surf": 0.5004,
+            "Hydro Pump": 0.4996,
+            "Double-Edge": 0.4972
           }
         },
         "Generalist": {
-          "weight": 0.3248,
+          "weight": 0.3195,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Hydro Pump": 1,
             "Thunder": 1,
-            "Roar": 0.7006,
-            "Hidden Power Flying": 0.668,
-            "Double-Edge": 0.6314
+            "Hidden Power Flying": 0.6877,
+            "Roar": 0.6754,
+            "Double-Edge": 0.637
           }
         }
       }
@@ -3179,7 +3179,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5025,
+          "weight": 0.5066,
           "items": {
             "Leftovers": 1
           },
@@ -3196,7 +3196,7 @@
           }
         },
         "Generalist": {
-          "weight": 0.4975,
+          "weight": 0.4934,
           "items": {
             "Leftovers": 1
           },
@@ -3204,8 +3204,8 @@
             "Megahorn": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Earthquake": 0.5054,
-            "Curse": 0.4946
+            "Earthquake": 0.5038,
+            "Curse": 0.4962
           }
         }
       }
@@ -3228,6 +3228,18 @@
           "Sleep Talk"
         ]
       },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Body Slam",
+          "Hidden Power Rock",
+          "High Jump Kick",
+          "Rest",
+          "Sleep Talk"
+        ]
+      },
       "Setup Sweeper": {
         "items": [
           "Leftovers"
@@ -3243,18 +3255,6 @@
           "hp": 22,
           "atk": 26
         }
-      },
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Body Slam",
-          "Hidden Power Rock",
-          "High Jump Kick",
-          "Rest",
-          "Sleep Talk"
-        ]
       }
     },
     "stats": {
@@ -3264,7 +3264,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3491,
+          "weight": 0.3442,
           "items": {
             "Leftovers": 1
           },
@@ -3275,25 +3275,8 @@
             "Sleep Talk": 1
           }
         },
-        "Setup Sweeper": {
-          "weight": 0.3288,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Curse": 1,
-            "High Jump Kick": 1,
-            "Mach Punch": 1,
-            "Hidden Power Ghost": 0.508,
-            "Hidden Power Rock": 0.492
-          },
-          "ivs": {
-            "hp": 22,
-            "atk": 26
-          }
-        },
         "Generalist": {
-          "weight": 0.3221,
+          "weight": 0.3281,
           "items": {
             "Leftovers": 1
           },
@@ -3301,8 +3284,25 @@
             "High Jump Kick": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hidden Power Rock": 0.5016,
-            "Body Slam": 0.4984
+            "Hidden Power Rock": 0.5006,
+            "Body Slam": 0.4994
+          }
+        },
+        "Setup Sweeper": {
+          "weight": 0.3277,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Curse": 1,
+            "High Jump Kick": 1,
+            "Mach Punch": 1,
+            "Hidden Power Ghost": 0.505,
+            "Hidden Power Rock": 0.495
+          },
+          "ivs": {
+            "hp": 22,
+            "atk": 26
           }
         }
       }
@@ -3365,12 +3365,12 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.835,
-        "Mint Berry": 0.165
+        "Leftovers": 0.8359,
+        "Mint Berry": 0.1641
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3426,
+          "weight": 0.3396,
           "items": {
             "Leftovers": 1
           },
@@ -3378,8 +3378,8 @@
             "Double-Edge": 1,
             "High Jump Kick": 1,
             "Meditate": 1,
-            "Hidden Power Rock": 0.5248,
-            "Hidden Power Ghost": 0.4752
+            "Hidden Power Rock": 0.5162,
+            "Hidden Power Ghost": 0.4838
           },
           "ivs": {
             "hp": 22,
@@ -3387,7 +3387,7 @@
           }
         },
         "Generalist": {
-          "weight": 0.3298,
+          "weight": 0.3304,
           "items": {
             "Leftovers": 1
           },
@@ -3395,23 +3395,23 @@
             "High Jump Kick": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Body Slam": 0.5222,
-            "Hidden Power Rock": 0.4778
+            "Body Slam": 0.5187,
+            "Hidden Power Rock": 0.4813
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3276,
+          "weight": 0.33,
           "items": {
-            "Mint Berry": 0.5036,
-            "Leftovers": 0.4964
+            "Leftovers": 0.5027,
+            "Mint Berry": 0.4973
           },
           "moves": {
             "High Jump Kick": 1,
             "Meditate": 1,
-            "Hidden Power Rock": 0.5048,
-            "Rest": 0.5036,
-            "Substitute": 0.4964,
-            "Hidden Power Ghost": 0.4952
+            "Hidden Power Rock": 0.511,
+            "Substitute": 0.5027,
+            "Rest": 0.4973,
+            "Hidden Power Ghost": 0.489
           },
           "ivs": {
             "hp": 22,
@@ -3478,7 +3478,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3364,
+          "weight": 0.3439,
           "items": {
             "Leftovers": 1
           },
@@ -3486,8 +3486,8 @@
             "Curse": 1,
             "High Jump Kick": 1,
             "Mach Punch": 1,
-            "Hidden Power Ghost": 0.5085,
-            "Hidden Power Rock": 0.4915
+            "Hidden Power Ghost": 0.5186,
+            "Hidden Power Rock": 0.4814
           },
           "ivs": {
             "hp": 22,
@@ -3495,7 +3495,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.3364,
+          "weight": 0.3289,
           "items": {
             "Leftovers": 1
           },
@@ -3515,8 +3515,8 @@
             "High Jump Kick": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hidden Power Ghost": 0.5009,
-            "Hidden Power Rock": 0.4991
+            "Hidden Power Rock": 0.5027,
+            "Hidden Power Ghost": 0.4973
           },
           "ivs": {
             "hp": 22,
@@ -3567,7 +3567,7 @@
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.5006,
+          "weight": 0.5036,
           "items": {
             "Leftovers": 1
           },
@@ -3579,7 +3579,7 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4994,
+          "weight": 0.4964,
           "items": {
             "Leftovers": 1
           },
@@ -3646,7 +3646,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3465,
+          "weight": 0.353,
           "items": {
             "Leftovers": 1
           },
@@ -3654,12 +3654,12 @@
             "Fire Blast": 1,
             "Solar Beam": 1,
             "Sunny Day": 1,
-            "Crunch": 0.5128,
-            "Pursuit": 0.4872
+            "Pursuit": 0.5016,
+            "Crunch": 0.4984
           }
         },
         "Generalist": {
-          "weight": 0.329,
+          "weight": 0.3258,
           "items": {
             "Leftovers": 1
           },
@@ -3671,7 +3671,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3245,
+          "weight": 0.3212,
           "items": {
             "Leftovers": 1
           },
@@ -3703,6 +3703,17 @@
           "Return"
         ]
       },
+      "Setup Sweeper": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Double-Edge",
+          "Rest",
+          "Sleep Talk"
+        ]
+      },
       "Generalist": {
         "items": [
           "Leftovers"
@@ -3714,17 +3725,6 @@
           "Sleep Talk",
           "Thunder Wave"
         ]
-      },
-      "Setup Sweeper": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Double-Edge",
-          "Rest",
-          "Sleep Talk"
-        ]
       }
     },
     "stats": {
@@ -3734,7 +3734,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3411,
+          "weight": 0.3414,
           "items": {
             "Leftovers": 1
           },
@@ -3742,25 +3742,12 @@
             "Curse": 1,
             "Psychic": 1,
             "Rest": 1,
-            "Return": 0.5176,
-            "Body Slam": 0.4824
-          }
-        },
-        "Generalist": {
-          "weight": 0.3349,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Psychic": 1,
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Seismic Toss": 0.5166,
-            "Thunder Wave": 0.4834
+            "Return": 0.5133,
+            "Body Slam": 0.4867
           }
         },
         "Setup Sweeper": {
-          "weight": 0.324,
+          "weight": 0.3304,
           "items": {
             "Leftovers": 1
           },
@@ -3769,6 +3756,19 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1
+          }
+        },
+        "Generalist": {
+          "weight": 0.3282,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Psychic": 1,
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Seismic Toss": 0.5057,
+            "Thunder Wave": 0.4943
           }
         }
       }
@@ -3814,8 +3814,8 @@
             "Growth": 1,
             "Hidden Power Ice": 1,
             "Thunderbolt": 1,
-            "Substitute": 0.5073,
-            "Baton Pass": 0.4927
+            "Substitute": 0.5063,
+            "Baton Pass": 0.4937
           },
           "ivs": {
             "def": 26
@@ -3849,22 +3849,6 @@
           "def": 26
         }
       },
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Encore",
-          "Hidden Power Flying",
-          "Leech Seed",
-          "Stun Spore"
-        ],
-        "ivs": {
-          "hp": 14,
-          "atk": 24,
-          "def": 26
-        }
-      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -3874,6 +3858,22 @@
           "Hidden Power Flying",
           "Stun Spore",
           "Synthesis"
+        ],
+        "ivs": {
+          "hp": 14,
+          "atk": 24,
+          "def": 26
+        }
+      },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Encore",
+          "Hidden Power Flying",
+          "Leech Seed",
+          "Stun Spore"
         ],
         "ivs": {
           "hp": 14,
@@ -3910,25 +3910,8 @@
             "def": 26
           }
         },
-        "Generalist": {
-          "weight": 0.3327,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Encore": 1,
-            "Hidden Power Flying": 1,
-            "Leech Seed": 1,
-            "Stun Spore": 1
-          },
-          "ivs": {
-            "hp": 14,
-            "atk": 24,
-            "def": 26
-          }
-        },
         "Bulky Attacker": {
-          "weight": 0.3309,
+          "weight": 0.3348,
           "items": {
             "Leftovers": 1
           },
@@ -3937,6 +3920,23 @@
             "Hidden Power Flying": 1,
             "Stun Spore": 1,
             "Synthesis": 1
+          },
+          "ivs": {
+            "hp": 14,
+            "atk": 24,
+            "def": 26
+          }
+        },
+        "Generalist": {
+          "weight": 0.3287,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Encore": 1,
+            "Hidden Power Flying": 1,
+            "Leech Seed": 1,
+            "Stun Spore": 1
           },
           "ivs": {
             "hp": 14,
@@ -3992,11 +3992,11 @@
     "stats": {
       "level": 65,
       "items": {
-        "Leftovers": 0.6597
+        "Leftovers": 0.6634
       },
       "roles": {
         "Thief user": {
-          "weight": 0.3403,
+          "weight": 0.3366,
           "moves": {
             "Ice Beam": 1,
             "Lovely Kiss": 1,
@@ -4005,7 +4005,7 @@
           }
         },
         "Generalist": {
-          "weight": 0.3321,
+          "weight": 0.3338,
           "items": {
             "Leftovers": 1
           },
@@ -4017,7 +4017,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3277,
+          "weight": 0.3297,
           "items": {
             "Leftovers": 1
           },
@@ -4079,12 +4079,12 @@
     "stats": {
       "level": 71,
       "items": {
-        "Leftovers": 0.8347,
-        "Mint Berry": 0.1653
+        "Leftovers": 0.8369,
+        "Mint Berry": 0.1631
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.5008,
+          "weight": 0.5011,
           "items": {
             "Leftovers": 1
           },
@@ -4100,18 +4100,18 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4992,
+          "weight": 0.4989,
           "items": {
-            "Leftovers": 0.6689,
-            "Mint Berry": 0.3311
+            "Leftovers": 0.6731,
+            "Mint Berry": 0.3269
           },
           "moves": {
             "Ancient Power": 1,
             "Hidden Power Ground": 1,
             "Swords Dance": 1,
-            "Protect": 0.3395,
-            "Rest": 0.3311,
-            "Substitute": 0.3294
+            "Protect": 0.3411,
+            "Substitute": 0.332,
+            "Rest": 0.3269
           },
           "ivs": {
             "hp": 14,
@@ -4131,17 +4131,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Bulky Attacker": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Double-Edge",
-          "Earthquake",
-          "Rest",
-          "Sleep Talk"
-        ]
-      },
       "Bulky Setup": {
         "items": [
           "Leftovers"
@@ -4152,6 +4141,17 @@
           "Double-Edge",
           "Rest",
           "Return",
+          "Sleep Talk"
+        ]
+      },
+      "Bulky Attacker": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Double-Edge",
+          "Earthquake",
+          "Rest",
           "Sleep Talk"
         ]
       },
@@ -4174,8 +4174,22 @@
         "Leftovers": 1
       },
       "roles": {
+        "Bulky Setup": {
+          "weight": 0.3391,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Curse": 1,
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Return": 0.3407,
+            "Body Slam": 0.3342,
+            "Double-Edge": 0.3251
+          }
+        },
         "Bulky Attacker": {
-          "weight": 0.3381,
+          "weight": 0.3385,
           "items": {
             "Leftovers": 1
           },
@@ -4186,22 +4200,8 @@
             "Sleep Talk": 1
           }
         },
-        "Bulky Setup": {
-          "weight": 0.3372,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Curse": 1,
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Double-Edge": 0.3406,
-            "Return": 0.334,
-            "Body Slam": 0.3254
-          }
-        },
         "Setup Sweeper": {
-          "weight": 0.3247,
+          "weight": 0.3224,
           "items": {
             "Leftovers": 1
           },
@@ -4209,8 +4209,8 @@
             "Curse": 1,
             "Earthquake": 1,
             "Roar": 1,
-            "Return": 0.5003,
-            "Body Slam": 0.4997
+            "Body Slam": 0.5123,
+            "Return": 0.4877
           }
         }
       }
@@ -4250,8 +4250,8 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Dragon Breath": 0.5036,
-            "Ice Beam": 0.4964
+            "Ice Beam": 0.5015,
+            "Dragon Breath": 0.4985
           }
         }
       }
@@ -4299,23 +4299,23 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.8314,
-        "Mint Berry": 0.1686
+        "Leftovers": 0.8322,
+        "Mint Berry": 0.1678
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5005,
+          "weight": 0.5013,
           "items": {
-            "Leftovers": 0.6631,
-            "Mint Berry": 0.3369
+            "Leftovers": 0.6652,
+            "Mint Berry": 0.3348
           },
           "moves": {
             "Hidden Power Ground": 1,
             "Return": 1,
             "Swords Dance": 1,
-            "Protect": 0.3485,
-            "Rest": 0.3369,
-            "Substitute": 0.3146
+            "Protect": 0.3511,
+            "Rest": 0.3348,
+            "Substitute": 0.3141
           },
           "ivs": {
             "hp": 14,
@@ -4323,7 +4323,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.4995,
+          "weight": 0.4987,
           "items": {
             "Leftovers": 1
           },
@@ -4331,9 +4331,9 @@
             "Return": 1,
             "Surf": 1,
             "Swords Dance": 1,
-            "Protect": 0.3366,
-            "Hidden Power Ground": 0.3322,
-            "Substitute": 0.3312
+            "Protect": 0.3414,
+            "Substitute": 0.3341,
+            "Hidden Power Ground": 0.3245
           }
         }
       }
@@ -4425,7 +4425,7 @@
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.3372,
+          "weight": 0.3408,
           "items": {
             "Leftovers": 1
           },
@@ -4437,7 +4437,7 @@
           }
         },
         "Generalist": {
-          "weight": 0.3356,
+          "weight": 0.3312,
           "items": {
             "Leftovers": 1
           },
@@ -4449,7 +4449,7 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.3272,
+          "weight": 0.328,
           "items": {
             "Leftovers": 1
           },
@@ -4521,6 +4521,18 @@
           "Thunder"
         ]
       },
+      "Setup Sweeper": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Body Slam",
+          "Earthquake",
+          "Protect",
+          "Return",
+          "Swords Dance"
+        ]
+      },
       "Bulky Setup": {
         "items": [
           "Leftovers"
@@ -4533,18 +4545,6 @@
           "Sleep Talk",
           "Swords Dance"
         ]
-      },
-      "Setup Sweeper": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Body Slam",
-          "Earthquake",
-          "Protect",
-          "Return",
-          "Swords Dance"
-        ]
       }
     },
     "stats": {
@@ -4554,7 +4554,7 @@
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.3363,
+          "weight": 0.3374,
           "items": {
             "Leftovers": 1
           },
@@ -4562,27 +4562,13 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Thunder": 0.3494,
-            "Surf": 0.3387,
-            "Earthquake": 0.3119
-          }
-        },
-        "Bulky Setup": {
-          "weight": 0.3352,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Double-Edge": 0.5144,
-            "Swords Dance": 0.5044,
-            "Curse": 0.4956,
-            "Return": 0.4856
+            "Thunder": 0.3519,
+            "Surf": 0.3393,
+            "Earthquake": 0.3088
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3285,
+          "weight": 0.3325,
           "items": {
             "Leftovers": 1
           },
@@ -4590,8 +4576,22 @@
             "Earthquake": 1,
             "Protect": 1,
             "Swords Dance": 1,
-            "Return": 0.5065,
-            "Body Slam": 0.4935
+            "Return": 0.5064,
+            "Body Slam": 0.4936
+          }
+        },
+        "Bulky Setup": {
+          "weight": 0.3301,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Double-Edge": 0.5156,
+            "Swords Dance": 0.5047,
+            "Curse": 0.4953,
+            "Return": 0.4844
           }
         }
       }
@@ -4649,7 +4649,7 @@
       },
       "roles": {
         "Bulky Support": {
-          "weight": 0.3442,
+          "weight": 0.344,
           "items": {
             "Leftovers": 1
           },
@@ -4661,7 +4661,7 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3292,
+          "weight": 0.331,
           "items": {
             "Leftovers": 1
           },
@@ -4673,7 +4673,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.3266,
+          "weight": 0.325,
           "items": {
             "Leftovers": 1
           },
@@ -4730,7 +4730,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5024,
+          "weight": 0.5051,
           "items": {
             "Leftovers": 1
           },
@@ -4738,12 +4738,12 @@
             "Cross Chop": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Curse": 0.5049,
-            "Rock Slide": 0.4951
+            "Curse": 0.5042,
+            "Rock Slide": 0.4958
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4976,
+          "weight": 0.4949,
           "items": {
             "Leftovers": 1
           },
@@ -4751,8 +4751,8 @@
             "Cross Chop": 1,
             "Curse": 1,
             "Rock Slide": 1,
-            "Earthquake": 0.5123,
-            "Hidden Power Bug": 0.4877
+            "Earthquake": 0.5166,
+            "Hidden Power Bug": 0.4834
           }
         }
       }
@@ -4764,6 +4764,18 @@
       "Leftovers"
     ],
     "roles": {
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Fire Blast",
+          "Flamethrower",
+          "Rest",
+          "Rock Slide"
+        ]
+      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -4777,18 +4789,6 @@
           "Rock Slide",
           "Sleep Talk"
         ]
-      },
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Fire Blast",
-          "Flamethrower",
-          "Rest",
-          "Rock Slide"
-        ]
       }
     },
     "stats": {
@@ -4797,23 +4797,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Attacker": {
-          "weight": 0.5067,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Fire Blast": 0.5061,
-            "Flamethrower": 0.4939,
-            "Hidden Power Grass": 0.3387,
-            "Rock Slide": 0.3387,
-            "Earthquake": 0.3226
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.4933,
+          "weight": 0.5004,
           "items": {
             "Leftovers": 1
           },
@@ -4821,8 +4806,23 @@
             "Curse": 1,
             "Rest": 1,
             "Rock Slide": 1,
-            "Fire Blast": 0.5153,
-            "Flamethrower": 0.4847
+            "Fire Blast": 0.5106,
+            "Flamethrower": 0.4894
+          }
+        },
+        "Bulky Attacker": {
+          "weight": 0.4996,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Fire Blast": 0.5093,
+            "Flamethrower": 0.4907,
+            "Hidden Power Grass": 0.3373,
+            "Earthquake": 0.3363,
+            "Rock Slide": 0.3265
           }
         }
       }
@@ -4862,24 +4862,24 @@
     "stats": {
       "level": 71,
       "items": {
-        "Leftovers": 0.6751
+        "Leftovers": 0.6666
       },
       "roles": {
         "Fast Attacker": {
-          "weight": 0.5005,
+          "weight": 0.504,
           "items": {
-            "Leftovers": 0.3508
+            "Leftovers": 0.3385
           },
           "moves": {
             "Fire Blast": 1,
             "Thunder Punch": 1,
-            "Hidden Power Ground": 0.6863,
-            "Cross Chop": 0.6645,
-            "Thief": 0.6492
+            "Hidden Power Ground": 0.6783,
+            "Thief": 0.6615,
+            "Cross Chop": 0.6602
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4995,
+          "weight": 0.496,
           "items": {
             "Leftovers": 1
           },
@@ -4887,8 +4887,8 @@
             "Fire Blast": 1,
             "Sunny Day": 1,
             "Thunder Punch": 1,
-            "Hidden Power Ground": 0.5026,
-            "Cross Chop": 0.4974
+            "Cross Chop": 0.5018,
+            "Hidden Power Ground": 0.4982
           }
         }
       }
@@ -4979,8 +4979,8 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Hidden Power Electric": 0.5061,
-            "Ice Beam": 0.4939
+            "Hidden Power Electric": 0.5073,
+            "Ice Beam": 0.4927
           }
         }
       }
@@ -5082,7 +5082,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5064,
+          "weight": 0.507,
           "items": {
             "Leftovers": 1
           },
@@ -5099,7 +5099,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.4936,
+          "weight": 0.493,
           "items": {
             "Leftovers": 1
           },
@@ -5119,17 +5119,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Setup Sweeper": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Earthquake",
-          "Explosion",
-          "Rock Slide",
-          "Swords Dance"
-        ]
-      },
       "Bulky Setup": {
         "items": [
           "Leftovers"
@@ -5140,6 +5129,17 @@
           "Soft-Boiled",
           "Swords Dance"
         ]
+      },
+      "Setup Sweeper": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Earthquake",
+          "Explosion",
+          "Rock Slide",
+          "Swords Dance"
+        ]
       }
     },
     "stats": {
@@ -5148,20 +5148,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Setup Sweeper": {
-          "weight": 0.5026,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Earthquake": 1,
-            "Explosion": 1,
-            "Rock Slide": 1,
-            "Swords Dance": 1
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.4974,
+          "weight": 0.506,
           "items": {
             "Leftovers": 1
           },
@@ -5169,6 +5157,18 @@
             "Earthquake": 1,
             "Rock Slide": 1,
             "Soft-Boiled": 1,
+            "Swords Dance": 1
+          }
+        },
+        "Setup Sweeper": {
+          "weight": 0.494,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Earthquake": 1,
+            "Explosion": 1,
+            "Rock Slide": 1,
             "Swords Dance": 1
           }
         }
@@ -5213,29 +5213,29 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.5095,
+          "weight": 0.5211,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Psychic": 1,
             "Recover": 1,
-            "Flamethrower": 0.6689,
-            "Thunder": 0.6685,
-            "Barrier": 0.6625
+            "Flamethrower": 0.6806,
+            "Thunder": 0.6601,
+            "Barrier": 0.6593
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4905,
+          "weight": 0.4789,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Psychic": 1,
             "Recover": 1,
-            "Ice Beam": 0.6714,
-            "Thunder": 0.6676,
-            "Flamethrower": 0.661
+            "Ice Beam": 0.6761,
+            "Thunder": 0.6685,
+            "Flamethrower": 0.6554
           }
         }
       }
@@ -5275,8 +5275,8 @@
             "Body Slam": 1,
             "Curse": 1,
             "Milk Drink": 1,
-            "Earthquake": 0.5031,
-            "Heal Bell": 0.4969
+            "Earthquake": 0.5107,
+            "Heal Bell": 0.4893
           }
         }
       }
@@ -5288,18 +5288,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Generalist": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Mean Look",
-          "Pain Split",
-          "Perish Song",
-          "Protect",
-          "Thunder"
-        ]
-      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -5310,6 +5298,18 @@
           "Psychic",
           "Shadow Ball",
           "Thief",
+          "Thunder"
+        ]
+      },
+      "Generalist": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Mean Look",
+          "Pain Split",
+          "Perish Song",
+          "Protect",
           "Thunder"
         ]
       },
@@ -5325,11 +5325,25 @@
     "stats": {
       "level": 67,
       "items": {
-        "Leftovers": 0.5568
+        "Leftovers": 0.5562
       },
       "roles": {
+        "Bulky Attacker": {
+          "weight": 0.3358,
+          "items": {
+            "Leftovers": 0.6603
+          },
+          "moves": {
+            "Pain Split": 1,
+            "Shadow Ball": 1,
+            "Thunder": 1,
+            "Thief": 0.3397,
+            "Psychic": 0.3385,
+            "Hypnosis": 0.3218
+          }
+        },
         "Generalist": {
-          "weight": 0.3371,
+          "weight": 0.3344,
           "items": {
             "Leftovers": 1
           },
@@ -5337,26 +5351,12 @@
             "Mean Look": 1,
             "Perish Song": 1,
             "Thunder": 1,
-            "Protect": 0.519,
-            "Pain Split": 0.481
-          }
-        },
-        "Bulky Attacker": {
-          "weight": 0.3336,
-          "items": {
-            "Leftovers": 0.6586
-          },
-          "moves": {
-            "Pain Split": 1,
-            "Shadow Ball": 1,
-            "Thunder": 1,
-            "Thief": 0.3414,
-            "Psychic": 0.3314,
-            "Hypnosis": 0.3272
+            "Protect": 0.5173,
+            "Pain Split": 0.4827
           }
         },
         "Thief user": {
-          "weight": 0.3293,
+          "weight": 0.3298,
           "moves": {
             "Hypnosis": 1,
             "Psychic": 1,
@@ -5401,10 +5401,10 @@
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hidden Power Grass": 0.5072,
-            "Flamethrower": 0.502,
-            "Fire Blast": 0.498,
-            "Sunny Day": 0.4928
+            "Flamethrower": 0.501,
+            "Sunny Day": 0.5001,
+            "Hidden Power Grass": 0.4999,
+            "Fire Blast": 0.499
           }
         }
       }
@@ -5456,11 +5456,11 @@
     "stats": {
       "level": 69,
       "items": {
-        "Leftovers": 0.8325
+        "Leftovers": 0.8305
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.3478,
+          "weight": 0.3445,
           "items": {
             "Leftovers": 1
           },
@@ -5472,21 +5472,21 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.3337,
+          "weight": 0.336,
           "items": {
-            "Leftovers": 0.4982
+            "Leftovers": 0.4954
           },
           "moves": {
             "Psychic": 1,
-            "Thunder": 0.7604,
-            "Fire Punch": 0.7291,
-            "Hypnosis": 0.516,
-            "Thief": 0.5018,
-            "Encore": 0.4926
+            "Thunder": 0.7616,
+            "Fire Punch": 0.7276,
+            "Hypnosis": 0.517,
+            "Thief": 0.5046,
+            "Encore": 0.4892
           }
         },
         "Generalist": {
-          "weight": 0.3185,
+          "weight": 0.3196,
           "items": {
             "Leftovers": 1
           },
@@ -5494,8 +5494,8 @@
             "Psychic": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Thunder": 0.5064,
-            "Fire Punch": 0.4936
+            "Thunder": 0.5058,
+            "Fire Punch": 0.4942
           }
         }
       }
@@ -5586,11 +5586,11 @@
     "stats": {
       "level": 77,
       "items": {
-        "Leftovers": 0.5048
+        "Leftovers": 0.5066
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5048,
+          "weight": 0.5066,
           "items": {
             "Leftovers": 1
           },
@@ -5602,13 +5602,13 @@
           }
         },
         "Thief user": {
-          "weight": 0.4952,
+          "weight": 0.4934,
           "moves": {
             "Drill Peck": 1,
             "Hidden Power Dark": 1,
             "Thief": 1,
-            "Toxic": 0.5112,
-            "Haze": 0.4888
+            "Toxic": 0.5122,
+            "Haze": 0.4878
           }
         }
       }
@@ -5651,7 +5651,7 @@
       },
       "roles": {
         "Fast Attacker": {
-          "weight": 0.5032,
+          "weight": 0.5063,
           "items": {
             "Leftovers": 1
           },
@@ -5663,7 +5663,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4968,
+          "weight": 0.4937,
           "items": {
             "Leftovers": 1
           },
@@ -5671,8 +5671,8 @@
             "Earthquake": 1,
             "Ice Beam": 1,
             "Morning Sun": 1,
-            "Thunder": 0.5052,
-            "Fire Blast": 0.4948
+            "Thunder": 0.5139,
+            "Fire Blast": 0.4861
           }
         }
       }
@@ -5684,17 +5684,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Fast Attacker": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Earthquake",
-          "Ice Beam",
-          "Lovely Kiss",
-          "Thunder"
-        ]
-      },
       "Bulky Attacker": {
         "items": [
           "Leftovers"
@@ -5706,6 +5695,17 @@
           "Moonlight",
           "Thunder"
         ]
+      },
+      "Fast Attacker": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Earthquake",
+          "Ice Beam",
+          "Lovely Kiss",
+          "Thunder"
+        ]
       }
     },
     "stats": {
@@ -5714,8 +5714,21 @@
         "Leftovers": 1
       },
       "roles": {
+        "Bulky Attacker": {
+          "weight": 0.5019,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Earthquake": 1,
+            "Ice Beam": 1,
+            "Moonlight": 1,
+            "Fire Blast": 0.5012,
+            "Thunder": 0.4988
+          }
+        },
         "Fast Attacker": {
-          "weight": 0.5061,
+          "weight": 0.4981,
           "items": {
             "Leftovers": 1
           },
@@ -5724,19 +5737,6 @@
             "Ice Beam": 1,
             "Lovely Kiss": 1,
             "Thunder": 1
-          }
-        },
-        "Bulky Attacker": {
-          "weight": 0.4939,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Earthquake": 1,
-            "Ice Beam": 1,
-            "Moonlight": 1,
-            "Fire Blast": 0.504,
-            "Thunder": 0.496
           }
         }
       }
@@ -5776,10 +5776,10 @@
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Flamethrower": 0.5096,
-            "Sunny Day": 0.5078,
-            "Hidden Power Grass": 0.4922,
-            "Fire Blast": 0.4904
+            "Flamethrower": 0.5095,
+            "Sunny Day": 0.5014,
+            "Hidden Power Grass": 0.4986,
+            "Fire Blast": 0.4905
           }
         }
       }
@@ -5816,11 +5816,11 @@
     "stats": {
       "level": 77,
       "items": {
-        "Leftovers": 0.5028
+        "Leftovers": 0.5003
       },
       "roles": {
         "Bulky Support": {
-          "weight": 0.5028,
+          "weight": 0.5003,
           "items": {
             "Leftovers": 1
           },
@@ -5828,18 +5828,18 @@
             "Rest": 1,
             "Return": 1,
             "Sleep Talk": 1,
-            "Night Shade": 0.5165,
-            "Curse": 0.4835
+            "Night Shade": 0.505,
+            "Curse": 0.495
           }
         },
         "Thief user": {
-          "weight": 0.4972,
+          "weight": 0.4997,
           "moves": {
             "Return": 1,
             "Thief": 1,
-            "Toxic": 0.6825,
-            "Hypnosis": 0.6677,
-            "Whirlwind": 0.6498
+            "Toxic": 0.6802,
+            "Hypnosis": 0.6667,
+            "Whirlwind": 0.6531
           }
         }
       }
@@ -5880,9 +5880,9 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Flamethrower": 0.3377,
-            "Hidden Power Electric": 0.3363,
-            "Ice Beam": 0.326
+            "Flamethrower": 0.3375,
+            "Hidden Power Electric": 0.3352,
+            "Ice Beam": 0.3273
           }
         }
       }
@@ -5923,9 +5923,9 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Sandstorm": 0.3438,
-            "Ice Beam": 0.3387,
-            "Hidden Power Electric": 0.3174
+            "Ice Beam": 0.3444,
+            "Sandstorm": 0.3441,
+            "Hidden Power Electric": 0.3115
           }
         }
       }
@@ -5937,6 +5937,21 @@
       "Leftovers"
     ],
     "roles": {
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Hidden Power Bug",
+          "Spore",
+          "Swords Dance",
+          "Synthesis"
+        ],
+        "ivs": {
+          "atk": 26,
+          "def": 26
+        }
+      },
       "Setup Sweeper": {
         "items": [
           "Leftovers"
@@ -5952,21 +5967,6 @@
           "hp": 14,
           "atk": 24
         }
-      },
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Hidden Power Bug",
-          "Spore",
-          "Swords Dance",
-          "Synthesis"
-        ],
-        "ivs": {
-          "atk": 26,
-          "def": 26
-        }
       }
     },
     "stats": {
@@ -5975,25 +5975,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Setup Sweeper": {
-          "weight": 0.5004,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Hidden Power Ground": 1,
-            "Spore": 1,
-            "Swords Dance": 1,
-            "Return": 0.5074,
-            "Body Slam": 0.4926
-          },
-          "ivs": {
-            "hp": 14,
-            "atk": 24
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.4996,
+          "weight": 0.5044,
           "items": {
             "Leftovers": 1
           },
@@ -6006,6 +5989,23 @@
           "ivs": {
             "atk": 26,
             "def": 26
+          }
+        },
+        "Setup Sweeper": {
+          "weight": 0.4956,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Hidden Power Ground": 1,
+            "Spore": 1,
+            "Swords Dance": 1,
+            "Return": 0.5069,
+            "Body Slam": 0.4931
+          },
+          "ivs": {
+            "hp": 14,
+            "atk": 24
           }
         }
       }
@@ -6058,25 +6058,25 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.6709
+        "Leftovers": 0.6739
       },
       "roles": {
         "Fast Attacker": {
-          "weight": 0.3481,
+          "weight": 0.3423,
           "items": {
-            "Leftovers": 0.5107
+            "Leftovers": 0.5112
           },
           "moves": {
             "Double-Edge": 1,
             "Iron Tail": 1,
-            "Rest": 0.5107,
-            "Sleep Talk": 0.5107,
-            "Hypnosis": 0.4893,
-            "Thief": 0.4893
+            "Rest": 0.5112,
+            "Sleep Talk": 0.5112,
+            "Hypnosis": 0.4888,
+            "Thief": 0.4888
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3284,
+          "weight": 0.3324,
           "items": {
             "Leftovers": 1
           },
@@ -6088,17 +6088,17 @@
           }
         },
         "Generalist": {
-          "weight": 0.3235,
+          "weight": 0.3254,
           "items": {
-            "Leftovers": 0.5091
+            "Leftovers": 0.5121
           },
           "moves": {
             "Double-Edge": 1,
             "Thunder": 1,
-            "Rest": 0.5091,
-            "Sleep Talk": 0.5091,
-            "Hypnosis": 0.4909,
-            "Thief": 0.4909
+            "Rest": 0.5121,
+            "Sleep Talk": 0.5121,
+            "Hypnosis": 0.4879,
+            "Thief": 0.4879
           }
         }
       }
@@ -6110,6 +6110,18 @@
       "Leftovers"
     ],
     "roles": {
+      "Thief user": {
+        "moves": [
+          "Hidden Power Ground",
+          "Hidden Power Water",
+          "Return",
+          "Thief",
+          "Toxic"
+        ],
+        "ivs": {
+          "hp": 14
+        }
+      },
       "Fast Attacker": {
         "items": [
           "Leftovers"
@@ -6135,28 +6147,29 @@
           "Rest",
           "Sleep Talk"
         ]
-      },
-      "Thief user": {
-        "moves": [
-          "Hidden Power Ground",
-          "Hidden Power Water",
-          "Return",
-          "Thief",
-          "Toxic"
-        ],
-        "ivs": {
-          "hp": 14
-        }
       }
     },
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.6702
+        "Leftovers": 0.6628
       },
       "roles": {
+        "Thief user": {
+          "weight": 0.3372,
+          "moves": {
+            "Return": 1,
+            "Thief": 1,
+            "Toxic": 1,
+            "Hidden Power Water": 0.5114,
+            "Hidden Power Ground": 0.4886
+          },
+          "ivs": {
+            "hp": 14
+          }
+        },
         "Fast Attacker": {
-          "weight": 0.3357,
+          "weight": 0.3367,
           "items": {
             "Leftovers": 1
           },
@@ -6164,15 +6177,15 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Hidden Power Water": 0.5096,
-            "Hidden Power Ground": 0.4904
+            "Hidden Power Water": 0.5098,
+            "Hidden Power Ground": 0.4902
           },
           "ivs": {
             "hp": 14
           }
         },
         "Bulky Setup": {
-          "weight": 0.3346,
+          "weight": 0.3261,
           "items": {
             "Leftovers": 1
           },
@@ -6181,19 +6194,6 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1
-          }
-        },
-        "Thief user": {
-          "weight": 0.3298,
-          "moves": {
-            "Return": 1,
-            "Thief": 1,
-            "Toxic": 1,
-            "Hidden Power Water": 0.5016,
-            "Hidden Power Ground": 0.4984
-          },
-          "ivs": {
-            "hp": 14
           }
         }
       }
@@ -6205,18 +6205,6 @@
       "Light Ball"
     ],
     "roles": {
-      "Fast Attacker": {
-        "items": [
-          "Light Ball"
-        ],
-        "moves": [
-          "Encore",
-          "Hidden Power Fire",
-          "Hidden Power Ice",
-          "Surf",
-          "Thunderbolt"
-        ]
-      },
       "Generalist": {
         "items": [
           "Light Ball"
@@ -6230,6 +6218,18 @@
         "ivs": {
           "def": 26
         }
+      },
+      "Fast Attacker": {
+        "items": [
+          "Light Ball"
+        ],
+        "moves": [
+          "Encore",
+          "Hidden Power Fire",
+          "Hidden Power Ice",
+          "Surf",
+          "Thunderbolt"
+        ]
       },
       "Bulky Attacker": {
         "items": [
@@ -6250,21 +6250,8 @@
         "Light Ball": 1
       },
       "roles": {
-        "Fast Attacker": {
-          "weight": 0.3377,
-          "items": {
-            "Light Ball": 1
-          },
-          "moves": {
-            "Encore": 1,
-            "Surf": 1,
-            "Thunderbolt": 1,
-            "Hidden Power Ice": 0.5146,
-            "Hidden Power Fire": 0.4854
-          }
-        },
         "Generalist": {
-          "weight": 0.3373,
+          "weight": 0.3426,
           "items": {
             "Light Ball": 1
           },
@@ -6278,8 +6265,21 @@
             "def": 26
           }
         },
+        "Fast Attacker": {
+          "weight": 0.3352,
+          "items": {
+            "Light Ball": 1
+          },
+          "moves": {
+            "Encore": 1,
+            "Surf": 1,
+            "Thunderbolt": 1,
+            "Hidden Power Ice": 0.5219,
+            "Hidden Power Fire": 0.4781
+          }
+        },
         "Bulky Attacker": {
-          "weight": 0.325,
+          "weight": 0.3222,
           "items": {
             "Light Ball": 1
           },
@@ -6287,8 +6287,8 @@
             "Substitute": 1,
             "Surf": 1,
             "Thunderbolt": 1,
-            "Hidden Power Fire": 0.5089,
-            "Hidden Power Ice": 0.4911
+            "Hidden Power Ice": 0.5013,
+            "Hidden Power Fire": 0.4987
           }
         }
       }
@@ -6366,23 +6366,23 @@
     "stats": {
       "level": 69,
       "items": {
-        "Leftovers": 0.6656,
-        "Mint Berry": 0.3344
+        "Leftovers": 0.6658,
+        "Mint Berry": 0.3342
       },
       "roles": {
         "Setup Sweeper": {
           "weight": 1,
           "items": {
-            "Leftovers": 0.6656,
-            "Mint Berry": 0.3344
+            "Leftovers": 0.6658,
+            "Mint Berry": 0.3342
           },
           "moves": {
             "Hidden Power Ground": 1,
             "Return": 1,
             "Swords Dance": 1,
-            "Protect": 0.3392,
-            "Rest": 0.3344,
-            "Substitute": 0.3264
+            "Protect": 0.3391,
+            "Rest": 0.3342,
+            "Substitute": 0.3267
           },
           "ivs": {
             "hp": 14,
@@ -6442,6 +6442,18 @@
       "Miracle Berry"
     ],
     "roles": {
+      "Setup Sweeper": {
+        "items": [
+          "Leftovers",
+          "Miracle Berry"
+        ],
+        "moves": [
+          "Belly Drum",
+          "Earthquake",
+          "Lovely Kiss",
+          "Return"
+        ]
+      },
       "Generalist": {
         "items": [
           "Leftovers",
@@ -6458,32 +6470,33 @@
           "atk": 26,
           "def": 24
         }
-      },
-      "Setup Sweeper": {
-        "items": [
-          "Leftovers",
-          "Miracle Berry"
-        ],
-        "moves": [
-          "Belly Drum",
-          "Earthquake",
-          "Lovely Kiss",
-          "Return"
-        ]
       }
     },
     "stats": {
       "level": 75,
       "items": {
-        "Miracle Berry": 0.5011,
-        "Leftovers": 0.4989
+        "Leftovers": 0.5029,
+        "Miracle Berry": 0.4971
       },
       "roles": {
-        "Generalist": {
-          "weight": 0.5005,
+        "Setup Sweeper": {
+          "weight": 0.5066,
           "items": {
             "Leftovers": 0.5009,
             "Miracle Berry": 0.4991
+          },
+          "moves": {
+            "Belly Drum": 1,
+            "Earthquake": 1,
+            "Lovely Kiss": 1,
+            "Return": 1
+          }
+        },
+        "Generalist": {
+          "weight": 0.4934,
+          "items": {
+            "Leftovers": 0.5049,
+            "Miracle Berry": 0.4951
           },
           "moves": {
             "Belly Drum": 1,
@@ -6495,19 +6508,6 @@
             "hp": 22,
             "atk": 26,
             "def": 24
-          }
-        },
-        "Setup Sweeper": {
-          "weight": 0.4995,
-          "items": {
-            "Miracle Berry": 0.5032,
-            "Leftovers": 0.4968
-          },
-          "moves": {
-            "Belly Drum": 1,
-            "Earthquake": 1,
-            "Lovely Kiss": 1,
-            "Return": 1
           }
         }
       }
@@ -6532,6 +6532,19 @@
           "Return"
         ]
       },
+      "Bulky Support": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Earthquake",
+          "Growth",
+          "Rest",
+          "Sleep Talk",
+          "Submission",
+          "Surf"
+        ]
+      },
       "Generalist": {
         "items": [
           "Leftovers",
@@ -6548,33 +6561,20 @@
           "atk": 26,
           "def": 24
         }
-      },
-      "Bulky Support": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Earthquake",
-          "Growth",
-          "Rest",
-          "Sleep Talk",
-          "Submission",
-          "Surf"
-        ]
       }
     },
     "stats": {
       "level": 71,
       "items": {
-        "Leftovers": 0.6521,
-        "Miracle Berry": 0.3479
+        "Leftovers": 0.6599,
+        "Miracle Berry": 0.3401
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3375,
+          "weight": 0.3418,
           "items": {
-            "Miracle Berry": 0.5297,
-            "Leftovers": 0.4703
+            "Miracle Berry": 0.5227,
+            "Leftovers": 0.4773
           },
           "moves": {
             "Belly Drum": 1,
@@ -6583,11 +6583,25 @@
             "Return": 1
           }
         },
-        "Generalist": {
-          "weight": 0.3344,
+        "Bulky Support": {
+          "weight": 0.3341,
           "items": {
-            "Miracle Berry": 0.5058,
-            "Leftovers": 0.4942
+            "Leftovers": 1
+          },
+          "moves": {
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Surf": 1,
+            "Growth": 0.3352,
+            "Earthquake": 0.3338,
+            "Submission": 0.331
+          }
+        },
+        "Generalist": {
+          "weight": 0.3241,
+          "items": {
+            "Leftovers": 0.5018,
+            "Miracle Berry": 0.4982
           },
           "moves": {
             "Belly Drum": 1,
@@ -6599,20 +6613,6 @@
             "hp": 22,
             "atk": 26,
             "def": 24
-          }
-        },
-        "Bulky Support": {
-          "weight": 0.3281,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Surf": 1,
-            "Submission": 0.3368,
-            "Growth": 0.3338,
-            "Earthquake": 0.3294
           }
         }
       }
@@ -6653,9 +6653,9 @@
             "Curse": 1,
             "Double-Edge": 1,
             "Recover": 1,
-            "Thunder": 0.3382,
-            "Ice Beam": 0.3334,
-            "Thunder Wave": 0.3284
+            "Thunder": 0.346,
+            "Ice Beam": 0.3304,
+            "Thunder Wave": 0.3236
           }
         }
       }
@@ -6681,6 +6681,17 @@
           "Rock Slide"
         ]
       },
+      "Generalist": {
+        "items": [
+          "Black Belt"
+        ],
+        "moves": [
+          "Meditate",
+          "Reversal",
+          "Rock Slide",
+          "Substitute"
+        ]
+      },
       "Setup Sweeper": {
         "items": [
           "Leftovers",
@@ -6694,57 +6705,31 @@
           "Rock Slide",
           "Substitute"
         ]
-      },
-      "Generalist": {
-        "items": [
-          "Black Belt"
-        ],
-        "moves": [
-          "Meditate",
-          "Reversal",
-          "Rock Slide",
-          "Substitute"
-        ]
       }
     },
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.5545,
-        "Black Belt": 0.3271,
-        "Mint Berry": 0.1185
+        "Leftovers": 0.5514,
+        "Black Belt": 0.3321,
+        "Mint Berry": 0.1165
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3408,
+          "weight": 0.3404,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Cross Chop": 1,
             "Meditate": 1,
-            "Hidden Power Ghost": 0.678,
             "Rock Slide": 0.672,
-            "Double-Edge": 0.65
-          }
-        },
-        "Setup Sweeper": {
-          "weight": 0.3321,
-          "items": {
-            "Leftovers": 0.6433,
-            "Mint Berry": 0.3567
-          },
-          "moves": {
-            "Cross Chop": 1,
-            "Meditate": 1,
-            "Hidden Power Ghost": 0.6756,
-            "Rock Slide": 0.6598,
-            "Rest": 0.3567,
-            "Substitute": 0.3079
+            "Double-Edge": 0.6661,
+            "Hidden Power Ghost": 0.6619
           }
         },
         "Generalist": {
-          "weight": 0.3271,
+          "weight": 0.3321,
           "items": {
             "Black Belt": 1
           },
@@ -6753,6 +6738,21 @@
             "Reversal": 1,
             "Rock Slide": 1,
             "Substitute": 1
+          }
+        },
+        "Setup Sweeper": {
+          "weight": 0.3275,
+          "items": {
+            "Leftovers": 0.6442,
+            "Mint Berry": 0.3558
+          },
+          "moves": {
+            "Cross Chop": 1,
+            "Meditate": 1,
+            "Hidden Power Ghost": 0.6751,
+            "Rock Slide": 0.6634,
+            "Rest": 0.3558,
+            "Substitute": 0.3057
           }
         }
       }
@@ -6795,7 +6795,7 @@
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.5054,
+          "weight": 0.5001,
           "items": {
             "Leftovers": 1
           },
@@ -6803,12 +6803,12 @@
             "Earthquake": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Ice Beam": 0.5,
-            "Sludge Bomb": 0.5
+            "Ice Beam": 0.5018,
+            "Sludge Bomb": 0.4982
           }
         },
         "Generalist": {
-          "weight": 0.4946,
+          "weight": 0.4999,
           "items": {
             "Leftovers": 1
           },
@@ -6861,21 +6861,21 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5047,
+          "weight": 0.5043,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Hydro Pump": 1,
             "Sludge Bomb": 1,
-            "Haze": 0.935,
-            "Spikes": 0.935,
-            "Rest": 0.065,
-            "Sleep Talk": 0.065
+            "Haze": 0.9407,
+            "Spikes": 0.9407,
+            "Rest": 0.0593,
+            "Sleep Talk": 0.0593
           }
         },
         "Bulky Setup": {
-          "weight": 0.4953,
+          "weight": 0.4957,
           "items": {
             "Leftovers": 1
           },
@@ -6883,8 +6883,8 @@
             "Curse": 1,
             "Hydro Pump": 1,
             "Sludge Bomb": 1,
-            "Spikes": 0.9369,
-            "Hidden Power Ground": 0.0631
+            "Spikes": 0.9407,
+            "Hidden Power Ground": 0.0593
           }
         }
       }
@@ -6924,8 +6924,8 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Thunder": 1,
-            "Surf": 0.5001,
-            "Hidden Power Ice": 0.4999
+            "Hidden Power Ice": 0.5036,
+            "Surf": 0.4964
           }
         }
       }
@@ -6965,8 +6965,8 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Thunder": 1,
-            "Hidden Power Ice": 0.5058,
-            "Crunch": 0.4942
+            "Hidden Power Ice": 0.5087,
+            "Crunch": 0.4913
           }
         }
       }
@@ -7011,30 +7011,30 @@
       },
       "roles": {
         "Bulky Support": {
-          "weight": 0.5017,
+          "weight": 0.5025,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Flamethrower": 0.5239,
-            "Double-Edge": 0.5036,
-            "Sunny Day": 0.4964,
-            "Fire Blast": 0.4761
+            "Flamethrower": 0.5175,
+            "Sunny Day": 0.5063,
+            "Double-Edge": 0.4937,
+            "Fire Blast": 0.4825
           }
         },
         "Generalist": {
-          "weight": 0.4983,
+          "weight": 0.4975,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Fire Blast": 1,
-            "Sunny Day": 0.7605,
-            "Double-Edge": 0.7587,
-            "Hidden Power Grass": 0.7483,
-            "Hypnosis": 0.7324
+            "Sunny Day": 0.757,
+            "Double-Edge": 0.7557,
+            "Hypnosis": 0.7484,
+            "Hidden Power Grass": 0.7389
           }
         }
       }
@@ -7074,10 +7074,10 @@
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Double-Edge": 0.5112,
-            "Super Fang": 0.5037,
-            "Iron Tail": 0.4963,
-            "Return": 0.4888
+            "Double-Edge": 0.5141,
+            "Super Fang": 0.5041,
+            "Iron Tail": 0.4959,
+            "Return": 0.4859
           }
         }
       }
@@ -7089,7 +7089,7 @@
       "Leftovers"
     ],
     "roles": {
-      "Fast Attacker": {
+      "Generalist": {
         "items": [
           "Leftovers"
         ],
@@ -7101,17 +7101,6 @@
           "Rock Slide",
           "Sleep Talk"
         ]
-      },
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Rest",
-          "Rock Slide",
-          "Sleep Talk"
-        ]
       }
     },
     "stats": {
@@ -7120,30 +7109,18 @@
         "Leftovers": 1
       },
       "roles": {
-        "Fast Attacker": {
-          "weight": 0.5104,
+        "Generalist": {
+          "weight": 1,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Earthquake": 1,
             "Rock Slide": 1,
-            "Rest": 0.5163,
-            "Sleep Talk": 0.5163,
-            "Curse": 0.4837,
-            "Roar": 0.4837
-          }
-        },
-        "Bulky Setup": {
-          "weight": 0.4896,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Curse": 1,
-            "Rest": 1,
-            "Rock Slide": 1,
-            "Sleep Talk": 1
+            "Rest": 0.5146,
+            "Sleep Talk": 0.5146,
+            "Curse": 0.4854,
+            "Roar": 0.4854
           }
         }
       }
@@ -7186,7 +7163,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5128,
+          "weight": 0.5127,
           "items": {
             "Leftovers": 1
           },
@@ -7198,7 +7175,7 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4872,
+          "weight": 0.4873,
           "items": {
             "Leftovers": 1
           },
@@ -7206,8 +7183,8 @@
             "Earthquake": 1,
             "Rock Slide": 1,
             "Swords Dance": 1,
-            "Hidden Power Bug": 0.5103,
-            "Substitute": 0.4897
+            "Hidden Power Bug": 0.5211,
+            "Substitute": 0.4789
           }
         }
       }
@@ -7273,7 +7250,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.3535,
+          "weight": 0.3483,
           "items": {
             "Leftovers": 1
           },
@@ -7281,32 +7258,32 @@
             "Agility": 1,
             "Baton Pass": 1,
             "Swords Dance": 1,
-            "Hidden Power Bug": 0.5154,
-            "Hidden Power Steel": 0.4846
+            "Hidden Power Bug": 0.5136,
+            "Hidden Power Steel": 0.4864
           },
           "ivs": {
             "atk": 26
           }
         },
         "Bulky Setup": {
-          "weight": 0.3288,
+          "weight": 0.3281,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Curse": 0.5126,
-            "Hidden Power Steel": 0.5081,
-            "Hidden Power Bug": 0.4919,
-            "Swords Dance": 0.4874
+            "Curse": 0.5022,
+            "Hidden Power Steel": 0.501,
+            "Hidden Power Bug": 0.499,
+            "Swords Dance": 0.4978
           },
           "ivs": {
             "atk": 26
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3177,
+          "weight": 0.3237,
           "items": {
             "Leftovers": 1
           },
@@ -7421,7 +7398,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5042,
+          "weight": 0.5053,
           "items": {
             "Leftovers": 1
           },
@@ -7429,8 +7406,8 @@
             "Hidden Power Ground": 1,
             "Return": 1,
             "Swords Dance": 1,
-            "Substitute": 0.5076,
-            "Agility": 0.4924
+            "Substitute": 0.5098,
+            "Agility": 0.4902
           },
           "ivs": {
             "hp": 14,
@@ -7438,7 +7415,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.4958,
+          "weight": 0.4947,
           "items": {
             "Leftovers": 1
           },
@@ -7446,8 +7423,8 @@
             "Hydro Pump": 1,
             "Return": 1,
             "Swords Dance": 1,
-            "Agility": 0.5054,
-            "Substitute": 0.4946
+            "Agility": 0.5131,
+            "Substitute": 0.4869
           }
         }
       }
@@ -7529,7 +7506,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.5143,
+          "weight": 0.5156,
           "items": {
             "Leftovers": 1
           },
@@ -7537,12 +7514,12 @@
             "Curse": 1,
             "Drill Peck": 1,
             "Rest": 1,
-            "Toxic": 0.5085,
-            "Whirlwind": 0.4915
+            "Toxic": 0.5061,
+            "Whirlwind": 0.4939
           }
         },
         "Generalist": {
-          "weight": 0.4857,
+          "weight": 0.4844,
           "items": {
             "Leftovers": 1
           },
@@ -7667,9 +7644,9 @@
           "moves": {
             "Baton Pass": 1,
             "Spore": 1,
-            "Spikes": 0.9245,
-            "Swords Dance": 0.5398,
-            "Agility": 0.5357
+            "Spikes": 0.924,
+            "Agility": 0.5382,
+            "Swords Dance": 0.5378
           }
         }
       }
@@ -7719,11 +7696,11 @@
     "stats": {
       "level": 77,
       "items": {
-        "Leftovers": 0.6722
+        "Leftovers": 0.6703
       },
       "roles": {
         "Generalist": {
-          "weight": 0.339,
+          "weight": 0.3356,
           "items": {
             "Leftovers": 1
           },
@@ -7739,7 +7716,7 @@
           }
         },
         "Bulky Attacker": {
-          "weight": 0.3333,
+          "weight": 0.3347,
           "items": {
             "Leftovers": 1
           },
@@ -7751,7 +7728,7 @@
           }
         },
         "Thief user": {
-          "weight": 0.3278,
+          "weight": 0.3297,
           "moves": {
             "Dynamic Punch": 1,
             "Moonlight": 1,
@@ -7768,17 +7745,17 @@
       "Leftovers"
     ],
     "roles": {
-      "Bulky Attacker": {
+      "Bulky Setup": {
         "items": [
           "Leftovers"
         ],
         "moves": [
           "Body Slam",
           "Curse",
+          "Double-Edge",
           "Earthquake",
-          "Lovely Kiss",
-          "Return",
-          "Self-Destruct"
+          "Rest",
+          "Return"
         ]
       },
       "Generalist": {
@@ -7793,17 +7770,17 @@
           "Sleep Talk"
         ]
       },
-      "Bulky Setup": {
+      "Bulky Attacker": {
         "items": [
           "Leftovers"
         ],
         "moves": [
           "Body Slam",
           "Curse",
-          "Double-Edge",
           "Earthquake",
-          "Rest",
-          "Return"
+          "Lovely Kiss",
+          "Return",
+          "Self-Destruct"
         ]
       }
     },
@@ -7813,35 +7790,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Attacker": {
-          "weight": 0.3383,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Earthquake": 1,
-            "Self-Destruct": 0.6825,
-            "Curse": 0.6631,
-            "Lovely Kiss": 0.6544,
-            "Body Slam": 0.5037,
-            "Return": 0.4963
-          }
-        },
-        "Generalist": {
-          "weight": 0.3338,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Double-Edge": 1,
-            "Rest": 1,
-            "Sleep Talk": 1,
-            "Curse": 0.5274,
-            "Earthquake": 0.4726
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.3279,
+          "weight": 0.3366,
           "items": {
             "Leftovers": 1
           },
@@ -7849,9 +7799,36 @@
             "Curse": 1,
             "Earthquake": 1,
             "Rest": 1,
-            "Body Slam": 0.3421,
-            "Double-Edge": 0.331,
-            "Return": 0.3269
+            "Body Slam": 0.3554,
+            "Double-Edge": 0.3336,
+            "Return": 0.311
+          }
+        },
+        "Generalist": {
+          "weight": 0.3336,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Double-Edge": 1,
+            "Rest": 1,
+            "Sleep Talk": 1,
+            "Curse": 0.5179,
+            "Earthquake": 0.4821
+          }
+        },
+        "Bulky Attacker": {
+          "weight": 0.3297,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Earthquake": 1,
+            "Self-Destruct": 0.6713,
+            "Lovely Kiss": 0.6685,
+            "Curse": 0.6602,
+            "Body Slam": 0.5059,
+            "Return": 0.4941
           }
         }
       }
@@ -7891,8 +7868,8 @@
             "Rest": 1,
             "Return": 1,
             "Sleep Talk": 1,
-            "Earthquake": 0.5037,
-            "Curse": 0.4963
+            "Curse": 0.501,
+            "Earthquake": 0.499
           }
         }
       }
@@ -7937,7 +7914,7 @@
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.5199,
+          "weight": 0.5167,
           "items": {
             "Leftovers": 1
           },
@@ -7945,22 +7922,22 @@
             "Psychic": 1,
             "Recover": 1,
             "Surf": 1,
-            "Thunderbolt": 0.3481,
-            "Thunder Wave": 0.3443,
-            "Rapid Spin": 0.3076
+            "Thunder Wave": 0.3485,
+            "Thunderbolt": 0.3409,
+            "Rapid Spin": 0.3106
           }
         },
         "Bulky Support": {
-          "weight": 0.4801,
+          "weight": 0.4833,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Recover": 1,
             "Surf": 1,
-            "Psychic": 0.6684,
-            "Thunder": 0.6674,
-            "Ice Beam": 0.6643
+            "Psychic": 0.6716,
+            "Thunder": 0.6655,
+            "Ice Beam": 0.6629
           }
         }
       }
@@ -7984,17 +7961,6 @@
           "Roar"
         ]
       },
-      "Bulky Attacker": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Earthquake",
-          "Iron Tail",
-          "Rest"
-        ]
-      },
       "Generalist": {
         "items": [
           "Leftovers"
@@ -8007,6 +7973,17 @@
           "Roar",
           "Sleep Talk"
         ]
+      },
+      "Bulky Attacker": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Earthquake",
+          "Iron Tail",
+          "Rest"
+        ]
       }
     },
     "stats": {
@@ -8016,7 +7993,7 @@
       },
       "roles": {
         "Bulky Setup": {
-          "weight": 0.3364,
+          "weight": 0.3413,
           "items": {
             "Leftovers": 1
           },
@@ -8024,12 +8001,26 @@
             "Curse": 1,
             "Earthquake": 1,
             "Explosion": 1,
-            "Roar": 0.5239,
-            "Iron Tail": 0.4761
+            "Roar": 0.5204,
+            "Iron Tail": 0.4796
+          }
+        },
+        "Generalist": {
+          "weight": 0.3388,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Earthquake": 1,
+            "Curse": 0.6995,
+            "Iron Tail": 0.6961,
+            "Rest": 0.6044,
+            "Sleep Talk": 0.6044,
+            "Roar": 0.3956
           }
         },
         "Bulky Attacker": {
-          "weight": 0.335,
+          "weight": 0.3199,
           "items": {
             "Leftovers": 1
           },
@@ -8038,20 +8029,6 @@
             "Earthquake": 1,
             "Iron Tail": 1,
             "Rest": 1
-          }
-        },
-        "Generalist": {
-          "weight": 0.3287,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Earthquake": 1,
-            "Curse": 0.7037,
-            "Iron Tail": 0.6885,
-            "Rest": 0.6079,
-            "Sleep Talk": 0.6079,
-            "Roar": 0.3921
           }
         }
       }
@@ -8097,11 +8074,11 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.6633
+        "Leftovers": 0.6653
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.3369,
+          "weight": 0.3379,
           "items": {
             "Leftovers": 1
           },
@@ -8113,7 +8090,7 @@
           }
         },
         "Thief user": {
-          "weight": 0.3367,
+          "weight": 0.3347,
           "moves": {
             "Earthquake": 1,
             "Rock Slide": 1,
@@ -8122,7 +8099,7 @@
           }
         },
         "Bulky Setup": {
-          "weight": 0.3264,
+          "weight": 0.3274,
           "items": {
             "Leftovers": 1
           },
@@ -8174,7 +8151,7 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5028,
+          "weight": 0.5094,
           "items": {
             "Leftovers": 1
           },
@@ -8182,21 +8159,21 @@
             "Rest": 1,
             "Sleep Talk": 1,
             "Surf": 1,
-            "Toxic": 0.5031,
-            "Ice Beam": 0.4969
+            "Ice Beam": 0.5047,
+            "Toxic": 0.4953
           }
         },
         "Bulky Support": {
-          "weight": 0.4972,
+          "weight": 0.4906,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Surf": 1,
-            "Roar": 0.6726,
-            "Ice Beam": 0.6716,
-            "Toxic": 0.6557
+            "Ice Beam": 0.6765,
+            "Roar": 0.6722,
+            "Toxic": 0.6513
           }
         }
       }
@@ -8236,8 +8213,8 @@
             "Growth": 1,
             "Razor Leaf": 1,
             "Synthesis": 1,
-            "Hidden Power Ice": 0.5051,
-            "Hidden Power Fire": 0.4949
+            "Hidden Power Ice": 0.5039,
+            "Hidden Power Fire": 0.4961
           }
         }
       }
@@ -8277,10 +8254,10 @@
           "moves": {
             "Giga Drain": 1,
             "Growth": 1,
-            "Hidden Power Ice": 0.5091,
-            "Synthesis": 0.5005,
-            "Sleep Powder": 0.4995,
-            "Hidden Power Fire": 0.4909
+            "Hidden Power Ice": 0.5083,
+            "Synthesis": 0.5007,
+            "Sleep Powder": 0.4993,
+            "Hidden Power Fire": 0.4917
           }
         }
       }
@@ -8320,10 +8297,10 @@
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Double-Edge": 0.5042,
-            "Earthquake": 0.5038,
-            "Curse": 0.4962,
-            "Return": 0.4958
+            "Curse": 0.5031,
+            "Double-Edge": 0.5002,
+            "Return": 0.4998,
+            "Earthquake": 0.4969
           }
         }
       }
@@ -8406,7 +8383,7 @@
       },
       "roles": {
         "Setup Sweeper": {
-          "weight": 0.5163,
+          "weight": 0.5066,
           "items": {
             "Leftovers": 1
           },
@@ -8414,12 +8391,12 @@
             "Fire Blast": 1,
             "Solar Beam": 1,
             "Sunny Day": 1,
-            "Zap Cannon": 0.5156,
-            "Encore": 0.4844
+            "Zap Cannon": 0.5136,
+            "Encore": 0.4864
           }
         },
         "Bulky Support": {
-          "weight": 0.4837,
+          "weight": 0.4934,
           "items": {
             "Leftovers": 1
           },
@@ -8427,8 +8404,8 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Curse": 0.52,
-            "Fire Blast": 0.48
+            "Curse": 0.5134,
+            "Fire Blast": 0.4866
           }
         }
       }
@@ -8472,21 +8449,21 @@
       },
       "roles": {
         "Generalist": {
-          "weight": 0.5138,
+          "weight": 0.5125,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rest": 1,
             "Sleep Talk": 1,
-            "Earthquake": 0.5067,
-            "Fire Blast": 0.5037,
-            "Flamethrower": 0.4963,
-            "Thunder Punch": 0.4933
+            "Fire Blast": 0.5112,
+            "Earthquake": 0.5077,
+            "Thunder Punch": 0.4923,
+            "Flamethrower": 0.4888
           }
         },
         "Setup Sweeper": {
-          "weight": 0.4862,
+          "weight": 0.4875,
           "items": {
             "Leftovers": 1
           },
@@ -8506,6 +8483,17 @@
       "Leftovers"
     ],
     "roles": {
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Curse",
+          "Rest",
+          "Roar",
+          "Rock Slide"
+        ]
+      },
       "Bulky Support": {
         "items": [
           "Leftovers"
@@ -8516,17 +8504,6 @@
           "Rest",
           "Rock Slide",
           "Sleep Talk"
-        ]
-      },
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Curse",
-          "Rest",
-          "Roar",
-          "Rock Slide"
         ]
       },
       "Generalist": {
@@ -8550,21 +8527,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Support": {
-          "weight": 0.3429,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Rest": 1,
-            "Rock Slide": 1,
-            "Sleep Talk": 1,
-            "Earthquake": 0.5023,
-            "Curse": 0.4977
-          }
-        },
         "Bulky Setup": {
-          "weight": 0.332,
+          "weight": 0.3432,
           "items": {
             "Leftovers": 1
           },
@@ -8575,19 +8539,32 @@
             "Rock Slide": 1
           }
         },
+        "Bulky Support": {
+          "weight": 0.3315,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Rest": 1,
+            "Rock Slide": 1,
+            "Sleep Talk": 1,
+            "Earthquake": 0.5118,
+            "Curse": 0.4882
+          }
+        },
         "Generalist": {
-          "weight": 0.3251,
+          "weight": 0.3253,
           "items": {
             "Leftovers": 1
           },
           "moves": {
             "Rock Slide": 1,
-            "Pursuit": 0.5123,
-            "Thunderbolt": 0.5102,
-            "Ice Beam": 0.5004,
-            "Earthquake": 0.4975,
-            "Fire Blast": 0.4926,
-            "Crunch": 0.487
+            "Pursuit": 0.5124,
+            "Thunderbolt": 0.5124,
+            "Earthquake": 0.4996,
+            "Fire Blast": 0.4954,
+            "Ice Beam": 0.494,
+            "Crunch": 0.4862
           }
         }
       }
@@ -8715,8 +8692,8 @@
             "Rest": 1,
             "Return": 1,
             "Sleep Talk": 1,
-            "Curse": 0.5048,
-            "Earthquake": 0.4952
+            "Curse": 0.508,
+            "Earthquake": 0.492
           }
         }
       }
@@ -8767,17 +8744,6 @@
       "Leftovers"
     ],
     "roles": {
-      "Bulky Setup": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Baton Pass",
-          "Curse",
-          "Sleep Powder",
-          "Sludge Bomb"
-        ]
-      },
       "Setup Sweeper": {
         "items": [
           "Leftovers"
@@ -8787,6 +8753,17 @@
           "Curse",
           "Sludge Bomb",
           "Stun Spore"
+        ]
+      },
+      "Bulky Setup": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Baton Pass",
+          "Curse",
+          "Sleep Powder",
+          "Sludge Bomb"
         ]
       },
       "Fast Attacker": {
@@ -8814,20 +8791,8 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Setup": {
-          "weight": 0.3404,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Baton Pass": 1,
-            "Curse": 1,
-            "Sleep Powder": 1,
-            "Sludge Bomb": 1
-          }
-        },
         "Setup Sweeper": {
-          "weight": 0.34,
+          "weight": 0.3408,
           "items": {
             "Leftovers": 1
           },
@@ -8838,8 +8803,20 @@
             "Stun Spore": 1
           }
         },
+        "Bulky Setup": {
+          "weight": 0.3345,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Baton Pass": 1,
+            "Curse": 1,
+            "Sleep Powder": 1,
+            "Sludge Bomb": 1
+          }
+        },
         "Fast Attacker": {
-          "weight": 0.3196,
+          "weight": 0.3247,
           "items": {
             "Leftovers": 1
           },
@@ -8847,9 +8824,9 @@
             "Hidden Power Fire": 1,
             "Psychic": 1,
             "Sludge Bomb": 1,
-            "Sleep Powder": 0.3442,
-            "Stun Spore": 0.33,
-            "Giga Drain": 0.3258
+            "Stun Spore": 0.3371,
+            "Sleep Powder": 0.335,
+            "Giga Drain": 0.328
           },
           "ivs": {
             "hp": 6,
@@ -8894,10 +8871,10 @@
           "moves": {
             "Growth": 1,
             "Razor Leaf": 1,
-            "Synthesis": 0.5128,
-            "Hidden Power Fire": 0.5014,
-            "Hidden Power Ice": 0.4986,
-            "Sleep Powder": 0.4872
+            "Synthesis": 0.5113,
+            "Hidden Power Fire": 0.5017,
+            "Hidden Power Ice": 0.4983,
+            "Sleep Powder": 0.4887
           }
         }
       }
@@ -8945,8 +8922,8 @@
             "Hidden Power Ground": 1,
             "Sludge Bomb": 1,
             "Swords Dance": 1,
-            "Synthesis": 0.5028,
-            "Sleep Powder": 0.4972
+            "Synthesis": 0.506,
+            "Sleep Powder": 0.494
           },
           "ivs": {
             "hp": 14,
@@ -9013,7 +8990,7 @@
       },
       "roles": {
         "Bulky Attacker": {
-          "weight": 0.3359,
+          "weight": 0.3384,
           "items": {
             "Leftovers": 1
           },
@@ -9021,12 +8998,12 @@
             "Moonlight": 1,
             "Razor Leaf": 1,
             "Sludge Bomb": 1,
-            "Sleep Powder": 0.5091,
-            "Stun Spore": 0.4909
+            "Stun Spore": 0.5006,
+            "Sleep Powder": 0.4994
           }
         },
         "Bulky Setup": {
-          "weight": 0.3357,
+          "weight": 0.3369,
           "items": {
             "Leftovers": 1
           },
@@ -9038,7 +9015,7 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3285,
+          "weight": 0.3246,
           "items": {
             "Leftovers": 1
           },
@@ -9046,8 +9023,8 @@
             "Hidden Power Ground": 1,
             "Sludge Bomb": 1,
             "Swords Dance": 1,
-            "Moonlight": 0.5126,
-            "Sleep Powder": 0.4874
+            "Moonlight": 0.5066,
+            "Sleep Powder": 0.4934
           },
           "ivs": {
             "hp": 14,
@@ -9074,6 +9051,19 @@
           "Thunder"
         ]
       },
+      "Bulky Attacker": {
+        "items": [
+          "Leftovers"
+        ],
+        "moves": [
+          "Fire Blast",
+          "Haze",
+          "Hidden Power Water",
+          "Pain Split",
+          "Sludge Bomb",
+          "Thunder"
+        ]
+      },
       "Generalist": {
         "items": [
           "Leftovers"
@@ -9089,19 +9079,6 @@
           "atk": 28,
           "def": 26
         }
-      },
-      "Bulky Attacker": {
-        "items": [
-          "Leftovers"
-        ],
-        "moves": [
-          "Fire Blast",
-          "Haze",
-          "Hidden Power Water",
-          "Pain Split",
-          "Sludge Bomb",
-          "Thunder"
-        ]
       }
     },
     "stats": {
@@ -9111,7 +9088,7 @@
       },
       "roles": {
         "Fast Attacker": {
-          "weight": 0.3389,
+          "weight": 0.3383,
           "items": {
             "Leftovers": 1
           },
@@ -9122,8 +9099,22 @@
             "Thunder": 1
           }
         },
+        "Bulky Attacker": {
+          "weight": 0.3329,
+          "items": {
+            "Leftovers": 1
+          },
+          "moves": {
+            "Pain Split": 1,
+            "Sludge Bomb": 1,
+            "Thunder": 1,
+            "Fire Blast": 0.3507,
+            "Hidden Power Water": 0.3424,
+            "Haze": 0.3069
+          }
+        },
         "Generalist": {
-          "weight": 0.335,
+          "weight": 0.3288,
           "items": {
             "Leftovers": 1
           },
@@ -9137,20 +9128,6 @@
             "hp": 14,
             "atk": 28,
             "def": 26
-          }
-        },
-        "Bulky Attacker": {
-          "weight": 0.3261,
-          "items": {
-            "Leftovers": 1
-          },
-          "moves": {
-            "Pain Split": 1,
-            "Sludge Bomb": 1,
-            "Thunder": 1,
-            "Fire Blast": 0.3475,
-            "Hidden Power Water": 0.3364,
-            "Haze": 0.3161
           }
         }
       }
@@ -9190,8 +9167,8 @@
             "Double-Edge": 1,
             "Rest": 1,
             "Sleep Talk": 1,
-            "Curse": 0.5028,
-            "Thunder": 0.4972
+            "Thunder": 0.5045,
+            "Curse": 0.4955
           }
         }
       }
@@ -9266,21 +9243,21 @@
     "stats": {
       "level": 73,
       "items": {
-        "Leftovers": 0.4818
+        "Leftovers": 0.4868
       },
       "roles": {
         "Thief user": {
-          "weight": 0.5182,
+          "weight": 0.5132,
           "moves": {
             "Drill Peck": 1,
             "Psychic": 1,
             "Thief": 1,
-            "Hidden Power Fire": 0.5027,
-            "Confuse Ray": 0.4973
+            "Confuse Ray": 0.5015,
+            "Hidden Power Fire": 0.4985
           }
         },
         "Bulky Attacker": {
-          "weight": 0.4818,
+          "weight": 0.4868,
           "items": {
             "Leftovers": 1
           },
@@ -9348,11 +9325,11 @@
     "stats": {
       "level": 81,
       "items": {
-        "Black Belt": 0.3283
+        "Black Belt": 0.331
       },
       "roles": {
         "Thief user": {
-          "weight": 0.3363,
+          "weight": 0.3359,
           "moves": {
             "Giga Drain": 1,
             "Hidden Power Bug": 1,
@@ -9365,7 +9342,7 @@
           }
         },
         "Fast Attacker": {
-          "weight": 0.3354,
+          "weight": 0.333,
           "moves": {
             "Giga Drain": 1,
             "Hidden Power Flying": 1,
@@ -9379,7 +9356,7 @@
           }
         },
         "Setup Sweeper": {
-          "weight": 0.3283,
+          "weight": 0.331,
           "items": {
             "Black Belt": 1
           },

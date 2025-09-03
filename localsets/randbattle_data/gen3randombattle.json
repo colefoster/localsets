@@ -3558,16 +3558,14 @@
       "Pressure"
     ],
     "items": [
-      "Choice Band",
       "White Herb"
     ],
     "roles": {
-      "Wallbreaker": {
+      "Fast Attacker": {
         "abilities": [
           "Pressure"
         ],
         "items": [
-          "Choice Band",
           "White Herb"
         ],
         "moves": [
@@ -3586,18 +3584,16 @@
         "Pressure": 1
       },
       "items": {
-        "White Herb": 0.6658,
-        "Choice Band": 0.3342
+        "White Herb": 1
       },
       "roles": {
-        "Wallbreaker": {
+        "Fast Attacker": {
           "weight": 1,
           "abilities": {
             "Pressure": 1
           },
           "items": {
-            "White Herb": 0.6658,
-            "Choice Band": 0.3342
+            "White Herb": 1
           },
           "moves": {
             "Psycho Boost": 1,
@@ -3617,16 +3613,14 @@
       "Pressure"
     ],
     "items": [
-      "Choice Band",
       "White Herb"
     ],
     "roles": {
-      "Wallbreaker": {
+      "Fast Attacker": {
         "abilities": [
           "Pressure"
         ],
         "items": [
-          "Choice Band",
           "White Herb"
         ],
         "moves": [
@@ -3645,18 +3639,16 @@
         "Pressure": 1
       },
       "items": {
-        "White Herb": 0.6557,
-        "Choice Band": 0.3443
+        "White Herb": 1
       },
       "roles": {
-        "Wallbreaker": {
+        "Fast Attacker": {
           "weight": 1,
           "abilities": {
             "Pressure": 1
           },
           "items": {
-            "White Herb": 0.6557,
-            "Choice Band": 0.3443
+            "White Herb": 1
           },
           "moves": {
             "Psycho Boost": 1,
