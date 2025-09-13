@@ -769,7 +769,7 @@
       "Leftovers"
     ],
     "roles": {
-      "Bulky Support": {
+      "Bulky Attacker": {
         "abilities": [
           "Thick Fat"
         ],
@@ -798,7 +798,7 @@
         "Leftovers": 1
       },
       "roles": {
-        "Bulky Support": {
+        "Bulky Attacker": {
           "weight": 1,
           "abilities": {
             "Thick Fat": 1
@@ -810,11 +810,11 @@
             "Steel": 1
           },
           "moves": {
+            "Apple Acid": 1,
             "Recover": 1,
-            "Dragon Tail": 0.6763,
-            "Leech Seed": 0.6641,
-            "Apple Acid": 0.6596,
             "Dragon Pulse": 0.5072,
+            "Leech Seed": 0.5057,
+            "Dragon Tail": 0.4943,
             "Draco Meteor": 0.4928
           }
         }
