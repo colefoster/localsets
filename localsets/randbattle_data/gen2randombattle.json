@@ -2323,7 +2323,7 @@
     }
   },
   "Feraligatr": {
-    "level": 71,
+    "level": 69,
     "items": [
       "Leftovers"
     ],
@@ -2343,7 +2343,7 @@
       }
     },
     "stats": {
-      "level": 71,
+      "level": 69,
       "items": {
         "Leftovers": 1
       },

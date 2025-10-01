@@ -11450,7 +11450,7 @@
     }
   },
   "Entei": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Pressure"
     ],
@@ -11470,7 +11470,10 @@
           "Flare Blitz",
           "Sacred Fire",
           "Stone Edge"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       },
       "Wallbreaker": {
         "abilities": [
@@ -11484,11 +11487,17 @@
           "Extreme Speed",
           "Flare Blitz",
           "Sacred Fire"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       }
     },
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Pressure": 1
       },
@@ -11509,6 +11518,9 @@
             "Flare Blitz": 1,
             "Sacred Fire": 1,
             "Stone Edge": 1
+          },
+          "evs": {
+            "hp": 81
           }
         },
         "Wallbreaker": {
@@ -11524,8 +11536,14 @@
             "Extreme Speed": 1,
             "Flare Blitz": 1,
             "Sacred Fire": 1
+          },
+          "evs": {
+            "hp": 81
           }
         }
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
@@ -13294,7 +13312,7 @@
     }
   },
   "Garchomp-Mega": {
-    "level": 77,
+    "level": 76,
     "abilities": [
       "Rough Skin"
     ],
@@ -13334,7 +13352,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 76,
       "abilities": {
         "Rough Skin": 1
       },
@@ -16596,7 +16614,7 @@
     }
   },
   "Heracross-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Moxie"
     ],
@@ -16623,7 +16641,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Moxie": 1
       },
@@ -16879,7 +16897,7 @@
     }
   },
   "Hitmontop": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Intimidate"
     ],
@@ -16909,7 +16927,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Intimidate": 1
       },
@@ -20331,7 +20349,7 @@
     }
   },
   "Latios": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Levitate"
     ],
@@ -20367,7 +20385,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Levitate": 1
       },
@@ -22106,7 +22124,7 @@
     }
   },
   "Magnezone": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Analytic",
       "Magnet Pull"
@@ -22168,7 +22186,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Analytic": 0.5161,
         "Magnet Pull": 0.4839
@@ -25318,7 +25336,7 @@
     }
   },
   "Nidoking": {
-    "level": 81,
+    "level": 82,
     "abilities": [
       "Sheer Force"
     ],
@@ -25344,7 +25362,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 82,
       "abilities": {
         "Sheer Force": 1
       },
@@ -34452,7 +34470,7 @@
     }
   },
   "Swellow": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Guts"
     ],
@@ -34490,7 +34508,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Guts": 1
       },
@@ -36333,7 +36351,7 @@
     }
   },
   "Tyrantrum": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Rock Head"
     ],
@@ -36362,7 +36380,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Rock Head": 1
       },
@@ -37809,7 +37827,7 @@
     }
   },
   "Volbeat": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Prankster"
     ],
@@ -37833,7 +37851,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Prankster": 1
       },
@@ -38680,7 +38698,7 @@
     }
   },
   "Wobbuffet": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Shadow Tag"
     ],
@@ -38716,7 +38734,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Shadow Tag": 1
       },

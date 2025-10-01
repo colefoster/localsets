@@ -2343,7 +2343,7 @@
     }
   },
   "Camerupt": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Magma Armor"
     ],
@@ -2372,7 +2372,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Magma Armor": 1
       },
@@ -8934,7 +8934,7 @@
     }
   },
   "Latias": {
-    "level": 67,
+    "level": 66,
     "abilities": [
       "Levitate"
     ],
@@ -8985,7 +8985,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 67,
+      "level": 66,
       "abilities": {
         "Levitate": 1
       },
@@ -14195,7 +14195,7 @@
     }
   },
   "Quagsire": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Water Absorb"
     ],
@@ -14235,7 +14235,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Water Absorb": 1
       },

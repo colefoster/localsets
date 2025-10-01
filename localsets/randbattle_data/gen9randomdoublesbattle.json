@@ -663,7 +663,7 @@
     }
   },
   "Appletun": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Ripen",
       "Thick Fat"
@@ -704,7 +704,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Ripen": 0.5079,
         "Thick Fat": 0.4921
@@ -25155,7 +25155,7 @@
     }
   },
   "Mandibuzz": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Overcoat"
     ],
@@ -25203,7 +25203,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Overcoat": 1
       },
@@ -26721,7 +26721,7 @@
     }
   },
   "Mightyena": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Intimidate"
     ],
@@ -26750,7 +26750,7 @@
       }
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Intimidate": 1
       },
@@ -28353,7 +28353,7 @@
     }
   },
   "Ninetales": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Drought"
     ],
@@ -28397,7 +28397,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Drought": 1
       },
@@ -32634,7 +32634,7 @@
     }
   },
   "Qwilfish-Hisui": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Intimidate"
     ],
@@ -32662,7 +32662,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Intimidate": 1
       },
@@ -37864,7 +37864,7 @@
     }
   },
   "Slither Wing": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Protosynthesis"
     ],
@@ -37895,7 +37895,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Protosynthesis": 1
       },
@@ -44427,7 +44427,7 @@
     }
   },
   "Volbeat": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Prankster"
     ],
@@ -44455,7 +44455,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Prankster": 1
       },
