@@ -34,7 +34,7 @@
     }
   },
   "Absol": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Justified"
     ],
@@ -49,7 +49,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Justified": 1
       },
