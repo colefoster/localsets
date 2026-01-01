@@ -3439,7 +3439,7 @@
     }
   },
   "Avalugg": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Sturdy"
     ],
@@ -3468,7 +3468,7 @@
       }
     },
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Sturdy": 1
       },
@@ -3683,7 +3683,7 @@
     }
   },
   "Azumarill": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Huge Power"
     ],
@@ -3712,7 +3712,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Huge Power": 1
       },
@@ -5830,7 +5830,7 @@
     }
   },
   "Calyrex-Shadow": {
-    "level": 62,
+    "level": 63,
     "abilities": [
       "As One (Spectrier)"
     ],
@@ -5872,7 +5872,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 62,
+      "level": 63,
       "abilities": {
         "As One (Spectrier)": 1
       },
@@ -6753,7 +6753,7 @@
     }
   },
   "Chimecho": {
-    "level": 95,
+    "level": 94,
     "abilities": [
       "Levitate"
     ],
@@ -6797,7 +6797,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 95,
+      "level": 94,
       "abilities": {
         "Levitate": 1
       },
@@ -9978,7 +9978,7 @@
     }
   },
   "Donphan": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Sturdy"
     ],
@@ -10007,7 +10007,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Sturdy": 1
       },
@@ -16208,7 +16208,7 @@
     }
   },
   "Goodra-Hisui": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Sap Sipper"
     ],
@@ -16258,7 +16258,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Sap Sipper": 1
       },
@@ -19333,7 +19333,7 @@
     }
   },
   "Indeedee-F": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Psychic Surge"
     ],
@@ -19373,7 +19373,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Psychic Surge": 1
       },
@@ -34515,7 +34515,7 @@
     }
   },
   "Regirock": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Clear Body"
     ],
@@ -34563,7 +34563,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Clear Body": 1
       },
@@ -38580,7 +38580,7 @@
     }
   },
   "Slowbro-Galar": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Regenerator"
     ],
@@ -38621,7 +38621,7 @@
       "spe": 0
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Regenerator": 1
       },
@@ -43717,7 +43717,7 @@
     }
   },
   "Ursaluna": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Guts"
     ],
@@ -43744,7 +43744,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Guts": 1
       },
@@ -44030,7 +44030,7 @@
     }
   },
   "Uxie": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Levitate"
     ],
@@ -44061,7 +44061,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Levitate": 1
       },
@@ -45265,7 +45265,7 @@
     }
   },
   "Walking Wake": {
-    "level": 77,
+    "level": 78,
     "abilities": [
       "Protosynthesis"
     ],
@@ -45295,7 +45295,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 78,
       "abilities": {
         "Protosynthesis": 1
       },
@@ -45407,7 +45407,7 @@
     }
   },
   "Weezing": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Levitate",
       "Neutralizing Gas"
@@ -45439,7 +45439,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Neutralizing Gas": 0.5051,
         "Levitate": 0.4949

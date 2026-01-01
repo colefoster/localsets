@@ -810,7 +810,7 @@
     }
   },
   "Arcanine": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Intimidate"
     ],
@@ -869,7 +869,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Intimidate": 1
       },
@@ -2251,7 +2251,7 @@
     }
   },
   "Cacturne": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Sand Veil"
     ],
@@ -2295,7 +2295,7 @@
       }
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Sand Veil": 1
       },
@@ -3979,7 +3979,7 @@
     }
   },
   "Dodrio": {
-    "level": 77,
+    "level": 78,
     "abilities": [
       "Early Bird"
     ],
@@ -4024,7 +4024,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 78,
       "abilities": {
         "Early Bird": 1
       },
@@ -8443,7 +8443,7 @@
     }
   },
   "Kecleon": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Color Change"
     ],
@@ -8470,7 +8470,7 @@
       }
     },
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Color Change": 1
       },
@@ -9028,7 +9028,7 @@
     }
   },
   "Latios": {
-    "level": 67,
+    "level": 66,
     "abilities": [
       "Levitate"
     ],
@@ -9079,7 +9079,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 67,
+      "level": 66,
       "abilities": {
         "Levitate": 1
       },
@@ -12520,7 +12520,7 @@
     }
   },
   "Noctowl": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Insomnia"
     ],
@@ -12545,7 +12545,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Insomnia": 1
       },

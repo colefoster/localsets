@@ -2887,7 +2887,7 @@
     }
   },
   "Articuno": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Pressure"
     ],
@@ -2910,7 +2910,6 @@
           "Toxic"
         ],
         "evs": {
-          "hp": 77,
           "atk": 0
         },
         "ivs": {
@@ -2931,7 +2930,6 @@
           "Toxic"
         ],
         "evs": {
-          "hp": 77,
           "atk": 0
         },
         "ivs": {
@@ -2940,14 +2938,13 @@
       }
     },
     "evs": {
-      "hp": 77,
       "atk": 0
     },
     "ivs": {
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Pressure": 1
       },
@@ -2971,7 +2968,6 @@
             "Substitute": 0.49
           },
           "evs": {
-            "hp": 77,
             "atk": 0
           },
           "ivs": {
@@ -2993,7 +2989,6 @@
             "Toxic": 1
           },
           "evs": {
-            "hp": 77,
             "atk": 0
           },
           "ivs": {
@@ -3002,7 +2997,6 @@
         }
       },
       "evs": {
-        "hp": 77,
         "atk": 0
       },
       "ivs": {
@@ -3679,7 +3673,7 @@
     }
   },
   "Beheeyem": {
-    "level": 90,
+    "level": 89,
     "abilities": [
       "Analytic"
     ],
@@ -3714,7 +3708,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 90,
+      "level": 89,
       "abilities": {
         "Analytic": 1
       },
@@ -5015,7 +5009,7 @@
     }
   },
   "Castform": {
-    "level": 97,
+    "level": 98,
     "abilities": [
       "Forecast"
     ],
@@ -5041,7 +5035,7 @@
       }
     },
     "stats": {
-      "level": 97,
+      "level": 98,
       "abilities": {
         "Forecast": 1
       },
@@ -5070,7 +5064,7 @@
     }
   },
   "Celebi": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Natural Cure"
     ],
@@ -5135,7 +5129,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Natural Cure": 1
       },
@@ -5205,7 +5199,7 @@
     }
   },
   "Chandelure": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Flame Body",
       "Flash Fire"
@@ -5232,6 +5226,7 @@
           "Trick"
         ],
         "evs": {
+          "hp": 77,
           "atk": 0
         }
       },
@@ -5262,7 +5257,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Flash Fire": 0.7634,
         "Flame Body": 0.2366
@@ -5290,6 +5285,7 @@
             "Hidden Power Fighting": 0.4877
           },
           "evs": {
+            "hp": 77,
             "atk": 0
           }
         },
@@ -6081,7 +6077,7 @@
     }
   },
   "Cloyster": {
-    "level": 78,
+    "level": 79,
     "abilities": [
       "Skill Link"
     ],
@@ -6105,7 +6101,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 79,
       "abilities": {
         "Skill Link": 1
       },
@@ -10397,7 +10393,7 @@
     }
   },
   "Forretress": {
-    "level": 78,
+    "level": 79,
     "abilities": [
       "Sturdy"
     ],
@@ -10424,7 +10420,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 79,
       "abilities": {
         "Sturdy": 1
       },
@@ -10720,7 +10716,7 @@
     }
   },
   "Garbodor": {
-    "level": 89,
+    "level": 90,
     "abilities": [
       "Aftermath"
     ],
@@ -10746,7 +10742,7 @@
       }
     },
     "stats": {
-      "level": 89,
+      "level": 90,
       "abilities": {
         "Aftermath": 1
       },
@@ -11504,7 +11500,7 @@
     }
   },
   "Giratina-Origin": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Levitate"
     ],
@@ -11530,7 +11526,7 @@
       }
     },
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Levitate": 1
       },
@@ -12462,7 +12458,7 @@
     }
   },
   "Grumpig": {
-    "level": 92,
+    "level": 91,
     "abilities": [
       "Thick Fat"
     ],
@@ -12525,7 +12521,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 92,
+      "level": 91,
       "abilities": {
         "Thick Fat": 1
       },
@@ -13874,7 +13870,7 @@
     }
   },
   "Infernape": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Blaze",
       "Iron Fist"
@@ -13922,7 +13918,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Blaze": 0.7004,
         "Iron Fist": 0.2996
@@ -14053,7 +14049,7 @@
     }
   },
   "Jirachi": {
-    "level": 75,
+    "level": 74,
     "abilities": [
       "Serene Grace"
     ],
@@ -14084,7 +14080,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 74,
       "abilities": {
         "Serene Grace": 1
       },
@@ -14197,7 +14193,7 @@
     }
   },
   "Jumpluff": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Chlorophyll"
     ],
@@ -14235,7 +14231,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Chlorophyll": 1
       },
@@ -14595,7 +14591,7 @@
     }
   },
   "Kecleon": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Color Change"
     ],
@@ -14632,7 +14628,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Color Change": 1
       },
@@ -15548,7 +15544,7 @@
     }
   },
   "Landorus": {
-    "level": 75,
+    "level": 74,
     "abilities": [
       "Sheer Force"
     ],
@@ -15597,7 +15593,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 74,
       "abilities": {
         "Sheer Force": 1
       },
@@ -17281,7 +17277,7 @@
     }
   },
   "Luxray": {
-    "level": 89,
+    "level": 88,
     "abilities": [
       "Guts",
       "Intimidate"
@@ -17326,7 +17322,7 @@
       }
     },
     "stats": {
-      "level": 89,
+      "level": 88,
       "abilities": {
         "Intimidate": 0.52,
         "Guts": 0.48
@@ -18689,7 +18685,7 @@
     }
   },
   "Mesprit": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Levitate"
     ],
@@ -18740,7 +18736,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Levitate": 1
       },
@@ -20530,7 +20526,7 @@
     }
   },
   "Octillery": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Sniper"
     ],
@@ -20569,7 +20565,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Sniper": 1
       },
@@ -23491,7 +23487,7 @@
     }
   },
   "Rhydon": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Lightning Rod"
     ],
@@ -23517,7 +23513,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Lightning Rod": 1
       },
@@ -24089,7 +24085,7 @@
     }
   },
   "Rotom-Wash": {
-    "level": 79,
+    "level": 80,
     "abilities": [
       "Levitate"
     ],
@@ -24130,7 +24126,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 79,
+      "level": 80,
       "abilities": {
         "Levitate": 1
       },
@@ -24292,7 +24288,7 @@
     }
   },
   "Salamence": {
-    "level": 75,
+    "level": 74,
     "abilities": [
       "Intimidate",
       "Moxie"
@@ -24319,7 +24315,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 74,
       "abilities": {
         "Intimidate": 0.5022,
         "Moxie": 0.4978
@@ -25273,7 +25269,7 @@
     }
   },
   "Serperior": {
-    "level": 85,
+    "level": 86,
     "abilities": [
       "Overgrow"
     ],
@@ -25338,7 +25334,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 86,
       "abilities": {
         "Overgrow": 1
       },
@@ -30122,7 +30118,7 @@
     }
   },
   "Ursaring": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Guts",
       "Quick Feet"
@@ -30161,7 +30157,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Guts": 0.5077,
         "Quick Feet": 0.4923
@@ -30562,7 +30558,7 @@
     }
   },
   "Venusaur": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Chlorophyll",
       "Overgrow"
@@ -30611,7 +30607,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Overgrow": 0.7485,
         "Chlorophyll": 0.2515
@@ -32227,7 +32223,7 @@
     }
   },
   "Wormadam-Trash": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Anticipation"
     ],
@@ -32252,7 +32248,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Anticipation": 1
       },
@@ -32698,7 +32694,7 @@
     }
   },
   "Zekrom": {
-    "level": 75,
+    "level": 74,
     "abilities": [
       "Teravolt"
     ],
@@ -32739,7 +32735,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 74,
       "abilities": {
         "Teravolt": 1
       },

@@ -4692,7 +4692,7 @@
     }
   },
   "Beedrill-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Swarm"
     ],
@@ -4717,7 +4717,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Swarm": 1
       },
@@ -8377,7 +8377,7 @@
     }
   },
   "Crobat": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Infiltrator"
     ],
@@ -8404,7 +8404,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Infiltrator": 1
       },
@@ -10368,7 +10368,7 @@
     }
   },
   "Druddigon": {
-    "level": 85,
+    "level": 86,
     "abilities": [
       "Rough Skin",
       "Sheer Force"
@@ -10416,7 +10416,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 86,
       "abilities": {
         "Rough Skin": 0.515,
         "Sheer Force": 0.485
@@ -15536,7 +15536,7 @@
     }
   },
   "Gourgeist-Super": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Frisk"
     ],
@@ -15562,7 +15562,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Frisk": 1
       },
@@ -15962,7 +15962,7 @@
     }
   },
   "Gyarados": {
-    "level": 77,
+    "level": 78,
     "abilities": [
       "Intimidate",
       "Moxie"
@@ -15991,7 +15991,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 78,
       "abilities": {
         "Intimidate": 0.5,
         "Moxie": 0.5
@@ -17296,7 +17296,7 @@
     }
   },
   "Houndoom": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Flash Fire"
     ],
@@ -17321,7 +17321,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Flash Fire": 1
       },
@@ -19316,7 +19316,7 @@
     }
   },
   "Krookodile": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Intimidate"
     ],
@@ -19346,7 +19346,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Intimidate": 1
       },
@@ -21550,7 +21550,7 @@
     }
   },
   "Lugia": {
-    "level": 72,
+    "level": 71,
     "abilities": [
       "Multiscale"
     ],
@@ -21577,7 +21577,7 @@
       }
     },
     "stats": {
-      "level": 72,
+      "level": 71,
       "abilities": {
         "Multiscale": 1
       },
@@ -26173,7 +26173,7 @@
     }
   },
   "Pangoro": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Iron Fist"
     ],
@@ -26213,7 +26213,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Iron Fist": 1
       },
@@ -26767,7 +26767,7 @@
     }
   },
   "Pinsir": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Moxie"
     ],
@@ -26798,7 +26798,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Moxie": 1
       },
@@ -30695,7 +30695,7 @@
     }
   },
   "Scizor": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Technician"
     ],
@@ -30754,7 +30754,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Technician": 1
       },
@@ -30906,7 +30906,7 @@
     }
   },
   "Scolipede": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Speed Boost"
     ],
@@ -30945,7 +30945,7 @@
       }
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Speed Boost": 1
       },
@@ -37334,7 +37334,7 @@
     }
   },
   "Venusaur-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Chlorophyll"
     ],
@@ -37360,7 +37360,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Chlorophyll": 1
       },
@@ -38808,7 +38808,7 @@
     }
   },
   "Wobbuffet": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Shadow Tag"
     ],
@@ -38844,7 +38844,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Shadow Tag": 1
       },

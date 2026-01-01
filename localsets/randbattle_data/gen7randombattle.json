@@ -1393,7 +1393,7 @@
     }
   },
   "Ampharos-Mega": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Static"
     ],
@@ -1452,7 +1452,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Static": 1
       },
@@ -6692,7 +6692,7 @@
     }
   },
   "Cacturne": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Water Absorb"
     ],
@@ -6731,7 +6731,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Water Absorb": 1
       },
@@ -8959,7 +8959,7 @@
     }
   },
   "Comfey": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Triage"
     ],
@@ -9031,7 +9031,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Triage": 1
       },
@@ -10456,7 +10456,7 @@
     }
   },
   "Deoxys-Attack": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Pressure"
     ],
@@ -10494,7 +10494,7 @@
       }
     },
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Pressure": 1
       },
@@ -11108,7 +11108,7 @@
     }
   },
   "Diggersby": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Huge Power"
     ],
@@ -11152,7 +11152,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Huge Power": 1
       },
@@ -13276,7 +13276,7 @@
     }
   },
   "Espeon": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Magic Bounce"
     ],
@@ -13317,7 +13317,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Magic Bounce": 1
       },
@@ -17380,7 +17380,7 @@
     }
   },
   "Gorebyss": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Swift Swim"
     ],
@@ -17420,7 +17420,7 @@
       "spa": 30
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Swift Swim": 1
       },
@@ -17603,7 +17603,7 @@
     }
   },
   "Gourgeist-Large": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Frisk"
     ],
@@ -17627,7 +17627,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Frisk": 1
       },
@@ -17654,7 +17654,7 @@
     }
   },
   "Gourgeist-Small": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Frisk"
     ],
@@ -17678,7 +17678,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Frisk": 1
       },
@@ -18353,7 +18353,7 @@
     }
   },
   "Guzzlord": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Beast Boost"
     ],
@@ -18378,7 +18378,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Beast Boost": 1
       },
@@ -19576,7 +19576,7 @@
     }
   },
   "Honchkrow": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Moxie"
     ],
@@ -19602,7 +19602,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Moxie": 1
       },
@@ -19857,7 +19857,7 @@
     }
   },
   "Houndoom-Mega": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Flash Fire"
     ],
@@ -19894,7 +19894,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Flash Fire": 1
       },
@@ -22834,7 +22834,7 @@
     }
   },
   "Kyurem-White": {
-    "level": 76,
+    "level": 75,
     "abilities": [
       "Turboblaze"
     ],
@@ -22875,7 +22875,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 76,
+      "level": 75,
       "abilities": {
         "Turboblaze": 1
       },
@@ -29017,7 +29017,7 @@
     }
   },
   "Minun": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Volt Absorb"
     ],
@@ -29078,7 +29078,7 @@
       "def": 30
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Volt Absorb": 1
       },
@@ -30519,7 +30519,7 @@
     }
   },
   "Nihilego": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Beast Boost"
     ],
@@ -30563,7 +30563,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Beast Boost": 1
       },
@@ -35738,7 +35738,7 @@
     }
   },
   "Rhydon": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Lightning Rod"
     ],
@@ -35764,7 +35764,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Lightning Rod": 1
       },
@@ -36708,7 +36708,7 @@
     }
   },
   "Sableye-Mega": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Prankster"
     ],
@@ -36744,7 +36744,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Prankster": 1
       },
@@ -38077,7 +38077,7 @@
     }
   },
   "Seaking": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Lightning Rod",
       "Swift Swim"
@@ -38121,7 +38121,7 @@
       }
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Swift Swim": 0.5162,
         "Lightning Rod": 0.4838
@@ -40587,7 +40587,7 @@
     }
   },
   "Skarmory": {
-    "level": 76,
+    "level": 75,
     "abilities": [
       "Sturdy"
     ],
@@ -40630,7 +40630,7 @@
       }
     },
     "stats": {
-      "level": 76,
+      "level": 75,
       "abilities": {
         "Sturdy": 1
       },
@@ -42164,7 +42164,7 @@
     }
   },
   "Steelix-Mega": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Sturdy"
     ],
@@ -42189,7 +42189,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Sturdy": 1
       },
@@ -42272,7 +42272,7 @@
     }
   },
   "Stunfisk": {
-    "level": 89,
+    "level": 88,
     "abilities": [
       "Static"
     ],
@@ -42331,7 +42331,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 89,
+      "level": 88,
       "abilities": {
         "Static": 1
       },
@@ -43143,7 +43143,7 @@
     }
   },
   "Swoobat": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Simple"
     ],
@@ -43201,7 +43201,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Simple": 1
       },
@@ -44362,7 +44362,7 @@
     }
   },
   "Thundurus": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Prankster"
     ],
@@ -44413,7 +44413,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Prankster": 1
       },
