@@ -3077,24 +3077,13 @@
         ],
         "moves": [
           "Calm Mind",
+          "Explosion",
           "Ice Beam",
           "Recover",
           "Surf",
           "Toxic"
-        ],
-        "evs": {
-          "atk": 0
-        },
-        "ivs": {
-          "atk": 0
-        }
+        ]
       }
-    },
-    "evs": {
-      "atk": 0
-    },
-    "ivs": {
-      "atk": 0
     },
     "stats": {
       "level": 98,
@@ -3117,22 +3106,11 @@
             "Ice Beam": 1,
             "Recover": 1,
             "Surf": 1,
-            "Calm Mind": 0.5117,
-            "Toxic": 0.4883
-          },
-          "evs": {
-            "atk": 0
-          },
-          "ivs": {
-            "atk": 0
+            "Calm Mind": 0.3493,
+            "Toxic": 0.3318,
+            "Explosion": 0.3189
           }
         }
-      },
-      "evs": {
-        "atk": 0
-      },
-      "ivs": {
-        "atk": 0
       }
     }
   },
@@ -8258,7 +8236,6 @@
         ],
         "moves": [
           "Calm Mind",
-          "Hidden Power Fire",
           "Ice Beam",
           "Lovely Kiss",
           "Psychic",
@@ -8266,10 +8243,16 @@
         ],
         "evs": {
           "atk": 0
+        },
+        "ivs": {
+          "atk": 0
         }
       }
     },
     "evs": {
+      "atk": 0
+    },
+    "ivs": {
       "atk": 0
     },
     "stats": {
@@ -8293,16 +8276,21 @@
             "Calm Mind": 1,
             "Ice Beam": 1,
             "Psychic": 1,
-            "Substitute": 0.3433,
-            "Hidden Power Fire": 0.3317,
-            "Lovely Kiss": 0.325
+            "Substitute": 0.5148,
+            "Lovely Kiss": 0.4852
           },
           "evs": {
+            "atk": 0
+          },
+          "ivs": {
             "atk": 0
           }
         }
       },
       "evs": {
+        "atk": 0
+      },
+      "ivs": {
         "atk": 0
       }
     }
@@ -17329,7 +17317,6 @@
         "moves": [
           "Earthquake",
           "Explosion",
-          "Overheat",
           "Rock Slide",
           "Shadow Ball"
         ]
@@ -17369,10 +17356,9 @@
           },
           "moves": {
             "Earthquake": 1,
+            "Explosion": 1,
             "Rock Slide": 1,
-            "Explosion": 0.6799,
-            "Shadow Ball": 0.6604,
-            "Overheat": 0.6597
+            "Shadow Ball": 1
           }
         },
         "Staller": {

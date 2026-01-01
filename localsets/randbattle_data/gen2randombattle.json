@@ -6217,7 +6217,7 @@
     }
   },
   "Pikachu": {
-    "level": 69,
+    "level": 73,
     "items": [
       "Light Ball"
     ],
@@ -6262,7 +6262,7 @@
       }
     },
     "stats": {
-      "level": 69,
+      "level": 73,
       "items": {
         "Light Ball": 1
       },
