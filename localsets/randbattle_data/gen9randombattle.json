@@ -944,8 +944,7 @@
       "Choice Band",
       "Focus Sash",
       "Leftovers",
-      "Life Orb",
-      "Weakness Policy"
+      "Life Orb"
     ],
     "roles": {
       "Bulky Attacker": {
@@ -971,7 +970,7 @@
           "Intimidate"
         ],
         "items": [
-          "Weakness Policy"
+          "Leftovers"
         ],
         "teraTypes": [
           "Grass",
@@ -1014,8 +1013,7 @@
         "Intimidate": 1
       },
       "items": {
-        "Leftovers": 0.395,
-        "Weakness Policy": 0.3333,
+        "Leftovers": 0.7283,
         "Life Orb": 0.2195,
         "Focus Sash": 0.0291,
         "Choice Band": 0.023
@@ -1046,7 +1044,7 @@
             "Intimidate": 1
           },
           "items": {
-            "Weakness Policy": 1
+            "Leftovers": 1
           },
           "teraTypes": {
             "Ground": 0.5224,
@@ -12978,7 +12976,7 @@
       "Assault Vest",
       "Choice Band",
       "Choice Scarf",
-      "Weakness Policy"
+      "Leftovers"
     ],
     "roles": {
       "Fast Attacker": {
@@ -13027,7 +13025,7 @@
           "Reckless"
         ],
         "items": [
-          "Weakness Policy"
+          "Leftovers"
         ],
         "teraTypes": [
           "Fighting",
@@ -13048,7 +13046,7 @@
       },
       "items": {
         "Assault Vest": 0.3324,
-        "Weakness Policy": 0.3272,
+        "Leftovers": 0.3272,
         "Choice Band": 0.1809,
         "Choice Scarf": 0.1596
       },
@@ -13102,7 +13100,7 @@
             "Reckless": 1
           },
           "items": {
-            "Weakness Policy": 1
+            "Leftovers": 1
           },
           "teraTypes": {
             "Fighting": 0.5011,
@@ -41164,8 +41162,8 @@
     ],
     "items": [
       "Choice Scarf",
-      "Life Orb",
-      "Weakness Policy"
+      "Leftovers",
+      "Life Orb"
     ],
     "roles": {
       "Fast Attacker": {
@@ -41198,7 +41196,7 @@
           "Infiltrator"
         ],
         "items": [
-          "Weakness Policy"
+          "Leftovers"
         ],
         "teraTypes": [
           "Grass",
@@ -41218,7 +41216,7 @@
         "Infiltrator": 1
       },
       "items": {
-        "Weakness Policy": 0.4911,
+        "Leftovers": 0.4911,
         "Life Orb": 0.3229,
         "Choice Scarf": 0.186
       },
@@ -41255,7 +41253,7 @@
             "Infiltrator": 1
           },
           "items": {
-            "Weakness Policy": 1
+            "Leftovers": 1
           },
           "teraTypes": {
             "Ground": 0.5173,
