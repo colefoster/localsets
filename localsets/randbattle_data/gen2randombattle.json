@@ -261,7 +261,7 @@
     }
   },
   "Arbok": {
-    "level": 73,
+    "level": 77,
     "items": [
       "Leftovers"
     ],
@@ -304,7 +304,7 @@
       }
     },
     "stats": {
-      "level": 73,
+      "level": 77,
       "items": {
         "Leftovers": 1
       },
@@ -1783,7 +1783,7 @@
     }
   },
   "Dunsparce": {
-    "level": 73,
+    "level": 77,
     "items": [
       "Leftovers"
     ],
@@ -1817,7 +1817,7 @@
       }
     },
     "stats": {
-      "level": 73,
+      "level": 77,
       "items": {
         "Leftovers": 1
       },
@@ -2243,7 +2243,7 @@
     }
   },
   "Farfetch\u2019d": {
-    "level": 73,
+    "level": 77,
     "items": [
       "Leftovers"
     ],
@@ -2261,7 +2261,7 @@
       }
     },
     "stats": {
-      "level": 73,
+      "level": 77,
       "items": {
         "Leftovers": 1
       },
@@ -3212,7 +3212,7 @@
     }
   },
   "Hitmonchan": {
-    "level": 75,
+    "level": 77,
     "items": [
       "Leftovers"
     ],
@@ -3258,7 +3258,7 @@
       }
     },
     "stats": {
-      "level": 75,
+      "level": 77,
       "items": {
         "Leftovers": 1
       },
@@ -3422,7 +3422,7 @@
     }
   },
   "Hitmontop": {
-    "level": 77,
+    "level": 73,
     "items": [
       "Leftovers"
     ],
@@ -3472,7 +3472,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 73,
       "items": {
         "Leftovers": 1
       },
@@ -7058,7 +7058,7 @@
     }
   },
   "Raticate": {
-    "level": 73,
+    "level": 77,
     "items": [
       "Leftovers"
     ],
@@ -7078,7 +7078,7 @@
       }
     },
     "stats": {
-      "level": 73,
+      "level": 77,
       "items": {
         "Leftovers": 1
       },
