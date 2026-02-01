@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "localsets"
-version = "0.1.71"
+version = "0.1.72"
 description = "Local Pokemon random battle sets (auto-updating) and Smogon competitive sets"
 readme = "README.md"
 
