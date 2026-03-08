@@ -19870,16 +19870,16 @@
       "Quark Drive"
     ],
     "items": [
-      "Focus Sash",
-      "Sitrus Berry"
+      "Booster Energy",
+      "Focus Sash"
     ],
     "roles": {
-      "Doubles Bulky Attacker": {
+      "Doubles Wallbreaker": {
         "abilities": [
           "Quark Drive"
         ],
         "items": [
-          "Sitrus Berry"
+          "Booster Energy"
         ],
         "teraTypes": [
           "Dragon",
@@ -19937,17 +19937,17 @@
         "Quark Drive": 1
       },
       "items": {
-        "Sitrus Berry": 0.511,
+        "Booster Energy": 0.511,
         "Focus Sash": 0.489
       },
       "roles": {
-        "Doubles Bulky Attacker": {
+        "Doubles Wallbreaker": {
           "weight": 0.511,
           "abilities": {
             "Quark Drive": 1
           },
           "items": {
-            "Sitrus Berry": 1
+            "Booster Energy": 1
           },
           "teraTypes": {
             "Dragon": 0.5022,
