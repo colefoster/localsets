@@ -252,7 +252,7 @@
     }
   },
   "Altaria": {
-    "level": 91,
+    "level": 90,
     "abilities": [
       "Natural Cure"
     ],
@@ -301,7 +301,7 @@
       }
     },
     "stats": {
-      "level": 91,
+      "level": 90,
       "abilities": {
         "Natural Cure": 1
       },
@@ -1463,7 +1463,7 @@
     }
   },
   "Arceus-Dragon": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Multitype"
     ],
@@ -1525,7 +1525,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Multitype": 1
       },
@@ -2088,7 +2088,7 @@
     }
   },
   "Arceus-Ghost": {
-    "level": 72,
+    "level": 71,
     "abilities": [
       "Multitype"
     ],
@@ -2127,7 +2127,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 72,
+      "level": 71,
       "abilities": {
         "Multitype": 1
       },
@@ -5331,7 +5331,7 @@
     }
   },
   "Breloom": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Technician"
     ],
@@ -5360,7 +5360,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Technician": 1
       },
@@ -5959,7 +5959,7 @@
     }
   },
   "Calyrex-Shadow": {
-    "level": 63,
+    "level": 62,
     "abilities": [
       "As One (Spectrier)"
     ],
@@ -6001,7 +6001,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 63,
+      "level": 62,
       "abilities": {
         "As One (Spectrier)": 1
       },
@@ -14480,7 +14480,7 @@
     }
   },
   "Gardevoir": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Trace"
     ],
@@ -14548,7 +14548,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Trace": 1
       },
@@ -17243,7 +17243,7 @@
     }
   },
   "Gumshoos": {
-    "level": 93,
+    "level": 94,
     "abilities": [
       "Adaptability"
     ],
@@ -17270,7 +17270,7 @@
       }
     },
     "stats": {
-      "level": 93,
+      "level": 94,
       "abilities": {
         "Adaptability": 1
       },
@@ -21958,7 +21958,7 @@
     }
   },
   "Komala": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Comatose"
     ],
@@ -21993,7 +21993,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Comatose": 1
       },
@@ -24712,7 +24712,7 @@
     }
   },
   "Lycanroc": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Sand Rush"
     ],
@@ -24741,7 +24741,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Sand Rush": 1
       },
@@ -30427,7 +30427,7 @@
     }
   },
   "Orthworm": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Earth Eater"
     ],
@@ -30475,7 +30475,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Earth Eater": 1
       },
@@ -37971,7 +37971,7 @@
     }
   },
   "Shiftry": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Wind Rider"
     ],
@@ -38018,7 +38018,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Wind Rider": 1
       },
@@ -39124,7 +39124,7 @@
     }
   },
   "Sneasler": {
-    "level": 77,
+    "level": 76,
     "abilities": [
       "Poison Touch",
       "Unburden"
@@ -39179,7 +39179,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 76,
       "abilities": {
         "Poison Touch": 0.5233,
         "Unburden": 0.4767
@@ -40804,7 +40804,7 @@
     }
   },
   "Sylveon": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Pixilate"
     ],
@@ -40855,7 +40855,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Pixilate": 1
       },
@@ -42522,7 +42522,7 @@
     }
   },
   "Tornadus-Therian": {
-    "level": 77,
+    "level": 78,
     "abilities": [
       "Regenerator"
     ],
@@ -42577,7 +42577,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 78,
       "abilities": {
         "Regenerator": 1
       },
@@ -43353,7 +43353,7 @@
     }
   },
   "Tropius": {
-    "level": 94,
+    "level": 93,
     "abilities": [
       "Harvest"
     ],
@@ -43393,7 +43393,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 94,
+      "level": 93,
       "abilities": {
         "Harvest": 1
       },
@@ -44532,7 +44532,7 @@
     }
   },
   "Venusaur": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Chlorophyll",
       "Overgrow"
@@ -44564,7 +44564,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Overgrow": 0.9852,
         "Chlorophyll": 0.0148
@@ -45738,7 +45738,7 @@
     }
   },
   "Weezing-Galar": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Levitate"
     ],
@@ -45786,7 +45786,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Levitate": 1
       },

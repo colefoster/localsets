@@ -1055,7 +1055,7 @@
     }
   },
   "Altaria-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Natural Cure"
     ],
@@ -1079,7 +1079,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Natural Cure": 1
       },
@@ -1106,7 +1106,7 @@
     }
   },
   "Ambipom": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Technician"
     ],
@@ -1133,7 +1133,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Technician": 1
       },
@@ -3683,7 +3683,7 @@
     }
   },
   "Audino": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Regenerator"
     ],
@@ -3709,7 +3709,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Regenerator": 1
       },
@@ -6761,7 +6761,7 @@
     }
   },
   "Charizard": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Blaze"
     ],
@@ -6782,7 +6782,10 @@
           "Fire Blast",
           "Roost",
           "Will-O-Wisp"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       },
       "Setup Sweeper": {
         "abilities": [
@@ -6793,11 +6796,17 @@
           "Earthquake",
           "Flare Blitz",
           "Swords Dance"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       }
     },
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Blaze": 1
       },
@@ -6819,6 +6828,9 @@
             "Roost": 1,
             "Earthquake": 0.5198,
             "Will-O-Wisp": 0.4802
+          },
+          "evs": {
+            "hp": 81
           }
         },
         "Setup Sweeper": {
@@ -6831,8 +6843,14 @@
             "Earthquake": 1,
             "Flare Blitz": 1,
             "Swords Dance": 1
+          },
+          "evs": {
+            "hp": 81
           }
         }
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
@@ -8270,7 +8288,7 @@
     }
   },
   "Cresselia": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Levitate"
     ],
@@ -8329,7 +8347,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Levitate": 1
       },
@@ -9198,7 +9216,7 @@
     }
   },
   "Deoxys-Defense": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Pressure"
     ],
@@ -9227,7 +9245,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Pressure": 1
       },
@@ -11000,7 +11018,7 @@
     }
   },
   "Electrode": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Aftermath",
       "Static"
@@ -11070,7 +11088,7 @@
       "def": 30
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Static": 0.5134,
         "Aftermath": 0.4866
@@ -13282,7 +13300,7 @@
     }
   },
   "Garchomp-Mega": {
-    "level": 76,
+    "level": 75,
     "abilities": [
       "Rough Skin"
     ],
@@ -13322,7 +13340,7 @@
       }
     },
     "stats": {
-      "level": 76,
+      "level": 75,
       "abilities": {
         "Rough Skin": 1
       },
@@ -15673,7 +15691,7 @@
     }
   },
   "Groudon": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Drought"
     ],
@@ -15718,7 +15736,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Drought": 1
       },
@@ -16189,7 +16207,7 @@
     }
   },
   "Haxorus": {
-    "level": 77,
+    "level": 76,
     "abilities": [
       "Mold Breaker"
     ],
@@ -16214,7 +16232,7 @@
       }
     },
     "stats": {
-      "level": 77,
+      "level": 76,
       "abilities": {
         "Mold Breaker": 1
       },
@@ -22416,7 +22434,7 @@
     }
   },
   "Manaphy": {
-    "level": 76,
+    "level": 77,
     "abilities": [
       "Hydration"
     ],
@@ -22452,7 +22470,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 76,
+      "level": 77,
       "abilities": {
         "Hydration": 1
       },
@@ -24949,7 +24967,7 @@
     }
   },
   "Mothim": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Tinted Lens"
     ],
@@ -24971,7 +24989,6 @@
           "Quiver Dance"
         ],
         "evs": {
-          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -24980,14 +24997,13 @@
       }
     },
     "evs": {
-      "hp": 81,
       "atk": 0
     },
     "ivs": {
       "atk": 0
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Tinted Lens": 1
       },
@@ -25010,7 +25026,6 @@
             "Quiver Dance": 1
           },
           "evs": {
-            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -25019,7 +25034,6 @@
         }
       },
       "evs": {
-        "hp": 81,
         "atk": 0
       },
       "ivs": {
@@ -25406,7 +25420,7 @@
     }
   },
   "Nidoking": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Sheer Force"
     ],
@@ -25432,7 +25446,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Sheer Force": 1
       },
@@ -26768,7 +26782,7 @@
     }
   },
   "Pinsir": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Moxie"
     ],
@@ -26799,7 +26813,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Moxie": 1
       },
@@ -28743,7 +28757,7 @@
     }
   },
   "Regirock": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Sturdy"
     ],
@@ -28784,7 +28798,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Sturdy": 1
       },
@@ -33209,7 +33223,7 @@
     }
   },
   "Spiritomb": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Infiltrator"
     ],
@@ -33257,7 +33271,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Infiltrator": 1
       },
@@ -34807,7 +34821,7 @@
     }
   },
   "Talonflame": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Gale Wings"
     ],
@@ -34828,7 +34842,10 @@
           "Roost",
           "U-turn",
           "Will-O-Wisp"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       },
       "Bulky Setup": {
         "abilities": [
@@ -34842,11 +34859,17 @@
           "Flare Blitz",
           "Roost",
           "Swords Dance"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       }
     },
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Gale Wings": 1
       },
@@ -34868,6 +34891,9 @@
             "Roost": 1,
             "U-turn": 0.5216,
             "Will-O-Wisp": 0.4784
+          },
+          "evs": {
+            "hp": 81
           }
         },
         "Bulky Setup": {
@@ -34883,13 +34909,19 @@
             "Flare Blitz": 1,
             "Roost": 1,
             "Swords Dance": 1
+          },
+          "evs": {
+            "hp": 81
           }
         }
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
   "Tangrowth": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Regenerator"
     ],
@@ -34937,7 +34969,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Regenerator": 1
       },
@@ -37062,7 +37094,7 @@
     }
   },
   "Venomoth": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Tinted Lens"
     ],
@@ -37098,7 +37130,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Tinted Lens": 1
       },
@@ -39270,7 +39302,7 @@
     }
   },
   "Yanmega": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Speed Boost",
       "Tinted Lens"
@@ -39292,7 +39324,10 @@
           "Bug Buzz",
           "Giga Drain",
           "U-turn"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       },
       "Fast Attacker": {
         "abilities": [
@@ -39308,6 +39343,7 @@
           "Protect"
         ],
         "evs": {
+          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -39317,8 +39353,11 @@
         }
       }
     },
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Tinted Lens": 0.5315,
         "Speed Boost": 0.4685
@@ -39341,6 +39380,9 @@
             "Bug Buzz": 1,
             "Giga Drain": 1,
             "U-turn": 1
+          },
+          "evs": {
+            "hp": 81
           }
         },
         "Fast Attacker": {
@@ -39358,6 +39400,7 @@
             "Protect": 1
           },
           "evs": {
+            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -39366,6 +39409,9 @@
             "spd": 30
           }
         }
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },

@@ -646,7 +646,7 @@
     }
   },
   "Arctovish": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Slush Rush",
       "Water Absorb"
@@ -663,7 +663,7 @@
       "Psychic Fangs"
     ],
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Water Absorb": 0.9933,
         "Slush Rush": 0.0067
@@ -924,7 +924,7 @@
     }
   },
   "Aurorus": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Snow Warning"
     ],
@@ -948,7 +948,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Snow Warning": 1
       },
@@ -1120,7 +1120,7 @@
     }
   },
   "Barraskewda": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Swift Swim"
     ],
@@ -1134,7 +1134,7 @@
       "Liquidation"
     ],
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Swift Swim": 1
       },
@@ -1830,7 +1830,7 @@
     }
   },
   "Calyrex": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Unnerve"
     ],
@@ -1851,7 +1851,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Unnerve": 1
       },
@@ -3136,7 +3136,7 @@
     }
   },
   "Crustle": {
-    "level": 81,
+    "level": 82,
     "abilities": [
       "Sturdy"
     ],
@@ -3151,7 +3151,7 @@
       "X-Scissor"
     ],
     "stats": {
-      "level": 81,
+      "level": 82,
       "abilities": {
         "Sturdy": 1
       },
@@ -3688,7 +3688,7 @@
     }
   },
   "Dracovish": {
-    "level": 77,
+    "level": 78,
     "abilities": [
       "Sand Rush",
       "Strong Jaw"
@@ -3704,7 +3704,7 @@
       "Psychic Fangs"
     ],
     "stats": {
-      "level": 77,
+      "level": 78,
       "abilities": {
         "Strong Jaw": 0.9888,
         "Sand Rush": 0.0112
@@ -4184,7 +4184,7 @@
     }
   },
   "Dunsparce": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Serene Grace"
     ],
@@ -4198,7 +4198,7 @@
       "Roost"
     ],
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Serene Grace": 1
       },
@@ -4404,7 +4404,7 @@
     }
   },
   "Electivire": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Motor Drive"
     ],
@@ -4422,7 +4422,7 @@
       "Wild Charge"
     ],
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Motor Drive": 1
       },
@@ -4522,7 +4522,7 @@
     }
   },
   "Escavalier": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Overcoat",
       "Swarm"
@@ -4540,7 +4540,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Overcoat": 0.5046,
         "Swarm": 0.4954
@@ -5654,7 +5654,7 @@
     }
   },
   "Glalie": {
-    "level": 96,
+    "level": 95,
     "abilities": [
       "Inner Focus"
     ],
@@ -5671,7 +5671,7 @@
       "Taunt"
     ],
     "stats": {
-      "level": 96,
+      "level": 95,
       "abilities": {
         "Inner Focus": 1
       },
@@ -5802,7 +5802,7 @@
     }
   },
   "Golurk": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "No Guard"
     ],
@@ -5818,7 +5818,7 @@
       "Stone Edge"
     ],
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "No Guard": 1
       },
@@ -5988,7 +5988,7 @@
     }
   },
   "Gourgeist-Small": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Frisk"
     ],
@@ -6003,7 +6003,7 @@
       "Will-O-Wisp"
     ],
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Frisk": 1
       },
@@ -6386,7 +6386,7 @@
     }
   },
   "Hawlucha": {
-    "level": 78,
+    "level": 79,
     "abilities": [
       "Mold Breaker",
       "Unburden"
@@ -6404,7 +6404,7 @@
       "Throat Chop"
     ],
     "stats": {
-      "level": 78,
+      "level": 79,
       "abilities": {
         "Unburden": 0.8355,
         "Mold Breaker": 0.1645
@@ -6662,7 +6662,7 @@
     }
   },
   "Hitmonchan": {
-    "level": 88,
+    "level": 87,
     "abilities": [
       "Iron Fist"
     ],
@@ -6681,7 +6681,7 @@
       "Throat Chop"
     ],
     "stats": {
-      "level": 88,
+      "level": 87,
       "abilities": {
         "Iron Fist": 1
       },
@@ -7068,7 +7068,7 @@
     }
   },
   "Jellicent": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Water Absorb"
     ],
@@ -7090,7 +7090,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Water Absorb": 1
       },
@@ -7544,7 +7544,7 @@
     }
   },
   "Kommo-o": {
-    "level": 80,
+    "level": 81,
     "abilities": [
       "Bulletproof"
     ],
@@ -7560,7 +7560,7 @@
       "Stealth Rock"
     ],
     "stats": {
-      "level": 80,
+      "level": 81,
       "abilities": {
         "Bulletproof": 1
       },
@@ -7928,7 +7928,7 @@
     }
   },
   "Lapras-Gmax": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Water Absorb"
     ],
@@ -7952,7 +7952,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Water Absorb": 1
       },
@@ -8110,7 +8110,7 @@
     }
   },
   "Lickilicky": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Oblivious"
     ],
@@ -8129,7 +8129,7 @@
       "Wish"
     ],
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Oblivious": 1
       },
@@ -8150,7 +8150,7 @@
     }
   },
   "Liepard": {
-    "level": 91,
+    "level": 92,
     "abilities": [
       "Prankster"
     ],
@@ -8168,7 +8168,7 @@
       "U-turn"
     ],
     "stats": {
-      "level": 91,
+      "level": 92,
       "abilities": {
         "Prankster": 1
       },
@@ -8280,7 +8280,7 @@
     }
   },
   "Lopunny": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Cute Charm"
     ],
@@ -8294,7 +8294,7 @@
       "Switcheroo"
     ],
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Cute Charm": 1
       },
@@ -8740,7 +8740,7 @@
     }
   },
   "Magearna": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Soul-Heart"
     ],
@@ -8760,7 +8760,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Soul-Heart": 1
       },
@@ -9258,7 +9258,7 @@
     }
   },
   "Melmetal": {
-    "level": 73,
+    "level": 72,
     "abilities": [
       "Iron Fist"
     ],
@@ -9274,7 +9274,7 @@
       "Thunder Wave"
     ],
     "stats": {
-      "level": 73,
+      "level": 72,
       "abilities": {
         "Iron Fist": 1
       },
@@ -9508,7 +9508,7 @@
     }
   },
   "Mewtwo": {
-    "level": 71,
+    "level": 72,
     "abilities": [
       "Unnerve"
     ],
@@ -9530,7 +9530,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 71,
+      "level": 72,
       "abilities": {
         "Unnerve": 1
       },
@@ -9642,7 +9642,7 @@
     }
   },
   "Miltank": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Sap Sipper",
       "Scrappy",
@@ -9660,7 +9660,7 @@
       "Toxic"
     ],
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Thick Fat": 0.5679,
         "Sap Sipper": 0.287,
@@ -9712,7 +9712,7 @@
     }
   },
   "Moltres": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Flame Body",
       "Pressure"
@@ -9728,7 +9728,7 @@
       "U-turn"
     ],
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Flame Body": 0.7014,
         "Pressure": 0.2986
@@ -9874,7 +9874,7 @@
     }
   },
   "Mr. Mime-Galar": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Screen Cleaner",
       "Vital Spirit"
@@ -9890,7 +9890,7 @@
       "Rapid Spin"
     ],
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Vital Spirit": 0.5137,
         "Screen Cleaner": 0.4863
@@ -10902,7 +10902,7 @@
     }
   },
   "Pelipper": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Drizzle"
     ],
@@ -10919,7 +10919,7 @@
       "U-turn"
     ],
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Drizzle": 1
       },
@@ -11422,7 +11422,7 @@
     }
   },
   "Primarina": {
-    "level": 80,
+    "level": 81,
     "abilities": [
       "Torrent"
     ],
@@ -11444,7 +11444,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 80,
+      "level": 81,
       "abilities": {
         "Torrent": 1
       },
@@ -11468,7 +11468,7 @@
     }
   },
   "Pyukumuku": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Unaware"
     ],
@@ -11488,7 +11488,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Unaware": 1
       },
@@ -11678,7 +11678,7 @@
     }
   },
   "Raikou": {
-    "level": 79,
+    "level": 80,
     "abilities": [
       "Pressure"
     ],
@@ -11702,7 +11702,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 79,
+      "level": 80,
       "abilities": {
         "Pressure": 1
       },
@@ -11922,7 +11922,7 @@
     }
   },
   "Regieleki": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Transistor"
     ],
@@ -11936,7 +11936,7 @@
       "Volt Switch"
     ],
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Transistor": 1
       },
@@ -11952,7 +11952,7 @@
     }
   },
   "Regigigas": {
-    "level": 82,
+    "level": 83,
     "abilities": [
       "Slow Start"
     ],
@@ -11966,7 +11966,7 @@
       "Toxic"
     ],
     "stats": {
-      "level": 82,
+      "level": 83,
       "abilities": {
         "Slow Start": 1
       },
@@ -12220,7 +12220,7 @@
     }
   },
   "Rhyperior": {
-    "level": 79,
+    "level": 80,
     "abilities": [
       "Solid Rock"
     ],
@@ -12236,7 +12236,7 @@
       "Stone Edge"
     ],
     "stats": {
-      "level": 79,
+      "level": 80,
       "abilities": {
         "Solid Rock": 1
       },
@@ -12358,7 +12358,7 @@
     }
   },
   "Roserade": {
-    "level": 84,
+    "level": 83,
     "abilities": [
       "Natural Cure"
     ],
@@ -12381,7 +12381,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 84,
+      "level": 83,
       "abilities": {
         "Natural Cure": 1
       },
@@ -14792,7 +14792,7 @@
     }
   },
   "Stunfisk": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Sand Veil",
       "Static"
@@ -14809,7 +14809,7 @@
       "Stealth Rock"
     ],
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Static": 0.9974,
         "Sand Veil": 0.0026
@@ -16228,7 +16228,7 @@
     }
   },
   "Umbreon": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Synchronize"
     ],
@@ -16242,7 +16242,7 @@
       "Wish"
     ],
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Synchronize": 1
       },
@@ -16454,7 +16454,7 @@
     }
   },
   "Vanilluxe": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Snow Warning"
     ],
@@ -16469,8 +16469,11 @@
       "Flash Cannon",
       "Freeze-Dry"
     ],
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Snow Warning": 1
       },
@@ -16484,6 +16487,9 @@
         "Aurora Veil": 0.7479,
         "Explosion": 0.7301,
         "Flash Cannon": 0.7053
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
@@ -17338,7 +17344,7 @@
     }
   },
   "Xerneas": {
-    "level": 65,
+    "level": 64,
     "abilities": [
       "Fairy Aura"
     ],
@@ -17358,7 +17364,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 65,
+      "level": 64,
       "abilities": {
         "Fairy Aura": 1
       },
@@ -17470,7 +17476,7 @@
     }
   },
   "Zacian": {
-    "level": 66,
+    "level": 67,
     "abilities": [
       "Intrepid Sword"
     ],
@@ -17486,7 +17492,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 66,
+      "level": 67,
       "abilities": {
         "Intrepid Sword": 1
       },
@@ -17504,7 +17510,7 @@
     }
   },
   "Zacian-Crowned": {
-    "level": 61,
+    "level": 62,
     "abilities": [
       "Intrepid Sword"
     ],
@@ -17519,7 +17525,7 @@
       "Swords Dance"
     ],
     "stats": {
-      "level": 61,
+      "level": 62,
       "abilities": {
         "Intrepid Sword": 1
       },
@@ -17536,7 +17542,7 @@
     }
   },
   "Zamazenta": {
-    "level": 69,
+    "level": 70,
     "abilities": [
       "Dauntless Shield"
     ],
@@ -17550,7 +17556,7 @@
       "Wild Charge"
     ],
     "stats": {
-      "level": 69,
+      "level": 70,
       "abilities": {
         "Dauntless Shield": 1
       },
@@ -17566,7 +17572,7 @@
     }
   },
   "Zamazenta-Crowned": {
-    "level": 68,
+    "level": 67,
     "abilities": [
       "Dauntless Shield"
     ],
@@ -17581,7 +17587,7 @@
       "Psychic Fangs"
     ],
     "stats": {
-      "level": 68,
+      "level": 67,
       "abilities": {
         "Dauntless Shield": 1
       },
@@ -17638,7 +17644,7 @@
     }
   },
   "Zapdos-Galar": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Defiant"
     ],
@@ -17655,7 +17661,7 @@
       "U-turn"
     ],
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Defiant": 1
       },

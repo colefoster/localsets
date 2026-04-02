@@ -169,7 +169,7 @@
     }
   },
   "Absol-Mega": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Justified"
     ],
@@ -210,7 +210,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Justified": 1
       },
@@ -420,7 +420,7 @@
     }
   },
   "Aerodactyl": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Unnerve"
     ],
@@ -485,7 +485,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Unnerve": 1
       },
@@ -698,7 +698,7 @@
     }
   },
   "Aggron-Mega": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Sturdy"
     ],
@@ -725,7 +725,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Sturdy": 1
       },
@@ -881,7 +881,7 @@
     }
   },
   "Alakazam-Mega": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Magic Guard"
     ],
@@ -920,7 +920,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Magic Guard": 1
       },
@@ -4623,7 +4623,7 @@
     }
   },
   "Bastiodon": {
-    "level": 94,
+    "level": 93,
     "abilities": [
       "Sturdy"
     ],
@@ -4649,7 +4649,7 @@
       }
     },
     "stats": {
-      "level": 94,
+      "level": 93,
       "abilities": {
         "Sturdy": 1
       },
@@ -4739,7 +4739,7 @@
     }
   },
   "Beautifly": {
-    "level": 99,
+    "level": 98,
     "abilities": [
       "Swarm"
     ],
@@ -4762,6 +4762,7 @@
           "Quiver Dance"
         ],
         "evs": {
+          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -4784,6 +4785,7 @@
           "Quiver Dance"
         ],
         "evs": {
+          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -4794,6 +4796,7 @@
       }
     },
     "evs": {
+      "hp": 81,
       "atk": 0
     },
     "ivs": {
@@ -4802,7 +4805,7 @@
       "spd": 30
     },
     "stats": {
-      "level": 99,
+      "level": 98,
       "abilities": {
         "Swarm": 1
       },
@@ -4826,6 +4829,7 @@
             "Quiver Dance": 1
           },
           "evs": {
+            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -4849,6 +4853,7 @@
             "Quiver Dance": 1
           },
           "evs": {
+            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -4859,6 +4864,7 @@
         }
       },
       "evs": {
+        "hp": 81,
         "atk": 0
       },
       "ivs": {
@@ -5430,7 +5436,7 @@
     }
   },
   "Bisharp": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "Defiant"
     ],
@@ -5457,7 +5463,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "Defiant": 1
       },
@@ -6770,7 +6776,7 @@
     }
   },
   "Camerupt": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Solid Rock"
     ],
@@ -6810,7 +6816,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Solid Rock": 1
       },
@@ -8980,7 +8986,7 @@
     }
   },
   "Comfey": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Triage"
     ],
@@ -9052,7 +9058,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Triage": 1
       },
@@ -14665,7 +14671,7 @@
     }
   },
   "Furfrou": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Fur Coat"
     ],
@@ -14707,7 +14713,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Fur Coat": 1
       },
@@ -16867,7 +16873,7 @@
     }
   },
   "Golduck": {
-    "level": 93,
+    "level": 92,
     "abilities": [
       "Cloud Nine",
       "Swift Swim"
@@ -16930,7 +16936,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 93,
+      "level": 92,
       "abilities": {
         "Cloud Nine": 0.9836,
         "Swift Swim": 0.0164
@@ -21850,7 +21856,7 @@
     }
   },
   "Kingler": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Sheer Force"
     ],
@@ -21877,7 +21883,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Sheer Force": 1
       },
@@ -22565,7 +22571,7 @@
     }
   },
   "Kyurem": {
-    "level": 80,
+    "level": 79,
     "abilities": [
       "Pressure"
     ],
@@ -22631,7 +22637,7 @@
       }
     },
     "stats": {
-      "level": 80,
+      "level": 79,
       "abilities": {
         "Pressure": 1
       },
@@ -26973,7 +26979,7 @@
     }
   },
   "Marowak": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Battle Armor",
       "Rock Head"
@@ -27001,7 +27007,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Rock Head": 0.591,
         "Battle Armor": 0.409
@@ -27297,7 +27303,7 @@
     }
   },
   "Mawile": {
-    "level": 89,
+    "level": 90,
     "abilities": [
       "Intimidate",
       "Sheer Force"
@@ -27327,7 +27333,7 @@
       }
     },
     "stats": {
-      "level": 89,
+      "level": 90,
       "abilities": {
         "Sheer Force": 0.5357,
         "Intimidate": 0.4643
@@ -31517,7 +31523,7 @@
     }
   },
   "Oricorio-Pom-Pom": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Dancer"
     ],
@@ -31555,7 +31561,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Dancer": 1
       },
@@ -32777,7 +32783,7 @@
     }
   },
   "Pinsir": {
-    "level": 84,
+    "level": 85,
     "abilities": [
       "Moxie"
     ],
@@ -32808,7 +32814,7 @@
       }
     },
     "stats": {
-      "level": 84,
+      "level": 85,
       "abilities": {
         "Moxie": 1
       },
@@ -32842,7 +32848,7 @@
     }
   },
   "Pinsir-Mega": {
-    "level": 74,
+    "level": 73,
     "abilities": [
       "Moxie"
     ],
@@ -32863,17 +32869,11 @@
           "Quick Attack",
           "Return",
           "Swords Dance"
-        ],
-        "evs": {
-          "hp": 81
-        }
+        ]
       }
     },
-    "evs": {
-      "hp": 81
-    },
     "stats": {
-      "level": 74,
+      "level": 73,
       "abilities": {
         "Moxie": 1
       },
@@ -32895,14 +32895,8 @@
             "Swords Dance": 1,
             "Close Combat": 0.5006,
             "Earthquake": 0.4994
-          },
-          "evs": {
-            "hp": 81
           }
         }
-      },
-      "evs": {
-        "hp": 81
       }
     }
   },
@@ -36296,7 +36290,7 @@
     }
   },
   "Rotom-Frost": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Levitate"
     ],
@@ -36345,6 +36339,7 @@
           "Will-O-Wisp"
         ],
         "evs": {
+          "hp": 81,
           "atk": 0
         },
         "ivs": {
@@ -36359,7 +36354,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Levitate": 1
       },
@@ -36410,6 +36405,7 @@
             "Volt Switch": 0.649
           },
           "evs": {
+            "hp": 81,
             "atk": 0
           },
           "ivs": {
@@ -38812,7 +38808,7 @@
     }
   },
   "Shedinja": {
-    "level": 96,
+    "level": 97,
     "abilities": [
       "Wonder Guard"
     ],
@@ -38837,7 +38833,7 @@
       }
     },
     "stats": {
-      "level": 96,
+      "level": 97,
       "abilities": {
         "Wonder Guard": 1
       },
@@ -42727,7 +42723,7 @@
     }
   },
   "Swalot": {
-    "level": 90,
+    "level": 91,
     "abilities": [
       "Liquid Ooze"
     ],
@@ -42768,7 +42764,7 @@
       }
     },
     "stats": {
-      "level": 90,
+      "level": 91,
       "abilities": {
         "Liquid Ooze": 1
       },
@@ -46066,7 +46062,7 @@
     }
   },
   "Tyrantrum": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Rock Head"
     ],
@@ -46112,7 +46108,7 @@
       }
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Rock Head": 1
       },
@@ -48937,7 +48933,7 @@
     }
   },
   "Wobbuffet": {
-    "level": 94,
+    "level": 95,
     "abilities": [
       "Shadow Tag"
     ],
@@ -48973,7 +48969,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 94,
+      "level": 95,
       "abilities": {
         "Shadow Tag": 1
       },
@@ -50003,7 +49999,7 @@
     }
   },
   "Zekrom": {
-    "level": 74,
+    "level": 75,
     "abilities": [
       "Teravolt"
     ],
@@ -50058,7 +50054,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 75,
       "abilities": {
         "Teravolt": 1
       },

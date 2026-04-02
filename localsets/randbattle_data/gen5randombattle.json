@@ -2679,7 +2679,7 @@
     }
   },
   "Archeops": {
-    "level": 78,
+    "level": 77,
     "abilities": [
       "Defeatist"
     ],
@@ -2705,7 +2705,7 @@
       }
     },
     "stats": {
-      "level": 78,
+      "level": 77,
       "abilities": {
         "Defeatist": 1
       },
@@ -2734,7 +2734,7 @@
     }
   },
   "Ariados": {
-    "level": 98,
+    "level": 99,
     "abilities": [
       "Insomnia",
       "Swarm"
@@ -2760,7 +2760,7 @@
       }
     },
     "stats": {
-      "level": 98,
+      "level": 99,
       "abilities": {
         "Swarm": 0.503,
         "Insomnia": 0.497
@@ -3474,7 +3474,7 @@
     }
   },
   "Beartic": {
-    "level": 92,
+    "level": 93,
     "abilities": [
       "Swift Swim"
     ],
@@ -3501,7 +3501,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 93,
       "abilities": {
         "Swift Swim": 1
       },
@@ -4842,7 +4842,7 @@
     }
   },
   "Camerupt": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Solid Rock"
     ],
@@ -4867,7 +4867,7 @@
       }
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Solid Rock": 1
       },
@@ -5761,7 +5761,7 @@
     }
   },
   "Chimecho": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Levitate"
     ],
@@ -5812,7 +5812,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Levitate": 1
       },
@@ -6214,7 +6214,7 @@
     }
   },
   "Cofagrigus": {
-    "level": 87,
+    "level": 86,
     "abilities": [
       "Mummy"
     ],
@@ -6270,7 +6270,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 87,
+      "level": 86,
       "abilities": {
         "Mummy": 1
       },
@@ -7676,7 +7676,7 @@
     }
   },
   "Ditto": {
-    "level": 87,
+    "level": 88,
     "abilities": [
       "Imposter"
     ],
@@ -7697,7 +7697,7 @@
       }
     },
     "stats": {
-      "level": 87,
+      "level": 88,
       "abilities": {
         "Imposter": 1
       },
@@ -7833,7 +7833,7 @@
     }
   },
   "Dragonair": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Marvel Scale",
       "Shed Skin"
@@ -7873,7 +7873,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Shed Skin": 0.739,
         "Marvel Scale": 0.261
@@ -9828,7 +9828,7 @@
     }
   },
   "Fearow": {
-    "level": 89,
+    "level": 88,
     "abilities": [
       "Sniper"
     ],
@@ -9865,14 +9865,11 @@
           "Drill Run",
           "Return",
           "U-turn"
-        ],
-        "evs": {
-          "hp": 77
-        }
+        ]
       }
     },
     "stats": {
-      "level": 89,
+      "level": 88,
       "abilities": {
         "Sniper": 1
       },
@@ -9911,9 +9908,6 @@
             "U-turn": 1,
             "Return": 0.5076,
             "Double-Edge": 0.4924
-          },
-          "evs": {
-            "hp": 77
           }
         }
       }
@@ -12741,7 +12735,7 @@
     }
   },
   "Haxorus": {
-    "level": 74,
+    "level": 75,
     "abilities": [
       "Mold Breaker"
     ],
@@ -12765,7 +12759,7 @@
       }
     },
     "stats": {
-      "level": 74,
+      "level": 75,
       "abilities": {
         "Mold Breaker": 1
       },
@@ -13237,7 +13231,7 @@
     }
   },
   "Hitmonlee": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Reckless",
       "Unburden"
@@ -13261,7 +13255,10 @@
           "Mach Punch",
           "Stone Edge",
           "Sucker Punch"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       },
       "Fast Attacker": {
         "abilities": [
@@ -13282,7 +13279,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Reckless": 0.516,
         "Unburden": 0.484
@@ -13307,6 +13304,9 @@
             "Stone Edge": 0.8244,
             "Sucker Punch": 0.6961,
             "Mach Punch": 0.6498
+          },
+          "evs": {
+            "hp": 81
           }
         },
         "Fast Attacker": {
@@ -14591,7 +14591,7 @@
     }
   },
   "Kecleon": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Color Change"
     ],
@@ -14628,7 +14628,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Color Change": 1
       },
@@ -17371,7 +17371,7 @@
     }
   },
   "Machamp": {
-    "level": 82,
+    "level": 81,
     "abilities": [
       "No Guard"
     ],
@@ -17399,7 +17399,7 @@
       }
     },
     "stats": {
-      "level": 82,
+      "level": 81,
       "abilities": {
         "No Guard": 1
       },
@@ -19333,7 +19333,7 @@
     }
   },
   "Miltank": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Sap Sipper",
       "Thick Fat"
@@ -19362,7 +19362,7 @@
       }
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Sap Sipper": 0.5142,
         "Thick Fat": 0.4858
@@ -19977,7 +19977,7 @@
     }
   },
   "Murkrow": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Prankster"
     ],
@@ -19999,11 +19999,17 @@
           "Roost",
           "Taunt",
           "Thunder Wave"
-        ]
+        ],
+        "evs": {
+          "hp": 81
+        }
       }
     },
+    "evs": {
+      "hp": 81
+    },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Prankster": 1
       },
@@ -20026,8 +20032,14 @@
             "Taunt": 0.3462,
             "Brave Bird": 0.337,
             "Haze": 0.3167
+          },
+          "evs": {
+            "hp": 81
           }
         }
+      },
+      "evs": {
+        "hp": 81
       }
     }
   },
@@ -21753,7 +21765,7 @@
     }
   },
   "Porygon-Z": {
-    "level": 81,
+    "level": 80,
     "abilities": [
       "Adaptability",
       "Download"
@@ -21792,7 +21804,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 81,
+      "level": 80,
       "abilities": {
         "Adaptability": 0.5112,
         "Download": 0.4888
@@ -23435,7 +23447,7 @@
     }
   },
   "Reuniclus": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Magic Guard"
     ],
@@ -23472,7 +23484,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Magic Guard": 1
       },
@@ -23782,7 +23794,7 @@
     }
   },
   "Rotom-Fan": {
-    "level": 83,
+    "level": 84,
     "abilities": [
       "Levitate"
     ],
@@ -23823,7 +23835,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 84,
       "abilities": {
         "Levitate": 1
       },
@@ -24370,7 +24382,7 @@
     }
   },
   "Samurott": {
-    "level": 86,
+    "level": 87,
     "abilities": [
       "Torrent"
     ],
@@ -24434,7 +24446,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 87,
       "abilities": {
         "Torrent": 1
       },
@@ -24654,7 +24666,7 @@
     }
   },
   "Sawsbuck": {
-    "level": 85,
+    "level": 84,
     "abilities": [
       "Sap Sipper"
     ],
@@ -24682,7 +24694,7 @@
       }
     },
     "stats": {
-      "level": 85,
+      "level": 84,
       "abilities": {
         "Sap Sipper": 1
       },
@@ -25582,7 +25594,7 @@
     }
   },
   "Shaymin": {
-    "level": 83,
+    "level": 82,
     "abilities": [
       "Natural Cure"
     ],
@@ -25622,7 +25634,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 83,
+      "level": 82,
       "abilities": {
         "Natural Cure": 1
       },
@@ -25736,7 +25748,7 @@
     }
   },
   "Shedinja": {
-    "level": 95,
+    "level": 96,
     "abilities": [
       "Wonder Guard"
     ],
@@ -25757,17 +25769,11 @@
           "Swords Dance",
           "Will-O-Wisp",
           "X-Scissor"
-        ],
-        "evs": {
-          "hp": 81
-        }
+        ]
       }
     },
-    "evs": {
-      "hp": 81
-    },
     "stats": {
-      "level": 95,
+      "level": 96,
       "abilities": {
         "Wonder Guard": 1
       },
@@ -25789,14 +25795,8 @@
             "X-Scissor": 1,
             "Will-O-Wisp": 0.5076,
             "Shadow Claw": 0.4924
-          },
-          "evs": {
-            "hp": 81
           }
         }
-      },
-      "evs": {
-        "hp": 81
       }
     }
   },
@@ -26772,7 +26772,7 @@
     }
   },
   "Smeargle": {
-    "level": 88,
+    "level": 89,
     "abilities": [
       "Own Tempo"
     ],
@@ -26809,7 +26809,7 @@
       "atk": 0
     },
     "stats": {
-      "level": 88,
+      "level": 89,
       "abilities": {
         "Own Tempo": 1
       },
@@ -28230,7 +28230,7 @@
     }
   },
   "Swanna": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Hydration"
     ],
@@ -28276,7 +28276,7 @@
       }
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Hydration": 1
       },
@@ -29005,7 +29005,7 @@
     }
   },
   "Thundurus-Therian": {
-    "level": 77,
+    "level": 76,
     "abilities": [
       "Volt Absorb"
     ],
@@ -29049,7 +29049,7 @@
       "def": 30
     },
     "stats": {
-      "level": 77,
+      "level": 76,
       "abilities": {
         "Volt Absorb": 1
       },
@@ -29312,7 +29312,7 @@
     }
   },
   "Tornadus": {
-    "level": 79,
+    "level": 78,
     "abilities": [
       "Defiant"
     ],
@@ -29351,7 +29351,7 @@
       }
     },
     "stats": {
-      "level": 79,
+      "level": 78,
       "abilities": {
         "Defiant": 1
       },
@@ -32136,7 +32136,7 @@
     }
   },
   "Wormadam-Sandy": {
-    "level": 92,
+    "level": 91,
     "abilities": [
       "Anticipation"
     ],
@@ -32161,7 +32161,7 @@
       }
     },
     "stats": {
-      "level": 92,
+      "level": 91,
       "abilities": {
         "Anticipation": 1
       },
@@ -32548,7 +32548,7 @@
     }
   },
   "Zebstrika": {
-    "level": 86,
+    "level": 85,
     "abilities": [
       "Lightning Rod",
       "Sap Sipper"
@@ -32602,7 +32602,7 @@
       "def": 30
     },
     "stats": {
-      "level": 86,
+      "level": 85,
       "abilities": {
         "Sap Sipper": 0.5003,
         "Lightning Rod": 0.4997
