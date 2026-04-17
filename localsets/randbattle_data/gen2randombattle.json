@@ -6632,7 +6632,7 @@
     }
   },
   "Porygon2": {
-    "level": 67,
+    "level": 80,
     "items": [
       "Leftovers"
     ],
@@ -6652,7 +6652,7 @@
       }
     },
     "stats": {
-      "level": 67,
+      "level": 80,
       "items": {
         "Leftovers": 1
       },
